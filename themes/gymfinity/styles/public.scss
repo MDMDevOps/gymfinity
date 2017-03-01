@@ -1,0 +1,10 @@
+/*------------------------------------------------------------------------------
+ * First file MUST be the variables file
+ * -------------------------------------------------------------------------- */
+@import 'modules/variables';
+/*------------------------------------------------------------------------------
+ * !Important: Copy the styles directory from MPress parent theme, and place here
+ *  - styles/mpress
+ * Import those styles directly into this file, so we only have to enqueue 1 file
+ * -------------------------------------------------------------------------- */
+@import 'mpress/public';
