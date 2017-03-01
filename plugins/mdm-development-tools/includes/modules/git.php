@@ -93,24 +93,24 @@ class Git extends \Mdm\Devtools {
 		) );
 	}
 
-	public function webhook_callback() {
+	public function webhook_callback( $request ) {
 		// do type checking here as the method declaration must be compatible with parent
-		if ( !$request instanceof WP_REST_Request ) {
-		    throw new InvalidArgumentException( __METHOD__ . ' expects an instance of WP_REST_Request' );
+		if ( !$request instanceof \WP_REST_Request ) {
+		    throw new \InvalidArgumentException( __METHOD__ . ' expects an instance of WP_REST_Request.' );
 		}
 		// If we're not pushing to the master branch, we can bail
 		if( !isset( $request['ref'] ) || strpos( $request['ref'], 'master' ) === false ) {
-		    return new WP_REST_Response( 'Push not on master branch', 201 );
+		    return new \WP_REST_Response( 'Push not on master branch', 201 );
 		}
 		// Peform the pull
-		$response = $this->pull();
+		// $response = $this->pull();
 		// Check if an exception was thrown
 		if( $this->exception !== false ) {
-			return new WP_REST_Response( $this->exception->getMessage(), 187 );
+			return new \WP_REST_Response( $this->exception->getMessage(), 187 );
 
 		}
 		// if we made it here without an exception being thrown, return response
-		return new WP_REST_Response( $response, 200 );
+		// return new WP_REST_Response( $response, 200 );
 
 	}
 
@@ -224,7 +224,7 @@ class Git extends \Mdm\Devtools {
 			}
 			// 3: Get json response from github and parse it
 			return json_decode( wp_remote_retrieve_body( wp_remote_get( $request_uri ) ), true );
-		} catch (Exception $e) {
+		} catch ( Exception $e ) {
 			return false;
 		}
 	}

@@ -51,6 +51,8 @@ class DevTools {
 	 * @var (string) $plugin_name : The unique identifier for this plugin
 	 */
 	protected static $plugin_name;
+	protected static $plugin_wp_name;
+
 
 	/**
 	 * Plugin Version
@@ -101,15 +103,16 @@ class DevTools {
 		$this->register_settings_hooks();
 		$this->register_admin_hooks();
 		$this->register_git_hooks();
+		$this->register_upgrade_hooks();
 	}
 
 	private function set_fields() {
 		self::$plugin_path = plugin_dir_path( __DIR__ );
 		self::$plugin_file = self::$plugin_path . 'index.php';
 		self::$plugin_url  = plugin_dir_url( __DIR__ );
-		self::$plugin_slug = dirname( plugin_basename( __DIR__ ) );
+		self::$plugin_slug = plugin_basename( self::$plugin_file );
 		self::$plugin_name = 'mdm_devtools';
-		self::$plugin_version = '1.0.0';
+		self::$plugin_version = '1.0.2';
 	}
 
 	private function register_settings_hooks() {
@@ -128,6 +131,7 @@ class DevTools {
 
 	private function register_git_hooks() {
 		$module = \Mdm\DevTools\Modules\Git::get_instance();
+		add_action( 'rest_api_init',array( $module, 'register_rest_route' ) );
 		add_filter( 'repository_data', array( $module, 'get_repository_data' ), 10, 2 );
 		add_action( 'wp_ajax_git_terminus', array( $module, 'git_terminus' ) );
 		add_action( 'display_git_configuration', array( $module, 'display_git_config' ) );

@@ -11,7 +11,7 @@
  * Plugin Name: .¯¯̿̿¯̿̿’̿̿̿̿̿̿̿’̿̿’̿̿̿̿̿’̿̿̿)͇̿̿)̿̿̿̿ ‘̿̿̿̿̿̿\̵͇̿̿\=(•̪̀●́)=o/̵͇̿̿/’̿̿ ̿ ̿̿
  * Plugin URI:  http://midwestfamilymarketing.com
  * Description: Tools to aid development, including git deployment, style guides, and server information
- * Version:     1.0.0
+ * Version:     1.0.2
  * Author:      Mid-West Family Marketing
  * Author URI:  http://midwestfamilymarketing.com
  * License:     GPL-2.0+

@@ -10,6 +10,8 @@
  */
 namespace Mdm\DevTools\Modules;
 
+use \Mdm\DevTools\Modules\Utilities as Utilities;
+
 // Prevent loading this file directly and/or if the class is already defined
 if ( ! defined( 'ABSPATH' ) || class_exists( 'WPGitHubUpdater' ) || class_exists( 'WP_GitHub_Updater' ) ) {
 	return;
@@ -97,7 +99,7 @@ class Upgrade extends \Mdm\Devtools {
 	 * Get repository data From Github
 	 * @since 1.0.0
 	 */
-	public static function get_github_data() {
+	public function get_github_data() {
 		// Instantiate update variable
 		$github_data = false;
 		// If we have an auth key...
@@ -139,12 +141,14 @@ class Upgrade extends \Mdm\Devtools {
 		}
 		// If we made it here, we can begin the update process
 		$update = array(
-			'url' => $this->$plugin_data['PluginURI'],
+			'url' => $this->plugin_data['PluginURI'],
 			'slug' => current( explode( '/', parent::$plugin_slug ) ),
+			'plugin' => parent::$plugin_slug,
 			'package' => $this->github_data['zipball_url'],
 			'new_version' => $this->github_data['tag_name'],
 		);
 		$transient->response[ parent::$plugin_slug ] = (object)$update;
+		// Utilities::expose( $transient );
 		return $transient; // Return filtered transient
 	}
 
@@ -193,7 +197,7 @@ class Upgrade extends \Mdm\Devtools {
 		// 4. Set the destination for the rest of the stack
 		$result['destination'] = $install_directory;
 		// 5. If it was active, re-activate
-		if ( self::$active ) {
+		if ( $this->is_active ) {
 			activate_plugin( parent::$plugin_slug );
 		}
 		return $result;
