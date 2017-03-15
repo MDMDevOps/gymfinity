@@ -3,8 +3,8 @@
 Project repository for syncing local, and staging work for venture apartments
 
 ## Usefule Links
-- **Staging:** [http://mdmserver.us/venture](http://mdmserver.us/venture)
-- **Github:** [https://github.com/MDMDevOps/venture](https://github.com/MDMDevOps/venture)
+- **Staging:** [http://mdmserver.us/gymfinity](http://mdmserver.us/gymfinity)
+- **Github:** [https://github.com/MDMDevOps/gymfinity](https://github.com/MDMDevOps/gymfinity)
 
 
 
@@ -44,7 +44,7 @@ Project repository for syncing local, and staging work for venture apartments
 ```
 
 **Manually**
-- Navigate to (https://wordpress.org/download/)[https://wordpress.org/download/] and download the latest version
+- Navigate to [https://wordpress.org/download/](https://wordpress.org/download/) and download the latest version
 - Unpack into desired working directory
 
 After you've downloaded Wordpress, create a database (if not using VV or wp-cli). Finally install it. For specific installation instructions, google it...or whatever.
@@ -52,7 +52,7 @@ After you've downloaded Wordpress, create a database (if not using VV or wp-cli)
 ### 2. Clone and configure repository
 
 ```bash
-git clone git@github.com:MDMDevOps/venture.git
+git clone git@github.com:MDMDevOps/gymfinity.git
 ```
 
 Open up **.git/config** and add the block:
