@@ -22,7 +22,7 @@ class Git extends \Mdm\Devtools {
 		try {
 			$path = trailingslashit( trim( ABSPATH . parent::$plugin_settings['git_path'] ) );
 			chdir( $path );
-			$real_path = shell_exec( 'git rev-parse --show-toplevel' );
+			$real_path = exec( "git rev-parse --show-toplevel" );
 			if( trailingslashit( trim( $real_path ) ) === $path ) {
 				return true;
 			}
@@ -98,20 +98,29 @@ class Git extends \Mdm\Devtools {
 		if ( !$request instanceof \WP_REST_Request ) {
 		    throw new \InvalidArgumentException( __METHOD__ . ' expects an instance of WP_REST_Request.' );
 		}
+
+		$request = $this->parse_request_object( $request );
+
 		// If we're not pushing to the master branch, we can bail
-		if( !isset( $request['ref'] ) || strpos( $request['ref'], 'master' ) === false ) {
+		if( !isset( $request->ref ) || strpos( $request->ref, 'master' ) === false ) {
 		    return new \WP_REST_Response( 'Push not on master branch', 201 );
 		}
 		// Peform the pull
-		// $response = $this->pull();
+		$response = $this->reset();
 		// Check if an exception was thrown
 		if( $this->exception !== false ) {
-			return new \WP_REST_Response( $this->exception->getMessage(), 187 );
+			return new \WP_REST_Response( $response, 187 );
 
 		}
 		// if we made it here without an exception being thrown, return response
-		// return new WP_REST_Response( $response, 200 );
+		return new WP_REST_Response( $response, 200 );
 
+	}
+
+	public function parse_request_object( $request ) {
+		$params = $request->get_params();
+		$params = json_decode( $params['payload'] );
+		return $params;
 	}
 
 	private function status() {
@@ -188,9 +197,11 @@ class Git extends \Mdm\Devtools {
 			return false;
 		}
 		try {
+			do_action( 'before_git_reset' );
 			chdir( trailingslashit( trim( ABSPATH . parent::$plugin_settings['git_path'] ) ) );
 			$response  = shell_exec( 'git fetch --all' );
 			$response .= shell_exec( 'git reset --hard origin/master' );
+			do_action( 'after_git_reset' );
 			return $response;
 		} catch ( Exception $e ) {
 			// Eventually I'll do some other stuff here to handle exceptions
