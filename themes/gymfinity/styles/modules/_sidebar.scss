@@ -1,0 +1,6 @@
+#sidebar-navigation {
+	display: none;
+	@include breakpoint( $menu-breakpoint ) {
+		display: block;
+	}
+}

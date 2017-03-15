@@ -1,0 +1,23 @@
+/* line 1, ../editor.scss */
+.gridable {
+  padding: 1.5em;
+}
+
+/* line 5, ../editor.scss */
+section, .row, .grid, .column, .columns, .cols, .col {
+  border: 1px dashed #e9e9e9;
+  position: relative;
+  padding: 25px 5px 5px 5px;
+}
+/* line 9, ../editor.scss */
+section:before, .row:before, .grid:before, .column:before, .columns:before, .cols:before, .col:before {
+  content: "";
+  display: table;
+}
+
+/* line 14, ../editor.scss */
+.row, .grid {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=editor.min.css.map */

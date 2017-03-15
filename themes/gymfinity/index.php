@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area row">
-	<main id="main" class="site-main column sm-8" role="main">
+	<main id="main" class="site-main column sm-8 sm-push-4 lg-9 lg-push-3" role="main">
 	<?php
 		/**
 		 * Begin standard wordpress loop, first checking if we have posts to show
@@ -49,7 +49,7 @@
 		endif;
 	?>
 	</main>
-	<aside id="sidebar" class="column sm-4">
+	<aside id="sidebar" class="column sm-4 sm-pull-8 lg-3 lg-pull-9">
 		<?php get_sidebar(); ?>
 	</aside>
 </div>

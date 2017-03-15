@@ -1,0 +1,14 @@
+#appbar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999999;
+	@include clearfix;
+	@include breakpoint( $menu-breakpoint ) {
+		display: none;
+	}
+	p {
+		margin: 0;
+	}
+}

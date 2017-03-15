@@ -62,7 +62,7 @@ if ( !function_exists( 'register_public_stylesheets' ) ) {
 if ( !function_exists( 'register_admin_stylesheets' ) ) {
     function register_admin_stylesheets( $stylesheets ) {
     	// Enqueue Google Fonts
-    	$stylesheets['venture-admin'] = array(
+    	$stylesheets['gymfinity-admin'] = array(
     		'src'   => CHILD_THEME_ROOT_URI . 'styles/dist/admin.min.css',
     		'deps'  => array(),
     		'ver'   => '1.0.0',
@@ -83,7 +83,7 @@ add_filter( 'mpress_editor_stylesheets', 'register_editor_stylesheets' );
 /* -------------------------------------------------------------------------- */
 
 function register_public_scripts( $scripts ) {
-	$scripts['venture-public'] = array(
+	$scripts['gymfinity-public'] = array(
 		'src'    => CHILD_THEME_ROOT_URI . 'scripts/dist/public.min.js',
 		'deps'   => array( 'jquery', 'mpress-public' ),
 		'ver'    => '1.0.0',
@@ -121,9 +121,9 @@ if( !function_exists( 'register_admin_scripts' ) ) {
 if( !function_exists( 'mpress_add_sidebars' ) ) {
     function register_child_sidebars( $sidebars ) {
     	$child_sidebars = array(
-    		'example' => array(
-    			'name'          => __( 'Example Sidebar', 'mpress-child' ),
-    			'id'            => 'example-sidebar',
+    		'masthead-widgets' => array(
+    			'name'          => __( 'Masthead Widgets', 'mpress-child' ),
+    			'id'            => 'masthead-widgets',
     			'before_widget' => '<div id="%1$s" class="widget %2$s">',
     			'after_widget'  => "</div>",
     			'before_title'  => '<h4 class="widget-title">',
@@ -133,7 +133,7 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     	return array_merge( $sidebars, $child_sidebars );
     }
     // Uncomment to use
-    // add_filter( 'mpress_sidebars', 'register_child_sidebars' );
+    add_filter( 'mpress_sidebars', 'register_child_sidebars' );
 }
 /* -------------------------------------------------------------------------- */
 
@@ -206,3 +206,4 @@ if( !function_exists( 'extend_mpress_theme_engine' ) ) {
 	// Uncomment ot use
 	//add_filter( 'mpress_theme_modules', 'extend_mpress_theme_engine' );
 }
+

@@ -1,0 +1,16 @@
+#masthead {
+	.top-banner {
+		p {
+			margin: 0;
+		}
+	}
+	.site-branding {
+		float: none;
+		.custom-logo-link {
+			display: block;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+	}
+}

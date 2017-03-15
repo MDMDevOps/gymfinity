@@ -17,6 +17,6 @@
 		<?php the_content(); ?>
 	</div>
 	<footer class="entry-footer">
-		<?php do_action( 'mpress_entry_meta', array( 'meta_type' => array( 'edit' ) ) ); ?>
+		<?php //do_action( 'mpress_entry_meta', array( 'meta_type' => array( 'edit' ) ) ); ?>
 	</footer>
 </article>
