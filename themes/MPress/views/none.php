@@ -8,8 +8,6 @@
 
 <article class="no-results not-found">
 
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/404.png" alt="404">
-
 	<header class="entry-header">
 		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'mpress' ); ?></h1>
 	</header>
