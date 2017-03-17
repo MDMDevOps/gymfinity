@@ -5769,7 +5769,7 @@ table td, .table td {
   padding: 0 1em;
   border: 0;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   /* line 30, ../mpress/components/_header.scss */
   #masthead .menu-toggle {
     display: none;
@@ -5897,7 +5897,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
   display: block;
   padding: .809em 1.618em .809em;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   /* line 81, ../mpress/components/_header.scss */
   #site-navigation {
     display: block;
@@ -6683,7 +6683,7 @@ body.custom-background {
 #appbar:after {
   clear: both;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   /* line 1, ../modules/_appbar.scss */
   #appbar {
     display: none;
@@ -6694,30 +6694,75 @@ body.custom-background {
   margin: 0;
 }
 
-/* line 3, ../modules/_masthead.scss */
+/* line 2, ../modules/_masthead.scss */
+#masthead .top-banner {
+  border-bottom: 1px solid #e2e2e2;
+}
+/* line 4, ../modules/_masthead.scss */
+#masthead .top-banner > .wrapper, #masthead .top-banner > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 8, ../modules/_masthead.scss */
 #masthead .top-banner p {
   margin: 0;
 }
-/* line 7, ../modules/_masthead.scss */
+/* line 11, ../modules/_masthead.scss */
+#masthead .top-banner .widgets {
+  float: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/* line 16, ../modules/_masthead.scss */
 #masthead .site-branding {
   float: none;
 }
-/* line 9, ../modules/_masthead.scss */
+/* line 18, ../modules/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
   max-width: 500px;
   margin: 0 auto;
+}
+/* line 25, ../modules/_masthead.scss */
+#masthead #secondary-navigation {
+  float: right;
+}
+/* line 27, ../modules/_masthead.scss */
+#masthead #secondary-navigation .menu {
+  padding: 0;
+}
+/* line 29, ../modules/_masthead.scss */
+#masthead #secondary-navigation .menu li {
+  display: inline-block;
+}
+/* line 32, ../modules/_masthead.scss */
+#masthead #secondary-navigation .menu a, #masthead #secondary-navigation .menu a:link {
+  padding: .404rem;
 }
 
 /* line 1, ../modules/_sidebar.scss */
 #sidebar-navigation {
   display: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 641px) {
   /* line 1, ../modules/_sidebar.scss */
   #sidebar-navigation {
     display: block;
   }
+}
+
+/* line 15, ../public.scss */
+address.inline {
+  display: inline;
 }
 
 /*# sourceMappingURL=public.min.css.map */

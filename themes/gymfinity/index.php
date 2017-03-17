@@ -49,7 +49,7 @@
 		endif;
 	?>
 	</main>
-	<aside id="sidebar" class="column sm-4 sm-pull-8 lg-3 lg-pull-9">
+	<aside id="sidebar" class="column sm-4 sm-pull-8 lg-3 lg-pull-9 fixed-scroll" data-container="#primary" data-offset="50px">
 		<?php get_sidebar(); ?>
 	</aside>
 </div>

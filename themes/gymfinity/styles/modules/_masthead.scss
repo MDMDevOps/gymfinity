@@ -1,7 +1,16 @@
 #masthead {
 	.top-banner {
+		border-bottom: 1px solid $border-color;
+		> .wrapper {
+			@include flexbox( 'row' );
+			align-items: center;
+		}
 		p {
 			margin: 0;
+		}
+		.widgets {
+			float: left;
+			flex: 1;
 		}
 	}
 	.site-branding {
@@ -12,5 +21,17 @@
 			margin: 0 auto;
 		}
 
+	}
+	#secondary-navigation {
+		float: right;
+		.menu {
+			padding: 0;
+			li {
+				display: inline-block;
+			}
+			a, a:link {
+				padding: .404rem;
+			}
+		}
 	}
 }

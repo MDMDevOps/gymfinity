@@ -1,9 +1,7 @@
-# Wordpress Stuff
-/wp-content/themes/twenty*
-/wp-content/upgrade
-/wp-content/uploads
+# Artifacts
+*.min.css
+*.min.js
 /sitemap.*
-/wp-config.php
 *.sql
 
 # Flywheel stuff

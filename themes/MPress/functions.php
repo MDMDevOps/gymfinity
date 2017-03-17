@@ -51,3 +51,27 @@ function mpress_autoload_register( $className ) {
 	// include the class...
 	include_once( $path );
 }
+
+/**
+ * Build tool stuff ONLY used during development
+ */
+if( !function_exists( 'mpress_build_grunt' ) ) {
+	function mpress_build_grunt() {
+		try {
+			// CD into this theme directory
+			chdir( trailingslashit( get_template_directory() ) );
+			// Compile SCSS
+			shell_exec( 'grunt compass:production' );
+			// Autoprefix
+			shell_exec( 'grunt newer:autoprefixer' );
+			// Clean temp directory
+			shell_exec( 'grunt clean' );
+			// Uglify javascript
+			shell_exec( 'grunt uglify' );
+		} catch ( Exception $e ) {
+			// Eventually I'll do some other stuff here to handle exceptions
+		}
+	}
+	add_filter( 'after_git_reset', 'build_grunt' );
+}
+

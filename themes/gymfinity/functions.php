@@ -98,7 +98,7 @@ add_filter( 'mpress_public_scripts', 'register_public_scripts' );
 
 if( !function_exists( 'register_admin_scripts' ) ) {
 	function register_admin_scripts( $scripts ) {
-		$scripts['venture-admin'] = array(
+		$scripts['gymfinity-admin'] = array(
 			'src'    => CHILD_THEME_ROOT_URI . 'scripts/dist/admin.min.js',
 			'deps'   => array( 'jquery' ),
 			'ver'    => '1.0.0',
@@ -140,12 +140,13 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
 if( !function_exists( 'register_child_menus' ) ) {
 	function register_child_menus( $menus ) {
 		$menus = array(
-			'primary-navbar'  => __( 'Primary Nav Bar', 'mpress-child' ),
+			'primary-navbar'    => __( 'Primary Nav Bar', 'mpress-child' ),
+			'secondary-navbar'  => __( 'Secondary Nav Bar', 'mpress-child' ),
 		);
 		return $menus;
 	}
 	// Uncomment to use
-	// add_filter( 'mpress_menus', 'register_child_menus' );
+	add_filter( 'mpress_menus', 'register_child_menus' );
 };
 /* -------------------------------------------------------------------------- */
 
