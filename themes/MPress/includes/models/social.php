@@ -131,7 +131,7 @@ class Social extends \Mpress\Theme {
 					$output .= sprintf( '<li class="%1$s">', $name );
 						$output .= sprintf( '<a class="social-link" href="%1$s" target="_blank" rel="noopener noreferrer">', esc_url_raw( $network_uri ) );
 							// Conditionally output icon
-							$output .= ( $args['icon'] === true ) ? apply_filters( 'get_font_icon', $name ) : '';
+							$output .= ( $args['icon'] === true ) ? apply_filters( 'get_mpress_icon', $name ) : '';
 							// Conditionally hide / show text
 							$output .= ( $args['text'] === true ) ? '<span class="social-name">' : '<span class="social-name screen-reader-text">';
 							// Close span

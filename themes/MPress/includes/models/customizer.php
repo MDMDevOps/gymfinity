@@ -47,7 +47,7 @@ class Customizer extends \Mpress\Theme {
 	 * @see https://developer.wordpress.org/reference/functions/wp_localize_script
 	 */
 	public function register_scripts() {
-		wp_register_script( 'mpress-customizer', parent::$theme_uri . 'scripts/dist/mpress.customizer.js', array(), null, true );
+		wp_register_script( 'mpress-customizer', parent::$theme_uri . 'scripts/dist/mpress.customizer.js', array( 'jquery' ), null, true );
 		wp_enqueue_script(  'mpress-customizer' );
 	}
 
