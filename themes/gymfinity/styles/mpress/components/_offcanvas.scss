@@ -16,22 +16,24 @@ body.offcanvas-open, body.offcanvas-opening {
     display: block;
     position: fixed;
     height: 100%;
-    right: -280px;
-    width: 280px;
+    right: 0;
+    top: 0;
+    width: 100%;
     visibility: hidden;
     backface-visibility: hidden;
     z-index: 9999;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: scroll;
-    transform: translate3d( 0, 0, 0 );
-    transition: transform .99s ease-in-out;
-    background: black;
+    transform: translate3d( 0, 100%, 0 );
+    transition: transform .3s ease-in-out;
+    background: #fff;
+    padding: $gutter;
     &.open, &.opening, &.closing {
         visibility: visible;
     }
     &.open, &.opening {
-    	transform: translate3d( -280px, 0, 0 );
+    	transform: translate3d( 0, 0, 0 );
     }
     header {
         @include clearfix;
@@ -47,11 +49,11 @@ body.offcanvas-open, body.offcanvas-opening {
     }
     a, a:link {
         display: block;
-        padding: .809em 1.618em .809em;
-        color: #fff;
-        transition: background .4s ease;
+        // padding: .809em 1.618em .809em;
+        // color: #fff;
+        // transition: background .4s ease;
         &:hover, &:focus {
-            background: darken( #2F323A, 5% );
+            // background: darken( #2F323A, 5% );
         }
     }
     > nav > ul, > nav > .menu > ul {
