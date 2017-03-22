@@ -121,9 +121,9 @@ if( !function_exists( 'register_admin_scripts' ) ) {
 if( !function_exists( 'mpress_add_sidebars' ) ) {
     function register_child_sidebars( $sidebars ) {
     	$child_sidebars = array(
-    		'masthead-widgets' => array(
-    			'name'          => __( 'Masthead Widgets', 'mpress-child' ),
-    			'id'            => 'masthead-widgets',
+    		'top-banner-widgets' => array(
+    			'name'          => __( 'Top Banner Widgets', 'mpress-child' ),
+    			'id'            => 'top-banner-widgets',
     			'before_widget' => '<div id="%1$s" class="widget %2$s">',
     			'after_widget'  => "</div>",
     			'before_title'  => '<h4 class="widget-title">',
