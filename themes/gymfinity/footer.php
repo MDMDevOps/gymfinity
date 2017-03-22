@@ -10,10 +10,29 @@
 
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="row">
+		<div class="column md-4">
+			<?php if ( is_active_sidebar( 'footer-widgets-1' ) ) : ?>
+				<?php dynamic_sidebar( 'footer-widgets-1' ); ?>
+			<?php endif; ?>
+		</div>
+		<div class="column md-4">
+			<?php if ( is_active_sidebar( 'footer-widgets-2' ) ) : ?>
+				<?php dynamic_sidebar( 'footer-widgets-2' ); ?>
+			<?php endif; ?>
+		</div>
+		<div class="column md-4">
+			<?php if ( is_active_sidebar( 'footer-widgets-3' ) ) : ?>
+				<?php dynamic_sidebar( 'footer-widgets-3' ); ?>
+			<?php endif; ?>
+		</div>
+	</div>
 
-	<?php get_template_part( 'views/colophon', apply_filters( 'colophon_type', '' ) ); ?>
-	<?php get_sidebar( 'footer-sidebar' ) ?>
-
+	<div class="site-info">
+		<div class="wrapper">
+			<?php do_action( 'copyright_message' ); ?>
+		</div>
+	</div>
 </footer>
 
 </div><!-- #page -->
