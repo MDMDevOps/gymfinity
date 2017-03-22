@@ -129,12 +129,22 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     			'before_title'  => '<h4 class="widget-title">',
     			'after_title'   => '</h4>'
     		),
+
+    		'footer-widgets' => array(
+	    		'name'          => __( 'Footer Widgets', 'mpress-child' ),
+	    			'id'            => 'footer-widgets',
+	    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	    			'after_widget'  => "</div>",
+	    			'before_title'  => '<h4 class="widget-title">',
+	    			'after_title'   => '</h4>'
+    		),
     	);
     	return array_merge( $sidebars, $child_sidebars );
     }
     // Uncomment to use
     add_filter( 'mpress_sidebars', 'register_child_sidebars' );
 }
+
 /* -------------------------------------------------------------------------- */
 
 if( !function_exists( 'register_child_menus' ) ) {

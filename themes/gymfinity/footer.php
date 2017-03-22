@@ -12,6 +12,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 
 	<?php get_template_part( 'views/colophon', apply_filters( 'colophon_type', '' ) ); ?>
+	<?php get_sidebar( 'footer-sidebar' ) ?>
 
 </footer>
 
