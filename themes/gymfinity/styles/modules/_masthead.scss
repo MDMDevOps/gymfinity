@@ -1,4 +1,7 @@
 #masthead {
+	padding: $gutter;
+	background: rgba( #000, .1 ); // Temporary style to see element during development
+	margin-bottom: 1.618rem;
 	.site-branding {
 		float: none;
 		.custom-logo-link {
@@ -11,27 +14,38 @@
 }
 .top-banner {
 	border-bottom: 1px solid $border-color;
-	> .wrapper {
-		@include flexbox( 'row' );
-		align-items: center;
-	}
+	text-align: center;
+	padding: $gutter $gutter 0;
 	p {
 		margin: 0;
 	}
-	.widgets {
-		float: left;
-		flex: 1;
+	.widget {
+		display: block;
+		min-width: 100%;
 	}
 	#secondary-navigation {
-		float: right;
 		.menu {
 			padding: 0;
 			li {
 				display: inline-block;
 			}
 			a, a:link {
-				padding: .404rem;
+				padding: $gutter / 2;
 			}
+		}
+	}
+	@include breakpoint( 'sm' ) {
+		text-align: left;
+		padding: 0 $gutter;
+		> .wrapper {
+			@include flexbox( 'row' );
+			align-items: center;
+		}
+		.widgets {
+			flex: 1;
+		}
+		#secondary-navigation {
+			float: right;
 		}
 	}
 }

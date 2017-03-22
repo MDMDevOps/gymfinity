@@ -1,4 +1,7 @@
 <aside class="off-canvas-menu" data-toggle="offcanvas" data-group="offcanvas" aria-expanded="false">
+	<header>
+		<?php the_custom_logo(); ?>
+	</header>
 	<nav id="off-canvas-navigation" class="navigation-menu dropdown" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 		<?php
 			// Check if off canvas menu location has a menu assigned, else use primary menu

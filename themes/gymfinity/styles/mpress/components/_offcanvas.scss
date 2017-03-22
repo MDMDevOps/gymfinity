@@ -28,6 +28,7 @@ body.offcanvas-open, body.offcanvas-opening {
     transform: translate3d( 0, 100%, 0 );
     transition: transform .3s ease-in-out;
     background: #fff;
+    padding: $gutter;
     &.open, &.opening, &.closing {
         visibility: visible;
     }

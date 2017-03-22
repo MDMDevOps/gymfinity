@@ -6469,17 +6469,18 @@ body.offcanvas #page-wrapper {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
   background: #fff;
+  padding: 0.809em;
 }
-/* line 31, ../mpress/components/_offcanvas.scss */
+/* line 32, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu.open, .off-canvas-menu.opening, .off-canvas-menu.closing {
   visibility: visible;
 }
-/* line 34, ../mpress/components/_offcanvas.scss */
+/* line 35, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu.open, .off-canvas-menu.opening {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 37, ../mpress/components/_offcanvas.scss */
+/* line 38, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu header {
   padding: .809rem 0;
 }
@@ -6492,32 +6493,32 @@ body.offcanvas #page-wrapper {
 .off-canvas-menu header:after {
   clear: both;
 }
-/* line 41, ../mpress/components/_offcanvas.scss */
+/* line 42, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu .menu-toggle {
   float: right;
   border-radius: .3rem;
   margin-right: .809em;
 }
-/* line 45, ../mpress/components/_offcanvas.scss */
+/* line 46, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu .menu-toggle .icon {
   padding: 0 .809rem 0 0;
 }
-/* line 49, ../mpress/components/_offcanvas.scss */
+/* line 50, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu a, .off-canvas-menu a:link {
   display: block;
 }
-/* line 58, ../mpress/components/_offcanvas.scss */
+/* line 59, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu > nav > ul, .off-canvas-menu > nav > .menu > ul {
   width: 100%;
   margin: 0;
   padding: 1em 0 1.618em;
 }
-/* line 63, ../mpress/components/_offcanvas.scss */
+/* line 64, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu li {
   display: block;
   position: relative;
 }
-/* line 66, ../mpress/components/_offcanvas.scss */
+/* line 67, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu li ul.sub-menu {
   list-style: none;
   display: block;
@@ -6532,15 +6533,15 @@ body.offcanvas #page-wrapper {
   -webkit-transition: opacity .4s ease;
           transition: opacity .4s ease;
 }
-/* line 79, ../mpress/components/_offcanvas.scss */
+/* line 80, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu li ul.sub-menu li {
   display: block;
 }
-/* line 82, ../mpress/components/_offcanvas.scss */
+/* line 83, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu li ul.sub-menu a, .off-canvas-menu li ul.sub-menu a:link {
   padding-left: 3.2em;
 }
-/* line 87, ../mpress/components/_offcanvas.scss */
+/* line 88, ../mpress/components/_offcanvas.scss */
 .off-canvas-menu li:focus > ul.sub-menu, .off-canvas-menu li.expanded > ul.sub-menu {
   position: relative;
   visibility: visible;
@@ -6689,48 +6690,37 @@ body.custom-background {
   margin: 0;
 }
 
-/* line 2, ../modules/_masthead.scss */
+/* line 1, ../modules/_masthead.scss */
+#masthead {
+  padding: 0.809em;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.618rem;
+}
+/* line 5, ../modules/_masthead.scss */
 #masthead .site-branding {
   float: none;
 }
-/* line 4, ../modules/_masthead.scss */
+/* line 7, ../modules/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
   max-width: 500px;
   margin: 0 auto;
 }
 
-/* line 12, ../modules/_masthead.scss */
+/* line 15, ../modules/_masthead.scss */
 .top-banner {
   border-bottom: 1px solid #e2e2e2;
+  text-align: center;
+  padding: 0.809em 0.809em 0;
 }
-/* line 14, ../modules/_masthead.scss */
-.top-banner > .wrapper, .top-banner > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/* line 18, ../modules/_masthead.scss */
+/* line 19, ../modules/_masthead.scss */
 .top-banner p {
   margin: 0;
 }
-/* line 21, ../modules/_masthead.scss */
-.top-banner .widgets {
-  float: left;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-/* line 25, ../modules/_masthead.scss */
-.top-banner #secondary-navigation {
-  float: right;
+/* line 22, ../modules/_masthead.scss */
+.top-banner .widget {
+  display: block;
+  min-width: 100%;
 }
 /* line 27, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu {
@@ -6742,7 +6732,37 @@ body.custom-background {
 }
 /* line 32, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
-  padding: .404rem;
+  padding: 0.4045em;
+}
+@media (min-width: 641px) {
+  /* line 15, ../modules/_masthead.scss */
+  .top-banner {
+    text-align: left;
+    padding: 0 0.809em;
+  }
+  /* line 40, ../modules/_masthead.scss */
+  .top-banner > .wrapper, .top-banner > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 44, ../modules/_masthead.scss */
+  .top-banner .widgets {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  /* line 47, ../modules/_masthead.scss */
+  .top-banner #secondary-navigation {
+    float: right;
+  }
 }
 
 /* line 1, ../modules/_sidebar.scss */
