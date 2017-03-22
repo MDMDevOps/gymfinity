@@ -1,9 +1,49 @@
 #colophon{
-	background:grey;
+	background:rgba(0, 0, 0, 0.1);
 	text-align:center;
 
-	li {
+	ul li{
 		display: inline-block;
+	}
+
+	span.icon {
+	    font-size: 2em;
+	    padding: 5px;
+	}
+
+	ul.social{
+		li.facebook{
+			a, a:link{
+
+				color:$facebook-color;
+
+				&:hover, &:focus{
+					color:darken($facebook-color, 10%);
+				}
+			}
+		}
+
+		li.twitter{
+			a, a:link{
+
+				color:$twitter-color;
+
+				&:hover, &:focus{
+					color:darken($twitter-color, 10%);
+				}
+			}
+		}
+
+		li.googleplus{
+			a, a:link{
+
+				color:$googleplus-color;
+
+				&:hover, &:focus{
+					color:darken($googleplus-color, 10%);
+				}
+			}
+		}
 	}
 
 	.custom-logo-link{
