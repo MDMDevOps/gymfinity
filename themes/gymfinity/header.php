@@ -43,8 +43,8 @@
 			<div class="top-banner">
 				<div class="wrapper clearfix">
 					<div class="widgets">
-						<?php if ( is_active_sidebar( 'top-banner' ) ) : ?>
-							<?php dynamic_sidebar( 'top-banner' ); ?>
+						<?php if ( is_active_sidebar( 'top-banner-widgets' ) ) : ?>
+							<?php dynamic_sidebar( 'top-banner-widgets' ); ?>
 						<?php endif; ?>
 					</div>
 					<nav id="secondary-navigation" class="navigation-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
