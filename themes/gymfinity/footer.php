@@ -17,9 +17,7 @@
 			<?php endif; ?>
 		</div>
 		<div class="column md-4">
-			<?php if ( is_active_sidebar( 'footer-widgets-2' ) ) : ?>
-				<?php dynamic_sidebar( 'footer-widgets-2' ); ?>
-			<?php endif; ?>
+			<?php the_custom_logo(); ?>
 		</div>
 		<div class="column md-4">
 			<?php if ( is_active_sidebar( 'footer-widgets-3' ) ) : ?>
