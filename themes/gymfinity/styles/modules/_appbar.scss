@@ -4,6 +4,8 @@
 	left: 0;
 	right: 0;
 	z-index: 99999999;
+	background: #fff;
+	border-top: 1px solid $border-color;
 	@include clearfix;
 	@include breakpoint( $menu-breakpoint ) {
 		display: none;

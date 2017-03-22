@@ -1,18 +1,4 @@
 #masthead {
-	.top-banner {
-		border-bottom: 1px solid $border-color;
-		> .wrapper {
-			@include flexbox( 'row' );
-			align-items: center;
-		}
-		p {
-			margin: 0;
-		}
-		.widgets {
-			float: left;
-			flex: 1;
-		}
-	}
 	.site-branding {
 		float: none;
 		.custom-logo-link {
@@ -21,6 +7,20 @@
 			margin: 0 auto;
 		}
 
+	}
+}
+.top-banner {
+	border-bottom: 1px solid $border-color;
+	> .wrapper {
+		@include flexbox( 'row' );
+		align-items: center;
+	}
+	p {
+		margin: 0;
+	}
+	.widgets {
+		float: left;
+		flex: 1;
 	}
 	#secondary-navigation {
 		float: right;
