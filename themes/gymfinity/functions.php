@@ -130,27 +130,18 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     			'after_title'   => '</h4>'
     		),
 
-    		'footer-widgets-1' => array(
-	    		'name'          => __( '1st Footer Widgets', 'mpress-child' ),
-	    			'id'            => 'footer-widgets-1',
+    		'footer-widgets-left' => array(
+	    		'name'          => __( 'left Footer Widgets', 'mpress-child' ),
+	    			'id'            => 'footer-widgets-left',
 	    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	    			'after_widget'  => "</div>",
 	    			'before_title'  => '<h4 class="widget-title">',
 	    			'after_title'   => '</h4>'
     		),
 
-    		'footer-widgets-2' => array(
-	    		'name'          => __( '2nd Footer Widgets', 'mpress-child' ),
-	    			'id'            => 'footer-widgets-2',
-	    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	    			'after_widget'  => "</div>",
-	    			'before_title'  => '<h4 class="widget-title">',
-	    			'after_title'   => '</h4>'
-    		),
-
-    		'footer-widgets-3' => array(
-	    		'name'          => __( '3rd Footer Widgets', 'mpress-child' ),
-	    			'id'            => 'footer-widgets-3',
+    		'footer-widgets-right' => array(
+	    		'name'          => __( 'Right Footer Widgets', 'mpress-child' ),
+	    			'id'            => 'footer-widgets-right',
 	    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	    			'after_widget'  => "</div>",
 	    			'before_title'  => '<h4 class="widget-title">',

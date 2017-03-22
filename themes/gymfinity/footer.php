@@ -11,17 +11,17 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="row">
-		<div class="column md-4">
-			<?php if ( is_active_sidebar( 'footer-widgets-1' ) ) : ?>
-				<?php dynamic_sidebar( 'footer-widgets-1' ); ?>
+		<div class="column md-4 outter-widget">
+			<?php if ( is_active_sidebar( 'footer-widgets-left' ) ) : ?>
+				<?php dynamic_sidebar( 'footer-widgets-left' ); ?>
 			<?php endif; ?>
 		</div>
 		<div class="column md-4">
 			<?php the_custom_logo(); ?>
 		</div>
-		<div class="column md-4">
-			<?php if ( is_active_sidebar( 'footer-widgets-3' ) ) : ?>
-				<?php dynamic_sidebar( 'footer-widgets-3' ); ?>
+		<div class="column md-4 outter-widget">
+			<?php if ( is_active_sidebar( 'footer-widgets-right' ) ) : ?>
+				<?php dynamic_sidebar( 'footer-widgets-right' ); ?>
 			<?php endif; ?>
 		</div>
 	</div>

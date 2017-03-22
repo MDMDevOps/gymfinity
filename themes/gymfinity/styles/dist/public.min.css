@@ -6785,6 +6785,18 @@ body.custom-background {
 #colophon li {
   display: inline-block;
 }
+/* line 9, ../modules/_footer.scss */
+#colophon .custom-logo-link {
+  max-width: 200px;
+}
+/* line 13, ../modules/_footer.scss */
+#colophon .outter-widget {
+  margin-top: 50px;
+}
+/* line 17, ../modules/_footer.scss */
+#colophon .site-info {
+  margin-top: 40px;
+}
 
 /* line 16, ../public.scss */
 address.inline {
