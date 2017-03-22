@@ -37,23 +37,11 @@
 
 	<div id="page-wrapper">
 
-		<?php if( get_theme_mod( 'mpress_menu_type' ) === 'offcanvas' ) : get_template_part( 'views/offcanvas' ); endif; ?>
+		<?php if( get_theme_mod( 'mpress_menu_type' ) === 'offcanvas' ) : get_template_part( 'partials/offcanvas' ); endif; ?>
+
+		<?php get_template_part( 'partials/banner', 'top' ); ?>
 
 		<header id="masthead" role="banner">
-			<div class="top-banner">
-				<div class="wrapper clearfix">
-					<div class="widgets">
-						<?php if ( is_active_sidebar( 'top-banner-widgets' ) ) : ?>
-							<?php dynamic_sidebar( 'top-banner-widgets' ); ?>
-						<?php endif; ?>
-					</div>
-					<nav id="secondary-navigation" class="navigation-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
-						<?php if( has_nav_menu( 'secondary-navbar' ) ) : ?>
-							<?php wp_nav_menu( array( 'theme_location' => 'secondary-navbar', 'container' => '', 'walker' => new \Mpress\Walker_Nav_Menu() ) ); ?>
-						<?php endif; ?>
-					</nav>
-				</div>
-			</div>
 			<div class="main-banner wrapper">
 				<div class="clearfix">
 					<div class="site-branding" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
@@ -67,8 +55,6 @@
 			</div>
 		</header>
 
-		<div id="appbar">
-				<button class="menu-toggle" aria-expanded="false" data-toggle="<?php echo get_theme_mod( 'mpress_menu_type' ); ?>"><?php do_action( 'mpress_icon', 'menu' ) ?><span class="screen-reader-text"><?php esc_html_e( 'Menu', 'mpress' ); ?></span></button>
-		</div>
+		<?php get_template_part( 'partials/banner', 'appbar' ); ?>
 
 		<div id="page" class="hfeed site">
