@@ -6760,6 +6760,16 @@ body.custom-background {
   }
 }
 
+/* line 1, ../modules/_footer.scss */
+#colophon {
+  background: grey;
+  text-align: center;
+}
+/* line 5, ../modules/_footer.scss */
+#colophon li {
+  display: inline-block;
+}
+
 /* line 16, ../public.scss */
 address.inline {
   display: inline;
