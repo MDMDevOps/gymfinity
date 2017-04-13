@@ -121,12 +121,12 @@ class Setup extends \Mpress\Theme {
 	 * @since version 1.0.0
 	 */
 	public function remove_script_version( $src ) {
-	    if ( strpos( $src, 'ver=' ) )
-	        $src = remove_query_arg( 'ver', $src );
-	    return $src;
+		if ( strpos( $src, 'ver=' ) )
+			$src = remove_query_arg( 'ver', $src );
+		return $src;
 	}
 
 	function remove_rss_version() {
-	    return '';
+		return '';
 	}
 }
