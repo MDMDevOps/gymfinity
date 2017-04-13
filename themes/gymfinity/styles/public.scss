@@ -29,10 +29,8 @@ address.inline {
 }
 #primary {
 	position: relative;
-	border: 1px solid red;
 }
 .fixed-scroll-column {
-	border: 1px solid green;
 	&.fixed {
 		position: fixed;
 	}
