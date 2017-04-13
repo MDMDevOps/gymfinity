@@ -1,0 +1,18 @@
+.mdm-metabox {
+	.image-preview {
+		border: 2px dashed #e9eef1;
+		padding: 10px;
+		margin-bottom: 10px
+	}
+	.image-background {
+		background-color: #e9eef1;
+	}
+	a.choose {
+		display: block;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: bottom;
+	}
+}
