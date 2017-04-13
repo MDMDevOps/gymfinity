@@ -6851,14 +6851,9 @@ address.inline {
 /* line 30, ../public.scss */
 #primary {
   position: relative;
-  border: 1px solid red;
 }
 
 /* line 34, ../public.scss */
-.fixed-scroll-column {
-  border: 1px solid green;
-}
-/* line 36, ../public.scss */
 .fixed-scroll-column.fixed {
   position: fixed;
 }
