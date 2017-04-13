@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area row">
-	<main id="main" class="site-main column sm-8 sm-push-4 lg-9 lg-push-3" role="main">
+	<main id="main" class="site-main" role="main">
 	<?php
 		/**
 		 * Begin standard wordpress loop, first checking if we have posts to show
