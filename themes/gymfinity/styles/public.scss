@@ -16,3 +16,24 @@
 address.inline {
 	display: inline;
 }
+
+.entry-content {
+	font-size: 1rem;
+	@include breakpoint( 'lg' ) {
+		font-size: 1.3rem;
+	}
+}
+
+#colophon {
+	height: 1000px;
+}
+#primary {
+	position: relative;
+	border: 1px solid red;
+}
+.fixed-scroll-column {
+	border: 1px solid green;
+	&.fixed {
+		position: fixed;
+	}
+}

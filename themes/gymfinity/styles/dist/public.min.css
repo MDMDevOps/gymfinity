@@ -6617,7 +6617,7 @@ html {
 /* line 40, ../mpress/_public.scss */
 body {
   position: relative;
-  font: normal normal normal 1rem/1.618em "Open Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font: normal normal normal 1rem/1.618 "Open Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   width: 100%;
   color: #232323;
   overflow: hidden;
@@ -6779,6 +6779,37 @@ body.custom-background {
 /* line 16, ../public.scss */
 address.inline {
   display: inline;
+}
+
+/* line 20, ../public.scss */
+.entry-content {
+  font-size: 1rem;
+}
+@media (min-width: 961px) {
+  /* line 20, ../public.scss */
+  .entry-content {
+    font-size: 1.3rem;
+  }
+}
+
+/* line 27, ../public.scss */
+#colophon {
+  height: 1000px;
+}
+
+/* line 30, ../public.scss */
+#primary {
+  position: relative;
+  border: 1px solid red;
+}
+
+/* line 34, ../public.scss */
+.fixed-scroll-column {
+  border: 1px solid green;
+}
+/* line 36, ../public.scss */
+.fixed-scroll-column.fixed {
+  position: fixed;
 }
 
 /*# sourceMappingURL=public.min.css.map */
