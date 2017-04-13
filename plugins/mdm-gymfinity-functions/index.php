@@ -34,11 +34,11 @@ function mdm_gymfinity_plugin_autoload_register( $className ) {
 	$className = strtolower( str_replace( '\\', '/', $className ) );
 	// Ensure there is no slash at the beginning of the classname
 	$className = ltrim( $className, '/' );
+	// Replace some known constants
+	$className = str_ireplace( 'Mdm/', '', $className );
+	$className = str_ireplace( 'Gymfinity/', '', $className );
 	// Append full path to class
 	$path  = plugin_dir_path( __FILE__ ) . 'includes/' . "{$className}.php";
-	// Replace some known constants
-	$path = str_ireplace( 'Mdm/', '', $path );
-	$path = str_ireplace( 'Gymfinity/', '', $path );
 	// include the class...
 	include_once( $path );
 }
