@@ -88,3 +88,22 @@ table.openings {
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+#about-us, #download-app-cta{
+	background:#c9c9c9;
+	padding: 20px 0
+}
+
+.button {
+	margin: 0 20px;
+	width: 200px;
+    padding: 5px 0;
+    background:#ed2024;
+    color:#fff;
+    border:none;
+
+    &:hover{
+    	background:darken(#ed2024, 10%);
+    	color:white;
+    }
+}
