@@ -7967,32 +7967,36 @@ table.openings td:before {
 table.openings td:first-child {
   margin-top: 0;
 }
+/* line 35, ../modules/_content.scss */
+table.openings td.class {
+  font-weight: 600;
+}
 @media (min-width: 769px) {
-  /* line 37, ../modules/_content.scss */
+  /* line 40, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 40, ../modules/_content.scss */
+  /* line 43, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 43, ../modules/_content.scss */
+  /* line 46, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 46, ../modules/_content.scss */
+  /* line 49, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 49, ../modules/_content.scss */
+  /* line 52, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 56, ../modules/_content.scss */
+/* line 59, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
