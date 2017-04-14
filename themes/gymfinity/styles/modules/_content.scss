@@ -1,3 +1,10 @@
+section.content-block {
+	.block-content {
+		max-width: $view-width;
+		margin: 0 auto;
+	}
+}
+
 table.openings {
 	// table-layout: fixed;
 	font-size: .85rem;

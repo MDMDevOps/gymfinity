@@ -7925,24 +7925,30 @@ div.dtr-modal div.dtr-modal-background {
   margin-top: 40px;
 }
 
-/* line 1, ../modules/_content.scss */
+/* line 2, ../modules/_content.scss */
+section.content-block .block-content {
+  max-width: 1270.56px;
+  margin: 0 auto;
+}
+
+/* line 8, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 4, ../modules/_content.scss */
+/* line 11, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 7, ../modules/_content.scss */
+/* line 14, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 10, ../modules/_content.scss */
+/* line 17, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 14, ../modules/_content.scss */
+/* line 21, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -7953,7 +7959,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 17, ../modules/_content.scss */
+/* line 24, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -7963,45 +7969,45 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 26, ../modules/_content.scss */
+/* line 33, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 35, ../modules/_content.scss */
+/* line 42, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 40, ../modules/_content.scss */
+  /* line 47, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 43, ../modules/_content.scss */
+  /* line 50, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 46, ../modules/_content.scss */
+  /* line 53, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 49, ../modules/_content.scss */
+  /* line 56, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 52, ../modules/_content.scss */
+  /* line 59, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 59, ../modules/_content.scss */
+/* line 66, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 64, ../modules/_content.scss */
+/* line 71, ../modules/_content.scss */
 .card {
   background: #fff;
   border-radius: 2px;
@@ -8014,14 +8020,14 @@ table.openings td.class {
   background: #ed2024;
 }
 
-/* line 76, ../modules/_content.scss */
+/* line 83, ../modules/_content.scss */
 .card-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* line 81, ../modules/_content.scss */
+/* line 88, ../modules/_content.scss */
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
