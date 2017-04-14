@@ -264,18 +264,28 @@ add_shortcode( 'jackrabbit_schedule', 'jackrabbit_embed_schedule' );
 
 function get_jackrabbit_schedule( $atts = array() ) {
 	// Parse attributes
-	$atts = shortcode_atts( array( 'url' => null ), $atts, 'jackrabbit_schedule' );
+	$atts = shortcode_atts( array(
+		'id'       => '33933',
+		'cat1'     => null,
+		'sort'     => 'class',
+		'hidecols' => null,
+	), $atts, 'jackrabbit_schedule' );
 	// Set up schedules array
 	$schedules = array();
-	// If we don't have a URL, we can bail...
-	if( empty( $atts['url'] ) ) {
+	// If we don't have a client ID, we can bail...
+	if( empty( $atts['id'] ) ) {
 		return $schedules;
 	}
-	// Format the URL a bit
-	$atts['url'] = htmlspecialchars_decode( esc_url_raw( $atts['url'] ) );
-	var_dump($atts['url']);
+	$request = 'https://app.jackrabbitclass.com/OpeningsDirect.asp';
+	foreach( $atts as $key => $att ) {
+		// If our att is empty, move on...
+		if( empty( $att ) ) {
+			continue;
+		}
+		$request = add_query_arg( $key, $att, $request );
+	}
 	// Get the data
-	$response = wp_remote_get( $atts['url'] );
+	$response = wp_remote_get( $request );
 	// If we had an error, we can bail
 	if( is_wp_error( $response ) || empty( $response ) ) {
 		return $schedules;
