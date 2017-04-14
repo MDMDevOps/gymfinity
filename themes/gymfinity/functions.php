@@ -273,6 +273,7 @@ function get_jackrabbit_schedule( $atts = array() ) {
 	}
 	// Format the URL a bit
 	$atts['url'] = htmlspecialchars_decode( esc_url_raw( $atts['url'] ) );
+	var_dump($atts['url']);
 	// Get the data
 	$response = wp_remote_get( $atts['url'] );
 	// If we had an error, we can bail
