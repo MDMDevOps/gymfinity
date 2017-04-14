@@ -1,5 +1,5 @@
 <?php
-/**
+/* Template Name: Home Page
  * The main template file.
  * This is the most generic template file in a WordPress theme
  * It is used to display a page when nothing more specific matches a query.
@@ -10,8 +10,8 @@
 
 <?php get_header(); ?>
 
-<div id="primary" class="content-area row">
-	<main id="main" class="site-main column sm-8 sm-push-4 lg-9 lg-push-3" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 	<?php
 		/**
 		 * Begin standard wordpress loop, first checking if we have posts to show
@@ -24,7 +24,7 @@
 				 */
 				if( is_singular() ) :
 					get_template_part( 'views/content', get_post_type() );
-					the_post_navigation();
+					
 					if ( comments_open() || get_comments_number() ) : comments_template(); endif;
 				else :
 					/**
@@ -49,8 +49,5 @@
 		endif;
 	?>
 	</main>
-	<aside id="sidebar" class="column sm-4 sm-pull-8 lg-3 lg-pull-9 fixed-scroll" data-container="#primary" data-offset="50px">
-		<?php get_sidebar(); ?>
-	</aside>
 </div>
 <?php get_footer(); ?>
