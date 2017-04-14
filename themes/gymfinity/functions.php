@@ -336,7 +336,7 @@ function set_jackrabbit_schedule_formatting( $table ) {
 				}
 				// If this is the first row, GET classes
 				if( $rowIndex === 0 ) {
-					$classes[$cellCount] = strtolower( trim( $cell->textContent ) );
+					$classes[$cellCount] = strtolower( preg_replace( '/\s+/', '', $cell->textContent ) );
 					$table['th'][] = $dom->saveHTML( $cell );
 				}
 
