@@ -8,10 +8,12 @@
  * Import those styles directly into this file, so we only have to enqueue 1 file
  * -------------------------------------------------------------------------- */
 @import 'mpress/public';
+@import 'vendors/datatables';
 @import 'modules/appbar';
 @import 'modules/masthead';
 @import 'modules/sidebar';
 @import 'modules/footer';
+@import 'modules/content';
 
 address.inline {
 	display: inline;
@@ -35,3 +37,4 @@ address.inline {
 		position: fixed;
 	}
 }
+

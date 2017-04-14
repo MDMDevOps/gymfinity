@@ -88,4 +88,6 @@ jQuery( function( $ ) {
 
 		return $sidebar;
 	}
+
+	// $('.sortable-table').DataTable();
 });

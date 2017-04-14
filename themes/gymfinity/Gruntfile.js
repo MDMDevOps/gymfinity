@@ -80,7 +80,7 @@ module.exports = function(grunt) {
             },
             public : {
                 files : {
-                    'scripts/dist/public.min.js' : [ 'scripts/public.js' ]
+                    'scripts/dist/public.min.js' : [ 'scripts/vendors/datatables.js', 'scripts/public.js' ]
                 }
             },
             admin : {

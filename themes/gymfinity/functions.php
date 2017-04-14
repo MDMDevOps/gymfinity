@@ -232,3 +232,137 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+function jackrabbit_embed_schedule( $atts = array() ) {
+
+	$schedules = get_jackrabbit_schedule( $atts );
+
+	foreach( $schedules as $index => $schedule ) {
+		$output  = '<div class="jackrabbit_table_wrapper"><table class="openings jackrabbit">';
+		$output .= '<thead>';
+			$output .= '<tr>';
+			foreach( $schedule['th'] as $th ) {
+				// Do some replacements
+				$th = str_ireplace( '<td>', '<th>', $th );
+				$th = str_ireplace( '</td>', '</th>', $th );
+				$output .= $th;
+			}
+			$output .= '</tr>';
+		$output .= '</thead>';
+		$output .= '<tbody>';
+		foreach( $schedule['tr'] as $tr ) {
+			$output .= $tr;
+		}
+		$output .= '</tbody></table></div>';
+		// Replace bold styles
+		$output = str_ireplace( '<b>', '', $output );
+		$output = str_ireplace( '</b>', '', $output );
+		// return the table
+		return $output;
+	}
+}
+add_shortcode( 'jackrabbit_schedule', 'jackrabbit_embed_schedule' );
+
+function get_jackrabbit_schedule( $atts = array() ) {
+	// Parse attributes
+	$atts = shortcode_atts( array( 'url' => null ), $atts, 'jackrabbit_schedule' );
+	// Set up schedules array
+	$schedules = array();
+	// If we don't have a URL, we can bail...
+	if( empty( $atts['url'] ) ) {
+		return $schedules;
+	}
+	// Get the data
+	$response = wp_remote_get( $atts['url'] );
+	// If we had an error, we can bail
+	if( is_wp_error( $response ) || empty( $response ) ) {
+		return $schedules;
+	}
+	// Set up a new DOM Document
+	$dom = new DOMDocument( '1.0', 'UTF-8' );
+	// Set error level to suppress minor warnings in HTML formatting
+	$internalErrors = libxml_use_internal_errors( true );
+	// Load the HTML from the response
+	$dom->loadHTML( '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">' . $response['body'] );
+	// Restore error level
+	libxml_use_internal_errors( $internalErrors );
+	// Get all the tables
+	$tables = $dom->getElementsByTagName( 'table' );
+	// Set all the tables (should be 1, but we want to be sure if there are more)
+	if( $tables->length ) {
+		foreach( $tables as $table ) {
+			$schedules[] = set_jackrabbit_schedule_formatting( $dom->saveHTML( $table ) );
+		}
+	}
+	// Return the schedules
+	return $schedules;
+}
+
+function set_jackrabbit_schedule_formatting( $table ) {
+	// Set up a new DOM Document
+	$dom = new DOMDocument( '1.0', 'UTF-8' );
+	// Set error level to suppress minor warnings in HTML formatting
+	$internalErrors = libxml_use_internal_errors( true );
+	// Load the HTML from the response
+	$dom->loadHTML( '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">' . $table );
+	// Restore error level
+	libxml_use_internal_errors( $internalErrors );
+	// Get rows
+	$rows = $dom->getElementsByTagName( 'tr' );
+	// Array to hold classes, new headings
+	$classes  = array();
+	// Reset our table variable to what we want
+	$table = array(
+		'th' => array(),
+		'tr' => array(),
+	);
+	if( $rows->length ) {
+		foreach( $rows as $rowIndex => $row ) {
+			$cells = array();
+			$blank = array();
+			$cellCount = 0;
+			$row->removeAttribute( 'style' );
+			foreach( $row->childNodes as $cellIndex => $cell ) {
+				// If this is not a TD...
+				if( $cell->nodeName !== 'td' ) {
+					continue;
+				}
+				// If it's a display none cell, lets just remove it...
+				if( $cell->getAttribute( 'style' ) === 'display:none' ) {
+					$blank[] = $cell;
+					continue;
+				}
+				if( htmlentities( $cell->nodeValue, null, 'utf-8' ) === '&nbsp;' ) {
+					$cell->nodeValue = 'Not Available';
+				}
+				// If this is the first row, GET classes
+				if( $rowIndex === 0 ) {
+					$classes[$cellCount] = strtolower( trim( $cell->textContent ) );
+					$table['th'][] = $dom->saveHTML( $cell );
+				}
+
+				// Else SET classes
+				else {
+					// Clear inline styles
+					$cell->removeAttribute( 'style' );
+					if( isset( $classes[$cellCount] ) ) {
+						$cell->setAttribute( 'class', $classes[$cellCount] );
+					}
+				}
+				++$cellCount;
+			}
+			// Remove display none cells
+			foreach( $blank as $empty ){
+			  $empty->parentNode->removeChild( $empty );
+			}
+			// If this is NOT the first row, save row
+			if( $rowIndex !== 0 ) {
+				$table['tr'][] = $dom->saveHTML( $row );
+			}
+		}
+
+	}
+	return $table;
+
+	// return $dom->saveHTML( $dom->documentElement );
+}
+

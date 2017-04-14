@@ -1,0 +1,61 @@
+table.openings {
+	// table-layout: fixed;
+	font-size: .85rem;
+	td {
+		vertical-align: top;
+	}
+	thead {
+		display: none;
+	}
+	tr {
+		display: block;
+		margin-bottom: 1.618rem;
+	}
+	td {
+		margin-top: -1px;
+		@include flexbox( 'row' );
+		&:before {
+			display: block;
+			content: attr(class);
+			text-transform: capitalize;
+			margin-right: 1rem;
+			min-width: 65px;
+			max-width: 65px;
+			font-weight: 600;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+		&.register {
+			a, a:link {
+				// @extend button;
+				// display: block;
+			}
+		}
+		&.class {
+			font-weight: 600;
+		}
+	}
+	@include breakpoint( 'md' ) {
+		thead {
+			display: table-header-group;
+		}
+		tr {
+			display: table-row;
+		}
+		td {
+			display: table-cell;
+			margin: 0;
+			&.ages {
+				white-space: nowrap;
+			}
+			&:before {
+				content: '';
+				display: none;
+			}
+		}
+	}
+}
+.jackrabbit_table_wrapper {
+	overflow-x: auto;
+}
