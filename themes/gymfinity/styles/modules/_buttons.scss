@@ -1,3 +1,6 @@
 .dropdown-toggle {
 	outline: none;
+	&.focused {
+		transform: rotate( 180deg );
+	}
 }

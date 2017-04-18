@@ -5799,17 +5799,11 @@ nav.navigation-menu li {
 /* line 51, ../mpress/components/_header.scss */
 nav.navigation-menu li ul.sub-menu {
   list-style: none;
-  display: block;
-  height: 0;
+  display: none;
   text-align: left;
-  position: absolute;
   width: 100%;
   min-width: 100%;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .4s ease;
-          transition: opacity .4s ease;
   padding-left: 1.618em;
 }
 /* line 65, ../mpress/components/_header.scss */
@@ -5818,18 +5812,15 @@ nav.navigation-menu li ul.sub-menu li {
 }
 /* line 68, ../mpress/components/_header.scss */
 nav.navigation-menu li ul.sub-menu.focused {
-  position: relative;
-  visibility: visible;
-  opacity: 1;
-  height: auto;
+  display: block;
 }
-/* line 76, ../mpress/components/_header.scss */
+/* line 77, ../mpress/components/_header.scss */
 nav.navigation-menu a, nav.navigation-menu a:link {
   display: block;
   padding: .809em 1.618em .809em;
 }
 
-/* line 81, ../mpress/components/_header.scss */
+/* line 82, ../mpress/components/_header.scss */
 #site-navigation {
   display: none;
   /***************************************************************************
@@ -5845,27 +5836,27 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 #site-navigation:after {
   clear: both;
 }
-/* line 84, ../mpress/components/_header.scss */
+/* line 85, ../mpress/components/_header.scss */
 #site-navigation.open, #site-navigation.closing {
   display: block;
 }
-/* line 87, ../mpress/components/_header.scss */
+/* line 88, ../mpress/components/_header.scss */
 #site-navigation.dropdown {
   width: 100%;
   clear: both;
 }
-/* line 91, ../mpress/components/_header.scss */
+/* line 92, ../mpress/components/_header.scss */
 #site-navigation ul.menu, #site-navigation .menu > ul {
   width: 100%;
   margin: 0;
   padding: 1em 0 1.618em;
 }
-/* line 96, ../mpress/components/_header.scss */
+/* line 97, ../mpress/components/_header.scss */
 #site-navigation li {
   display: block;
   position: relative;
 }
-/* line 99, ../mpress/components/_header.scss */
+/* line 100, ../mpress/components/_header.scss */
 #site-navigation li ul.sub-menu {
   list-style: none;
   display: block;
@@ -5881,28 +5872,28 @@ nav.navigation-menu a, nav.navigation-menu a:link {
           transition: opacity .4s ease;
   padding-left: 1.618em;
 }
-/* line 113, ../mpress/components/_header.scss */
+/* line 114, ../mpress/components/_header.scss */
 #site-navigation li ul.sub-menu li {
   display: block;
 }
-/* line 116, ../mpress/components/_header.scss */
+/* line 117, ../mpress/components/_header.scss */
 #site-navigation li ul.sub-menu.focused {
   position: relative;
   visibility: visible;
   opacity: 1;
   height: auto;
 }
-/* line 124, ../mpress/components/_header.scss */
+/* line 125, ../mpress/components/_header.scss */
 #site-navigation a, #site-navigation a:link {
   display: block;
   padding: .809em 1.618em .809em;
 }
 @media (min-width: 641px) {
-  /* line 81, ../mpress/components/_header.scss */
+  /* line 82, ../mpress/components/_header.scss */
   #site-navigation {
     display: block;
   }
-  /* line 135, ../mpress/components/_header.scss */
+  /* line 136, ../mpress/components/_header.scss */
   #site-navigation.dropdown {
     float: right;
     width: auto;
@@ -5914,19 +5905,19 @@ nav.navigation-menu a, nav.navigation-menu a:link {
     -webkit-transition: all .3s ease;
             transition: all .3s ease;
   }
-  /* line 144, ../mpress/components/_header.scss */
+  /* line 145, ../mpress/components/_header.scss */
   #site-navigation.dropdown.closing, #site-navigation.dropdown.closed {
     visibility: visible;
     opacity: 1;
     max-height: none;
     height: auto;
   }
-  /* line 152, ../mpress/components/_header.scss */
+  /* line 153, ../mpress/components/_header.scss */
   #site-navigation li {
     position: relative;
     white-space: nowrap;
   }
-  /* line 156, ../mpress/components/_header.scss */
+  /* line 157, ../mpress/components/_header.scss */
   #site-navigation li ul.sub-menu {
     position: absolute !important;
     width: auto;
@@ -5939,11 +5930,11 @@ nav.navigation-menu a, nav.navigation-menu a:link {
     -webkit-transition: -webkit-transform .3s linear, opacity .4s linear;
             transition: transform .3s linear, opacity .4s linear;
   }
-  /* line 165, ../mpress/components/_header.scss */
+  /* line 166, ../mpress/components/_header.scss */
   #site-navigation li ul.sub-menu li {
     display: block;
   }
-  /* line 168, ../mpress/components/_header.scss */
+  /* line 169, ../mpress/components/_header.scss */
   #site-navigation li ul.sub-menu.focused {
     -webkit-transition: -webkit-transform .3s linear, opacity .4s linear;
             transition: transform .3s linear, opacity .4s linear;
@@ -5954,7 +5945,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
         -ms-transform: translateY(0);
             transform: translateY(0);
   }
-  /* line 178, ../mpress/components/_header.scss */
+  /* line 179, ../mpress/components/_header.scss */
   #site-navigation li:hover > ul.sub-menu, #site-navigation li:focus > ul.sub-menu {
     -webkit-transition: -webkit-transform .3s linear, opacity .4s linear;
             transition: transform .3s linear, opacity .4s linear;
@@ -5965,7 +5956,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
         -ms-transform: translateY(0);
             transform: translateY(0);
   }
-  /* line 187, ../mpress/components/_header.scss */
+  /* line 188, ../mpress/components/_header.scss */
   #site-navigation li ul.sub-menu.focused {
     -webkit-transition: -webkit-transform .3s linear, opacity .4s linear;
             transition: transform .3s linear, opacity .4s linear;
@@ -5976,12 +5967,12 @@ nav.navigation-menu a, nav.navigation-menu a:link {
         -ms-transform: translateY(0);
             transform: translateY(0);
   }
-  /* line 196, ../mpress/components/_header.scss */
+  /* line 197, ../mpress/components/_header.scss */
   #site-navigation a {
     display: block;
     padding: .404em;
   }
-  /* line 201, ../mpress/components/_header.scss */
+  /* line 202, ../mpress/components/_header.scss */
   #site-navigation ul.menu {
     display: block;
     white-space: nowrap;
@@ -5995,37 +5986,37 @@ nav.navigation-menu a, nav.navigation-menu a:link {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  /* line 208, ../mpress/components/_header.scss */
+  /* line 209, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li {
     display: inline-block;
     zoom: 1;
     margin: 0;
   }
-  /* line 212, ../mpress/components/_header.scss */
+  /* line 213, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li:first-child {
     margin-left: 0;
   }
-  /* line 215, ../mpress/components/_header.scss */
+  /* line 216, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li:last-child {
     margin-right: 0;
   }
-  /* line 219, ../mpress/components/_header.scss */
+  /* line 220, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li > ul.sub-menu {
     left: 0;
   }
-  /* line 222, ../mpress/components/_header.scss */
+  /* line 223, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li > ul.sub-menu > li > ul.sub-menu {
     top: 0;
     right: 100%;
   }
-  /* line 226, ../mpress/components/_header.scss */
+  /* line 227, ../mpress/components/_header.scss */
   #site-navigation ul.menu > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu {
     top: 0;
     right: 100%;
   }
 }
 
-/* line 236, ../mpress/components/_header.scss */
+/* line 237, ../mpress/components/_header.scss */
 .dropdown-toggle {
   position: absolute;
   top: 0;
@@ -6036,11 +6027,11 @@ nav.navigation-menu a, nav.navigation-menu a:link {
           transition: transform .3s ease;
   border: none;
 }
-/* line 244, ../mpress/components/_header.scss */
+/* line 245, ../mpress/components/_header.scss */
 .dropdown-toggle:hover, .dropdown-toggle:focus {
   background: transparent;
 }
-/* line 247, ../mpress/components/_header.scss */
+/* line 248, ../mpress/components/_header.scss */
 .dropdown-toggle:active {
   bottom: auto;
 }
@@ -7792,6 +7783,12 @@ div.dtr-modal div.dtr-modal-background {
 .dropdown-toggle {
   outline: none;
 }
+/* line 3, ../modules/_buttons.scss */
+.dropdown-toggle.focused {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
 /* line 1, ../modules/_masthead.scss */
 #masthead {
@@ -8059,17 +8056,12 @@ address.inline {
   }
 }
 
-/* line 30, ../public.scss */
-#colophon {
-  height: 1000px;
-}
-
-/* line 33, ../public.scss */
+/* line 29, ../public.scss */
 #primary {
   position: relative;
 }
 
-/* line 37, ../public.scss */
+/* line 33, ../public.scss */
 .fixed-scroll-column.fixed {
   position: fixed;
 }

@@ -193,11 +193,11 @@ if( !function_exists( 'add_editor_formats' ) ) {
  */
 if( !function_exists( 'add_font_icons' ) ) {
 	function add_font_icons( $icons ) {
-		$icons['scrolltop'] = 'icon fa fa-angle-up';
+		$icons['toggle-sub-menu'] = 'icon fa fa-angle-down';
 		return $icons;
 	}
 	// Uncomment to use
-	// add_filter( 'mpress_font_icons', 'add_font_icons' );
+	add_filter( 'mpress_font_icons', 'add_font_icons' );
 }
 
 
@@ -379,5 +379,5 @@ function set_jackrabbit_schedule_formatting( $table ) {
 	// return $dom->saveHTML( $dom->documentElement );
 }
 
-include_once CHILD_THEME_ROOT_DIR . 'includes/class_sidebar_walker_nave_menu.php';
+include_once CHILD_THEME_ROOT_DIR . 'includes/class_sidebar_walker_nav_menu.php';
 
