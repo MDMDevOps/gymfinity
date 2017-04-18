@@ -379,3 +379,5 @@ function set_jackrabbit_schedule_formatting( $table ) {
 	// return $dom->saveHTML( $dom->documentElement );
 }
 
+include_once CHILD_THEME_ROOT_DIR . 'includes/class_sidebar_walker_nave_menu.php';
+

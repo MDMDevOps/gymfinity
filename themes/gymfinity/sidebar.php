@@ -8,7 +8,7 @@
 <div class="fixed-scroll-column">
 	<nav id="sidebar-navigation" class="navigation-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
 		<?php if( has_nav_menu( 'primary-navbar' ) ) : ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary-navbar', 'container' => '', 'walker' => new \Mpress\Walker_Nav_Menu() ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary-navbar', 'container' => '', 'walker' => new Sidebar_Walker_Nav_Menu() ) ); ?>
 		<?php endif; ?>
 	</nav>
 
