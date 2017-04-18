@@ -7788,6 +7788,11 @@ div.dtr-modal div.dtr-modal-background {
   margin: 0;
 }
 
+/* line 1, ../modules/_buttons.scss */
+.dropdown-toggle {
+  outline: none;
+}
+
 /* line 1, ../modules/_masthead.scss */
 #masthead {
   padding: 0.809em;
@@ -8032,6 +8037,9 @@ table.openings td.class {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+<<<<<<< HEAD
+/* line 19, ../public.scss */
+=======
 /* line 92, ../modules/_content.scss */
 #about-us, #download-app-cta {
   background: #c9c9c9;
@@ -8054,6 +8062,7 @@ table.openings td.class {
 }
 
 /* line 18, ../public.scss */
+>>>>>>> 19e6e484924813ba2f5ba9a72bf0567c798f3891
 address.inline {
   display: inline;
 }
