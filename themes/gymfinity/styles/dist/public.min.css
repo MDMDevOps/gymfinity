@@ -7939,6 +7939,7 @@ section.content-block .block-content {
 /* line 8, ../modules/_content.scss */
 #menu-homepage-icon-menu {
   text-align: center;
+  overflow: hidden;
 }
 /* line 12, ../modules/_content.scss */
 #menu-homepage-icon-menu li {
@@ -8070,26 +8071,7 @@ table.openings td.class {
   padding: 20px 0;
 }
 
-<<<<<<< HEAD
-/* line 18, ../public.scss */
-=======
-/* line 97, ../modules/_content.scss */
-.button {
-  margin: 0 20px;
-  width: 200px;
-  padding: 5px 0;
-  background: #ed2024;
-  color: #fff;
-  border: none;
-}
-/* line 105, ../modules/_content.scss */
-.button:hover {
-  background: #ca1014;
-  color: white;
-}
-
 /* line 19, ../public.scss */
->>>>>>> 9a7977a1e2b011f7bc43ff5f71944667ee0a7d1e
 address.inline {
   display: inline;
 }
