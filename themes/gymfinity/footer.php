@@ -16,12 +16,9 @@
 				<?php dynamic_sidebar( 'footer-widgets-left' ); ?>
 			<?php endif; ?>
 		</div>
-		<div class="column md-4">
-			<?php the_custom_logo(); ?>
-		</div>
-		<div class="column md-4 outter-widget">
+		<div class="column md-8 outter-widget">
 			<?php if ( is_active_sidebar( 'footer-widgets-right' ) ) : ?>
-				<?php dynamic_sidebar( 'footer-widgets-right' ); ?>
+				<?php the_custom_logo(); ?>
 			<?php endif; ?>
 		</div>
 	</div>

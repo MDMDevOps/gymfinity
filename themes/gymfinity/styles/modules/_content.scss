@@ -7,7 +7,7 @@ section.content-block {
 
 #menu-homepage-icon-menu{
 	text-align:center;
-	overflow:hidden;
+	@include clearfix();
 
 	li {
 		display: inline-block;
