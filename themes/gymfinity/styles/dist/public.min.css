@@ -7788,6 +7788,11 @@ div.dtr-modal div.dtr-modal-background {
   margin: 0;
 }
 
+/* line 1, ../modules/_buttons.scss */
+.dropdown-toggle {
+  outline: none;
+}
+
 /* line 1, ../modules/_masthead.scss */
 #masthead {
   padding: 0.809em;
@@ -8032,33 +8037,33 @@ table.openings td.class {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 18, ../public.scss */
+/* line 19, ../public.scss */
 address.inline {
   display: inline;
 }
 
-/* line 22, ../public.scss */
+/* line 23, ../public.scss */
 .entry-content {
   font-size: 1rem;
 }
 @media (min-width: 961px) {
-  /* line 22, ../public.scss */
+  /* line 23, ../public.scss */
   .entry-content {
     font-size: 1.3rem;
   }
 }
 
-/* line 29, ../public.scss */
+/* line 30, ../public.scss */
 #colophon {
   height: 1000px;
 }
 
-/* line 32, ../public.scss */
+/* line 33, ../public.scss */
 #primary {
   position: relative;
 }
 
-/* line 36, ../public.scss */
+/* line 37, ../public.scss */
 .fixed-scroll-column.fixed {
   position: fixed;
 }
