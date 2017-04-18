@@ -4803,14 +4803,14 @@ button, input[type='submit'], .button, .ghost-button {
           transition: all .25s ease-in-out;
   padding: 0 1.618em;
   color: #232323;
-  background: #0274BE;
-  border: 1px solid #0274BE;
+  background: #ed2024;
+  border: 1px solid #ed2024;
   position: relative;
 }
 /* line 23, ../mpress/components/_buttons.scss */
 button:hover, input[type='submit']:hover, .button:hover, .ghost-button:hover, button:focus, input[type='submit']:focus, .button:focus, .ghost-button:focus {
-  background: #0265a5;
-  border-color: #0265a5;
+  background: #e11216;
+  border-color: #e11216;
 }
 /* line 27, ../mpress/components/_buttons.scss */
 button:active, input[type='submit']:active, .button:active, .ghost-button:active {
@@ -4819,7 +4819,7 @@ button:active, input[type='submit']:active, .button:active, .ghost-button:active
 
 /* line 35, ../mpress/components/_buttons.scss */
 .ghost-button {
-  border: 3px solid #0274BE;
+  border: 3px solid #ed2024;
   background: transparent;
 }
 /* line 39, ../mpress/components/_buttons.scss */
@@ -4842,19 +4842,19 @@ ul.pagination li, .entry-content ul.pagination li {
 }
 /* line 52, ../mpress/components/_buttons.scss */
 ul.pagination li.current, .entry-content ul.pagination li.current {
-  background: #0274BE;
+  background: #ed2024;
 }
 /* line 54, ../mpress/components/_buttons.scss */
 ul.pagination li.current a, ul.pagination li.current a:link, .entry-content ul.pagination li.current a, .entry-content ul.pagination li.current a:link {
   color: #232323;
-  border-top: 1px solid #0274BE;
-  border-bottom: 1px solid #0274BE;
+  border-top: 1px solid #ed2024;
+  border-bottom: 1px solid #ed2024;
 }
 /* line 58, ../mpress/components/_buttons.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current a:link:hover, ul.pagination li.current a:link:focus, .entry-content ul.pagination li.current a:hover, .entry-content ul.pagination li.current a:focus, .entry-content ul.pagination li.current a:link:hover, .entry-content ul.pagination li.current a:link:focus {
-  background: #0265a5;
-  border-top: 1px solid #0265a5;
-  border-bottom: 1px solid #0265a5;
+  background: #e11216;
+  border-top: 1px solid #e11216;
+  border-bottom: 1px solid #e11216;
 }
 /* line 65, ../mpress/components/_buttons.scss */
 ul.pagination li:first-child, .entry-content ul.pagination li:first-child {
@@ -4888,7 +4888,7 @@ ul.pagination a:hover, ul.pagination a:focus, ul.pagination a:link:hover, ul.pag
  * ---------------------------------------------------------------------------*/
 /* line 10, ../mpress/components/_hyperlinks.scss */
 a {
-  color: #0274BE;
+  color: #ed2024;
   text-decoration: none;
   font-size: inherit;
   font-weight: inherit;
@@ -4898,11 +4898,11 @@ a {
 }
 /* line 17, ../mpress/components/_hyperlinks.scss */
 a a:visited {
-  color: #0274BE;
+  color: #ed2024;
 }
 /* line 20, ../mpress/components/_hyperlinks.scss */
 a:hover, a:focus {
-  color: #01558c;
+  color: #ca1014;
 }
 
 /* -----------------------------------------------------------------------------
@@ -6122,7 +6122,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 }
 /* line 47, ../mpress/components/_widgets.scss */
 .banner-bottom .breadcrumbs_wrapper ul a:hover, .banner-bottom .breadcrumbs_wrapper ul a:focus, .banner-bottom .breadcrumbs_wrapper ul a:link:hover, .banner-bottom .breadcrumbs_wrapper ul a:link:focus {
-  color: #0274BE;
+  color: #ed2024;
 }
 /* line 52, ../mpress/components/_widgets.scss */
 .banner-bottom .breadcrumbs_wrapper li {
@@ -6205,7 +6205,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 }
 /* line 109, ../mpress/components/_widgets.scss */
 .banner-bottom .search_wrapper form button:hover, .banner-bottom .search_wrapper form input[type='submit']:hover, .banner-bottom .search_wrapper form .button:hover, .banner-bottom .search_wrapper form .ghost-button:hover, .banner-bottom .search_wrapper form button:focus, .banner-bottom .search_wrapper form input[type='submit']:focus, .banner-bottom .search_wrapper form .button:focus, .banner-bottom .search_wrapper form .ghost-button:focus {
-  color: #0274BE;
+  color: #ed2024;
 }
 /* line 116, ../mpress/components/_widgets.scss */
 .banner-bottom .social {
@@ -6239,7 +6239,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 }
 /* line 137, ../mpress/components/_widgets.scss */
 .banner-bottom .social a:hover, .banner-bottom .social a:focus, .banner-bottom .social a:link:hover, .banner-bottom .social a:link:focus {
-  color: #0274BE;
+  color: #ed2024;
 }
 @media (min-width: 481px) {
   /* line 143, ../mpress/components/_widgets.scss */
@@ -6419,7 +6419,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 }
 /* line 267, ../mpress/components/_widgets.scss */
 .entry-meta a:hover, .entry-meta a:focus, .entry-meta a:link:hover, .entry-meta a:link:focus, .excerpt-meta a:hover, .excerpt-meta a:focus, .excerpt-meta a:link:hover, .excerpt-meta a:link:focus {
-  color: #0274BE;
+  color: #ed2024;
 }
 /* line 271, ../mpress/components/_widgets.scss */
 .entry-meta ul, .excerpt-meta ul {
@@ -6562,7 +6562,7 @@ body.offcanvas #page-wrapper {
 /* line 10, ../mpress/components/_comments.scss */
 .comment-list li.comment .comment-reply-link {
   color: #232323;
-  background: #0274BE;
+  background: #ed2024;
   padding: .809rem 1.618rem;
   display: block;
   position: absolute;
