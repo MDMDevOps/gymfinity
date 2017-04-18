@@ -5,6 +5,33 @@ section.content-block {
 	}
 }
 
+#menu-homepage-icon-menu{
+
+	text-align:center;
+
+	li {
+		display: inline-block;
+		width: 25%;
+		float: left;
+		height: 200px;
+	}
+
+	a:before {
+		content: "\f03e";
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+	/*--adjust as necessary--*/
+	    color: #000;
+	    font-size: 50px;
+	    display: block;
+	    position: relative;
+	    left: 0;
+	    right:0;
+	}
+}
+
 table.openings {
 	// table-layout: fixed;
 	font-size: .85rem;
@@ -94,16 +121,16 @@ table.openings {
 	padding: 20px 0
 }
 
-.button {
-	margin: 0 20px;
-	width: 200px;
-    padding: 5px 0;
-    background:#ed2024;
-    color:#fff;
-    border:none;
+// .button {
+// 	margin: 0 20px;
+// 	width: 200px;
+//     padding: 5px 0;
+//     background:#ed2024;
+//     color:#fff;
+//     border:none;
 
-    &:hover{
-    	background:darken(#ed2024, 10%);
-    	color:white;
-    }
-}
+//     &:hover, {
+//     	background:darken(#ed2024, 10%);
+//     	color:white;
+//     }
+// }
