@@ -129,7 +129,11 @@ table.openings {
 //     color:#fff;
 //     border:none;
 
+<<<<<<< HEAD
+//     &:hover{
+=======
 //     &:hover, {
+>>>>>>> 530f3b9eb4908337803845f0c4bfcb051ca1a86b
 //     	background:darken(#ed2024, 10%);
 //     	color:white;
 //     }
