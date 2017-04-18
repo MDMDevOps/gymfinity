@@ -7788,6 +7788,11 @@ div.dtr-modal div.dtr-modal-background {
   margin: 0;
 }
 
+/* line 1, ../modules/_buttons.scss */
+.dropdown-toggle {
+  outline: none;
+}
+
 /* line 1, ../modules/_masthead.scss */
 #masthead {
   padding: 0.809em;
@@ -8053,7 +8058,7 @@ table.openings td.class {
   color: white;
 }
 
-/* line 18, ../public.scss */
+/* line 19, ../public.scss */
 address.inline {
   display: inline;
 }
