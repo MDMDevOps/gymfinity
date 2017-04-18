@@ -1,0 +1,140 @@
+section.content-block {
+	.block-content {
+		max-width: $view-width;
+		margin: 0 auto;
+	}
+}
+
+#menu-homepage-icon-menu{
+	text-align:center;
+	overflow:hidden;
+
+	li {
+		display: inline-block;
+		width: 25%;
+		float: left;
+		height: 200px;
+	}
+
+	a:before {
+		content: "\f03e";
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+	/*--adjust as necessary--*/
+	    color: #000;
+	    font-size: 50px;
+	    display: block;
+	    position: relative;
+	    left: 0;
+	    right:0;
+	}
+}
+
+table.openings {
+	// table-layout: fixed;
+	font-size: .85rem;
+	td {
+		vertical-align: top;
+	}
+	thead {
+		display: none;
+	}
+	tr {
+		display: block;
+		margin-bottom: 1.618rem;
+	}
+	td {
+		margin-top: -1px;
+		@include flexbox( 'row' );
+		&:before {
+			display: block;
+			content: attr(class);
+			text-transform: capitalize;
+			margin-right: 1rem;
+			min-width: 65px;
+			max-width: 65px;
+			font-weight: 600;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+		&.register {
+			a, a:link {
+				// @extend button;
+				// display: block;
+			}
+		}
+		&.class {
+			font-weight: 600;
+		}
+	}
+	@include breakpoint( 'md' ) {
+		thead {
+			display: table-header-group;
+		}
+		tr {
+			display: table-row;
+		}
+		td {
+			display: table-cell;
+			margin: 0;
+			&.ages {
+				white-space: nowrap;
+			}
+			&:before {
+				content: '';
+				display: none;
+			}
+		}
+	}
+}
+.jackrabbit_table_wrapper {
+	overflow-x: auto;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 100px;
+  margin: 1rem;
+  position: relative;
+  width: 100px;
+  border-radius: 50%;
+  background:#ed2024;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#about-us, #download-app-cta{
+	background:#c9c9c9;
+	padding: 20px 0
+}
+
+// .button {
+// 	margin: 0 20px;
+// 	width: 200px;
+//     padding: 5px 0;
+//     background:#ed2024;
+//     color:#fff;
+//     border:none;
+
+<<<<<<< HEAD
+//     &:hover{
+=======
+//     &:hover, {
+>>>>>>> 530f3b9eb4908337803845f0c4bfcb051ca1a86b
+//     	background:darken(#ed2024, 10%);
+//     	color:white;
+//     }
+// }

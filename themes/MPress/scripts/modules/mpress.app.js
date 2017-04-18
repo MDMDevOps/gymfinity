@@ -55,10 +55,16 @@ var Mpress = ( function ( $ ) {
 			function toggleSubMenu( event ) {
 				event.preventDefault();
 				if( $sub.hasClass( 'focused' ) ) {
-					$sub.removeClass( 'focused' ).attr( 'aria-hidden', 'true' );
+					$sub.slideUp( 300, function() {
+						$sub.removeClass( 'focused' ).attr( 'aria-hidden', 'true' );
+					});
+					$toggle.removeClass( 'focused' ).attr( 'aria-expanded', 'false' );
 					return true;
 				}
-				$sub.addClass( 'focused' ).attr( 'aria-hidden', 'false' );
+				$sub.slideDown(300, function() {
+					$sub.addClass( 'focused' ).attr( 'aria-hidden', 'false' );
+				});
+				$toggle.addClass( 'focused' ).attr( 'aria-expanded', 'true' );
 				return false;
 			}
 			// Define how to handle clicks (for touch support)

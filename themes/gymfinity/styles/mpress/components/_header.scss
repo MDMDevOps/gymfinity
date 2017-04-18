@@ -50,26 +50,27 @@ nav.navigation-menu {
         position: relative;
         ul.sub-menu {
             list-style: none;
-            display: block;
-            height: 0;
+            display: none;
+            // height: 0;
             text-align: left;
-            position: absolute;
+            // position: absolute;
             width: 100%;
             min-width: 100%;
             z-index: 999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity .4s ease;
+            // opacity: 0;
+            // visibility: hidden;
+            // transition: opacity .4s ease;
             padding-left: 1.618em;
             // Generic styles to sub-menu items
             li {
                 display: block;
             }
             &.focused {
-                position: relative;
-                visibility: visible;
-                opacity: 1;
-                height: auto;
+            	display: block;
+                // position: relative;
+                // visibility: visible;
+                // opacity: 1;
+                // height: auto;
             }
         }
     }
