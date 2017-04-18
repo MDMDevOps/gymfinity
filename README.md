@@ -1,4 +1,4 @@
-# Project Repo for Venture
+# Project Repo for Gymfinity
 
 Project repository for syncing local, and staging work for venture apartments
 
