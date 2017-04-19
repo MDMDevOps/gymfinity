@@ -7936,7 +7936,15 @@ section.content-block .block-content {
 /* line 8, ../modules/_content.scss */
 #menu-homepage-icon-menu {
   text-align: center;
-  overflow: hidden;
+}
+/* line 10, ../mpress/modules/_mixins.scss */
+#menu-homepage-icon-menu:after, #menu-homepage-icon-menu:before {
+  content: "";
+  display: table;
+}
+/* line 14, ../mpress/modules/_mixins.scss */
+#menu-homepage-icon-menu:after {
+  clear: both;
 }
 /* line 12, ../modules/_content.scss */
 #menu-homepage-icon-menu li {
