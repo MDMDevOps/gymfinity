@@ -38,7 +38,7 @@ class Menus extends \Mpress\Theme {
 
 	public function get_menu( $atts = array() ) {
 		// If no menu location, or menu is specified, we can bail without doing anything
-		if( !$atts['theme_location'] && !$atts['menu'] ) {
+		if( empty( $atts['theme_location'] ) && empty( $atts['menu'] ) ) {
 			return false;
 		}
 		// Merge passed in atts with defaults

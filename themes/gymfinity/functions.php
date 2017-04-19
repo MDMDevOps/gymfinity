@@ -39,38 +39,38 @@ define( 'CHILD_THEME_ROOT_URI', trailingslashit( get_stylesheet_directory_uri() 
  * @since version 1.0.0
  */
 if ( !function_exists( 'register_public_stylesheets' ) ) {
-    function register_public_stylesheets( $stylesheets ) {
-    	// Enqueue Google Fonts
-    	$stylesheets['google-fonts'] = array(
-    		'src'   => '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700',
-    		'deps'  => array(),
-    		'ver'   => '1.0.0',
-    		'media' => 'all',
-    	);
-    	// Enqueue main stylesheet from child instead of parent
-    	$stylesheets['mpress-public'] = array(
-    		'src'   => CHILD_THEME_ROOT_URI . 'styles/dist/public.min.css',
-    		'deps'  => array( 'FontAwesome', 'google-fonts' ),
-    		'ver'   => '1.0.0',
-    		'media' => 'all',
-    	);
-    	return $stylesheets;
-    }
-    add_filter( 'mpress_public_stylesheets', 'register_public_stylesheets' );
+	function register_public_stylesheets( $stylesheets ) {
+		// Enqueue Google Fonts
+		$stylesheets['google-fonts'] = array(
+			'src'   => '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700',
+			'deps'  => array(),
+			'ver'   => '1.0.0',
+			'media' => 'all',
+		);
+		// Enqueue main stylesheet from child instead of parent
+		$stylesheets['mpress-public'] = array(
+			'src'   => CHILD_THEME_ROOT_URI . 'styles/dist/public.min.css',
+			'deps'  => array( 'FontAwesome', 'google-fonts' ),
+			'ver'   => '1.0.0',
+			'media' => 'all',
+		);
+		return $stylesheets;
+	}
+	add_filter( 'mpress_public_stylesheets', 'register_public_stylesheets' );
 }
 /* -------------------------------------------------------------------------- */
 if ( !function_exists( 'register_admin_stylesheets' ) ) {
-    function register_admin_stylesheets( $stylesheets ) {
-    	// Enqueue Google Fonts
-    	$stylesheets['gymfinity-admin'] = array(
-    		'src'   => CHILD_THEME_ROOT_URI . 'styles/dist/admin.min.css',
-    		'deps'  => array(),
-    		'ver'   => '1.0.0',
-    		'media' => 'all',
-    	);
-    	return $stylesheets;
-    }
-    add_filter( 'mpress_admin_stylesheets', 'register_admin_stylesheets' );
+	function register_admin_stylesheets( $stylesheets ) {
+		// Enqueue Google Fonts
+		$stylesheets['gymfinity-admin'] = array(
+			'src'   => CHILD_THEME_ROOT_URI . 'styles/dist/admin.min.css',
+			'deps'  => array(),
+			'ver'   => '1.0.0',
+			'media' => 'all',
+		);
+		return $stylesheets;
+	}
+	add_filter( 'mpress_admin_stylesheets', 'register_admin_stylesheets' );
 }
 /* -------------------------------------------------------------------------- */
 
@@ -119,6 +119,7 @@ if( !function_exists( 'register_admin_scripts' ) ) {
  * @see   http://codex.wordpress.org/Widgetizing_Themes
  */
 if( !function_exists( 'mpress_add_sidebars' ) ) {
+<<<<<<< HEAD
     function register_child_sidebars( $sidebars ) {
     	$child_sidebars = array(
     		'top-banner-widgets' => array(
@@ -161,6 +162,41 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     }
     // Uncomment to use
     add_filter( 'mpress_sidebars', 'register_child_sidebars' );
+=======
+	function register_child_sidebars( $sidebars ) {
+		$child_sidebars = array(
+			'top-banner-widgets' => array(
+				'name'          => __( 'Top Banner Widgets', 'mpress-child' ),
+				'id'            => 'top-banner-widgets',
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => "</div>",
+				'before_title'  => '<h4 class="widget-title">',
+				'after_title'   => '</h4>'
+			),
+
+			'footer-widgets-left' => array(
+				'name'          => __( 'left Footer Widgets', 'mpress-child' ),
+					'id'            => 'footer-widgets-left',
+					'before_widget' => '<div id="%1$s" class="widget %2$s">',
+					'after_widget'  => "</div>",
+					'before_title'  => '<h4 class="widget-title">',
+					'after_title'   => '</h4>'
+			),
+
+			'footer-widgets-right' => array(
+				'name'          => __( 'Right Footer Widgets', 'mpress-child' ),
+					'id'            => 'footer-widgets-right',
+					'before_widget' => '<div id="%1$s" class="widget %2$s">',
+					'after_widget'  => "</div>",
+					'before_title'  => '<h4 class="widget-title">',
+					'after_title'   => '</h4>'
+			),
+		);
+		return array_merge( $sidebars, $child_sidebars );
+	}
+	// Uncomment to use
+	add_filter( 'mpress_sidebars', 'register_child_sidebars' );
+>>>>>>> c67ec1b7819e7d3fd3762a896da3dd4885768711
 }
 
 /* -------------------------------------------------------------------------- */
@@ -185,10 +221,10 @@ if( !function_exists( 'add_editor_formats' ) ) {
 	function add_editor_formats( $formats ) {
 		// Example to add cursive class
 		$formats['inline']['items'][] = array(
-		    'title'   => 'Cursive',
-		    'classes' => 'cursive',
-		    'inline' => 'span',
-		    'wrapper' => false,
+			'title'   => 'Cursive',
+			'classes' => 'cursive',
+			'inline' => 'span',
+			'wrapper' => false,
 		);
 		return $formats;
 	}
@@ -238,7 +274,7 @@ if( !function_exists( 'extend_mpress_theme_engine' ) ) {
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
+	add_theme_support( 'woocommerce' );
 }
 
 function jackrabbit_embed_schedule( $atts = array() ) {
@@ -389,4 +425,46 @@ function set_jackrabbit_schedule_formatting( $table ) {
 }
 
 include_once CHILD_THEME_ROOT_DIR . 'includes/class_sidebar_walker_nav_menu.php';
+
+/**
+ * Function to remove automatic placement of sharing buttons from jetpack
+ */
+if( !function_exists( 'jptweak_remove_share' ) ) {
+	function jptweak_remove_share() {
+		remove_filter( 'the_content', 'sharing_display', 19 );
+		remove_filter( 'the_excerpt', 'sharing_display', 19 );
+		if ( class_exists( 'Jetpack_Likes' ) ) {
+			remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
+		}
+	}
+	add_action( 'loop_start', 'jptweak_remove_share' );
+}
+
+/**
+ * Function to manually place the sharing buttons from jetpack wherever we want
+ */
+if( !function_exists( 'jptweak_place_share' ) ) {
+	function jptweak_place_share() {
+		if ( function_exists( 'sharing_display' ) ) {
+			sharing_display( '', true );
+		}
+		if ( class_exists( 'Jetpack_Likes' ) ) {
+			$custom_likes = new Jetpack_Likes;
+			echo $custom_likes->post_likes( '' );
+		}
+	}
+	add_action( 'jp_share_buttons', 'jptweak_place_share' );
+}
+
+add_filter('excerpt_more','__return_false');
+
+
+if( !function_exists( 'customize_image_sizes' ) ) {
+	function customize_image_sizes() {
+		// 16:9 Featured image size for the post thumbnail on the blog page
+		add_image_size( 'gymfinity-featured-small', '300', '170', true );
+	}
+	add_action( 'init', 'customize_image_sizes' );
+}
+
 
