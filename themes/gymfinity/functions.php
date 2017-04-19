@@ -130,6 +130,15 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     			'after_title'   => '</h4>'
     		),
 
+    		'off-canvas-widgets' => array(
+    			'name'          => __( 'Off Canvas Widgets', 'mpress-child' ),
+    			'id'            => 'off-canvas-widgets',
+    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    			'after_widget'  => "</div>",
+    			'before_title'  => '<h4 class="widget-title">',
+    			'after_title'   => '</h4>'
+    		),
+
     		'footer-widgets-left' => array(
 	    		'name'          => __( 'left Footer Widgets', 'mpress-child' ),
 	    			'id'            => 'footer-widgets-left',
