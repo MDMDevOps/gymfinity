@@ -11,9 +11,8 @@
 				wp_nav_menu( array( 'theme_location' => $location, 'container' => '', 'walker' => new \Mpress\Walker_Nav_Menu() ) );
 			}
 		?>
-
-		<div>
-		<?php dynamic_sidebar( 'off-canvas-widgets' ); ?>
-		</div>
 	</nav><!-- #site-navigation -->
+
+	<?php dynamic_sidebar( 'off-canvas-widgets' ); ?>
+
 </aside>
