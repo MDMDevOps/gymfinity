@@ -1,0 +1,28 @@
+article.excerpt {
+	outline: 1px solid $border-color;
+	margin-bottom: $gutter * 2;
+	header, footer, > div {
+		padding: $gutter;
+	}
+	.excerpt-meta {
+		border-bottom: 1px solid $border-color;
+	}
+}
+.excerpt-content-wrapper {
+	.excerpt-thumbnail {
+		img {
+			@extend .aligncenter;
+			display: block;
+		}
+	}
+	@include breakpoint( 'xs' ) {
+		.excerpt-thumbnail {
+			img {
+				float: left;
+				margin: 0 $gutter $gutter 0;
+				position: relative;
+				top: 6px;
+			}
+		}
+	}
+}
