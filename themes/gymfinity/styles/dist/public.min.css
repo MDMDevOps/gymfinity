@@ -5372,7 +5372,7 @@ table td, .table td {
 }
 
 /* line 14, ../mpress/components/_embeds.scss */
-.aligncenter {
+.aligncenter, .excerpt-content-wrapper .excerpt-thumbnail img {
   margin: 0 auto 1.618em;
 }
 
@@ -8086,28 +8086,56 @@ table.openings td.class {
   padding: 20px 0;
 }
 
-/* line 19, ../public.scss */
+/* line 1, ../modules/_blog.scss */
+article.excerpt {
+  outline: 1px solid #e2e2e2;
+  margin-bottom: 1.618em;
+}
+/* line 4, ../modules/_blog.scss */
+article.excerpt header, article.excerpt footer, article.excerpt > div {
+  padding: 0.809em;
+}
+/* line 7, ../modules/_blog.scss */
+article.excerpt .excerpt-meta {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* line 13, ../modules/_blog.scss */
+.excerpt-content-wrapper .excerpt-thumbnail img {
+  display: block;
+}
+@media (min-width: 481px) {
+  /* line 20, ../modules/_blog.scss */
+  .excerpt-content-wrapper .excerpt-thumbnail img {
+    float: left;
+    margin: 0 0.809em 0.809em 0;
+    position: relative;
+    top: 6px;
+  }
+}
+
+/* line 20, ../public.scss */
 address.inline {
   display: inline;
 }
 
-/* line 23, ../public.scss */
+/* line 24, ../public.scss */
 .entry-content {
   font-size: 1rem;
 }
 @media (min-width: 961px) {
-  /* line 23, ../public.scss */
+  /* line 24, ../public.scss */
   .entry-content {
     font-size: 1.3rem;
   }
 }
 
-/* line 29, ../public.scss */
+/* line 30, ../public.scss */
 #primary {
   position: relative;
 }
 
-/* line 33, ../public.scss */
+/* line 34, ../public.scss */
 .fixed-scroll-column.fixed {
   position: fixed;
 }
