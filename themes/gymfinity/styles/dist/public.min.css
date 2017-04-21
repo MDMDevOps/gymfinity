@@ -7890,39 +7890,49 @@ div.dtr-modal div.dtr-modal-background {
   font-size: 2em;
   padding: 5px;
 }
-/* line 16, ../modules/_footer.scss */
+/* line 14, ../modules/_footer.scss */
+#colophon ul.social {
+  margin-bottom: 0;
+}
+/* line 17, ../modules/_footer.scss */
 #colophon ul.social li.facebook a, #colophon ul.social li.facebook a:link {
   color: #3b5998;
 }
-/* line 20, ../modules/_footer.scss */
+/* line 21, ../modules/_footer.scss */
 #colophon ul.social li.facebook a:hover, #colophon ul.social li.facebook a:focus, #colophon ul.social li.facebook a:link:hover, #colophon ul.social li.facebook a:link:focus {
   color: #2d4373;
 }
-/* line 27, ../modules/_footer.scss */
+/* line 28, ../modules/_footer.scss */
 #colophon ul.social li.twitter a, #colophon ul.social li.twitter a:link {
   color: #55acee;
 }
-/* line 31, ../modules/_footer.scss */
+/* line 32, ../modules/_footer.scss */
 #colophon ul.social li.twitter a:hover, #colophon ul.social li.twitter a:focus, #colophon ul.social li.twitter a:link:hover, #colophon ul.social li.twitter a:link:focus {
   color: #2795e9;
 }
-/* line 38, ../modules/_footer.scss */
+/* line 39, ../modules/_footer.scss */
 #colophon ul.social li.googleplus a, #colophon ul.social li.googleplus a:link {
   color: #dd4b39;
 }
-/* line 42, ../modules/_footer.scss */
+/* line 43, ../modules/_footer.scss */
 #colophon ul.social li.googleplus a:hover, #colophon ul.social li.googleplus a:focus, #colophon ul.social li.googleplus a:link:hover, #colophon ul.social li.googleplus a:link:focus {
   color: #c23321;
 }
-/* line 49, ../modules/_footer.scss */
+/* line 50, ../modules/_footer.scss */
 #colophon .custom-logo-link {
   max-width: 200px;
 }
-/* line 53, ../modules/_footer.scss */
-#colophon .outter-widget {
-  margin-top: 50px;
+/* line 54, ../modules/_footer.scss */
+#colophon .margin-widget {
+  margin-top: 10px;
 }
-/* line 57, ../modules/_footer.scss */
+@media (min-width: 961px) {
+  /* line 54, ../modules/_footer.scss */
+  #colophon .margin-widget {
+    margin-bottom: 20px;
+  }
+}
+/* line 61, ../modules/_footer.scss */
 #colophon .site-info {
   margin-top: 40px;
 }

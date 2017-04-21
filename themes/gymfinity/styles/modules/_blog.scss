@@ -1,6 +1,7 @@
 article.excerpt {
-	outline: 1px solid $border-color;
+	// outline: 1px solid $border-color;
 	margin-bottom: $gutter * 2;
+	box-shadow: $box-shadow;
 	header, footer, > div {
 		padding: $gutter;
 	}
@@ -22,6 +23,17 @@ article.excerpt {
 				margin: 0 $gutter $gutter 0;
 				position: relative;
 				top: 6px;
+			}
+		}
+	}
+}
+
+.sharedaddy {
+	.sd-content {
+		ul {
+			margin: 0 !important;
+			li {
+				margin-bottom: 0;
 			}
 		}
 	}

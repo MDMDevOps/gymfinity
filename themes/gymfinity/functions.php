@@ -390,3 +390,40 @@ function set_jackrabbit_schedule_formatting( $table ) {
 
 include_once CHILD_THEME_ROOT_DIR . 'includes/class_sidebar_walker_nav_menu.php';
 
+/**
+ * Function to remove automatic placement of sharing buttons from jetpack
+ */
+if( !function_exists( 'jptweak_remove_share' ) ) {
+	function jptweak_remove_share() {
+		remove_filter( 'the_content', 'sharing_display', 19 );
+		remove_filter( 'the_excerpt', 'sharing_display', 19 );
+		if ( class_exists( 'Jetpack_Likes' ) ) {
+			remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
+		}
+	}
+	add_action( 'loop_start', 'jptweak_remove_share' );
+}
+/**
+ * Function to manually place the sharing buttons from jetpack wherever we want
+ */
+if( !function_exists( 'jptweak_place_share' ) ) {
+	function jptweak_place_share() {
+		if ( function_exists( 'sharing_display' ) ) {
+			sharing_display( '', true );
+		}
+		if ( class_exists( 'Jetpack_Likes' ) ) {
+			$custom_likes = new Jetpack_Likes;
+			echo $custom_likes->post_likes( '' );
+		}
+	}
+	add_action( 'jp_share_buttons', 'jptweak_place_share' );
+}
+add_filter('excerpt_more','__return_false');
+if( !function_exists( 'customize_image_sizes' ) ) {
+	function customize_image_sizes() {
+		// 16:9 Featured image size for the post thumbnail on the blog page
+		add_image_size( 'gymfinity-featured-small', '300', '170', true );
+	}
+	add_action( 'init', 'customize_image_sizes' );
+}
+
