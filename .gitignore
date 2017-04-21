@@ -45,7 +45,7 @@ ehthumbs.db
 Icon?
 Thumbs.db
 ._*
-.orig
+*.orig
 
 # Vim generated files #
 ######################
