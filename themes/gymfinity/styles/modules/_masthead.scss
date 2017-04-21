@@ -1,7 +1,7 @@
 #masthead {
 	padding: $gutter;
-	background: rgba( #000, .1 ); // Temporary style to see element during development
-	margin-bottom: 1.618rem;
+	// background: rgba( #000, .1 ); // Temporary style to see element during development
+	// margin-bottom: 1.618rem;
 	.site-branding {
 		float: none;
 		.custom-logo-link {
@@ -13,10 +13,28 @@
 	}
 }
 
+#colophon {
+	background: linear-gradient(to right, #000000 0%,#343434 100%) !important;
+}
+
+.title-banner {
+	background: rgba( #000, .1 );
+	padding: $gutter;
+	margin-bottom: $gutter * 2;
+	h1, h2, .h1, .h2 {
+		padding: 0;
+		margin: 0;
+	}
+}
+
 .top-banner {
-	border-bottom: 1px solid $border-color;
+	background: $primary-color;
+	color: #000;
 	text-align: center;
 	padding: $gutter $gutter 0;
+	a, a:link {
+		color: #fff;
+	}
 	p {
 		margin: 0;
 	}

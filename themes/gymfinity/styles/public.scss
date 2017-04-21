@@ -36,3 +36,37 @@ address.inline {
 	}
 }
 
+.box-container {
+	padding: $gutter;
+	box-shadow: $box-shadow;
+	margin-bottom: $gutter * 2;
+}
+.nav-links {
+	@include clearfix;
+	margin-bottom: $gutter * 2;
+	a, a:link {
+		display: inline-block;
+		background: $primary-color;
+		color: #fff;
+		padding: $gutter;
+		box-shadow: $box-shadow;
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		&:hover, &:focus {
+			box-shadow: $hover-box-shadow;
+		}
+	}
+	.nav-previous, .nav-next {
+		width: 50%;
+	}
+	.nav-previous {
+		float: left;
+		text-align: left;
+		padding-right: $gutter;
+	}
+	.nav-next {
+		padding-left: $gutter;
+		float: right;
+		text-align: right;
+	}
+}
+
