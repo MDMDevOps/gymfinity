@@ -7793,8 +7793,6 @@ div.dtr-modal div.dtr-modal-background {
 /* line 1, ../modules/_masthead.scss */
 #masthead {
   padding: 0.809em;
-  background: rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.618rem;
 }
 /* line 5, ../modules/_masthead.scss */
 #masthead .site-branding {
@@ -7808,39 +7806,62 @@ div.dtr-modal div.dtr-modal-background {
 }
 
 /* line 16, ../modules/_masthead.scss */
+#colophon {
+  background: -webkit-linear-gradient(left, #000000 0%, #343434 100%) !important;
+  background: linear-gradient(to right, #000000 0%, #343434 100%) !important;
+}
+
+/* line 20, ../modules/_masthead.scss */
+.title-banner {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.809em;
+  margin-bottom: 1.618em;
+}
+/* line 24, ../modules/_masthead.scss */
+.title-banner h1, .title-banner h2, .title-banner .h1, .title-banner .h2 {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 30, ../modules/_masthead.scss */
 .top-banner {
-  border-bottom: 1px solid #e2e2e2;
+  background: #ed2024;
+  color: #000;
   text-align: center;
   padding: 0.809em 0.809em 0;
 }
-/* line 20, ../modules/_masthead.scss */
+/* line 35, ../modules/_masthead.scss */
+.top-banner a, .top-banner a:link {
+  color: #fff;
+}
+/* line 38, ../modules/_masthead.scss */
 .top-banner p {
   margin: 0;
 }
-/* line 23, ../modules/_masthead.scss */
+/* line 41, ../modules/_masthead.scss */
 .top-banner .widget {
   display: block;
   min-width: 100%;
 }
-/* line 28, ../modules/_masthead.scss */
+/* line 46, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu {
   padding: 0;
 }
-/* line 30, ../modules/_masthead.scss */
+/* line 48, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li {
   display: inline-block;
 }
-/* line 33, ../modules/_masthead.scss */
+/* line 51, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
   padding: 0.4045em;
 }
 @media (min-width: 641px) {
-  /* line 16, ../modules/_masthead.scss */
+  /* line 30, ../modules/_masthead.scss */
   .top-banner {
     text-align: left;
     padding: 0 0.809em;
   }
-  /* line 41, ../modules/_masthead.scss */
+  /* line 59, ../modules/_masthead.scss */
   .top-banner > .wrapper, .top-banner > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7853,13 +7874,13 @@ div.dtr-modal div.dtr-modal-background {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 45, ../modules/_masthead.scss */
+  /* line 63, ../modules/_masthead.scss */
   .top-banner .widgets {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 48, ../modules/_masthead.scss */
+  /* line 66, ../modules/_masthead.scss */
   .top-banner #secondary-navigation {
     float: right;
   }
@@ -7874,6 +7895,20 @@ div.dtr-modal div.dtr-modal-background {
   #sidebar-navigation {
     display: block;
   }
+}
+/* line 6, ../modules/_sidebar.scss */
+#sidebar-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 9, ../modules/_sidebar.scss */
+#sidebar-navigation ul a, #sidebar-navigation ul a:link {
+  padding: 0.809em;
+  margin: 0 -0.809em;
+}
+/* line 12, ../modules/_sidebar.scss */
+#sidebar-navigation ul a:hover, #sidebar-navigation ul a:focus, #sidebar-navigation ul a:link:hover, #sidebar-navigation ul a:link:focus {
+  background-color: #e2e2e2;
 }
 
 /* line 1, ../modules/_footer.scss */
@@ -8088,30 +8123,39 @@ table.openings td.class {
 
 /* line 1, ../modules/_blog.scss */
 article.excerpt {
-  outline: 1px solid #e2e2e2;
   margin-bottom: 1.618em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-/* line 4, ../modules/_blog.scss */
+/* line 5, ../modules/_blog.scss */
 article.excerpt header, article.excerpt footer, article.excerpt > div {
   padding: 0.809em;
 }
-/* line 7, ../modules/_blog.scss */
+/* line 8, ../modules/_blog.scss */
 article.excerpt .excerpt-meta {
   border-bottom: 1px solid #e2e2e2;
 }
 
-/* line 13, ../modules/_blog.scss */
+/* line 14, ../modules/_blog.scss */
 .excerpt-content-wrapper .excerpt-thumbnail img {
   display: block;
 }
 @media (min-width: 481px) {
-  /* line 20, ../modules/_blog.scss */
+  /* line 21, ../modules/_blog.scss */
   .excerpt-content-wrapper .excerpt-thumbnail img {
     float: left;
     margin: 0 0.809em 0.809em 0;
     position: relative;
     top: 6px;
   }
+}
+
+/* line 33, ../modules/_blog.scss */
+.sharedaddy .sd-content ul {
+  margin: 0 !important;
+}
+/* line 35, ../modules/_blog.scss */
+.sharedaddy .sd-content ul li {
+  margin-bottom: 0;
 }
 
 /* line 20, ../public.scss */
@@ -8138,6 +8182,57 @@ address.inline {
 /* line 34, ../public.scss */
 .fixed-scroll-column.fixed {
   position: fixed;
+}
+
+/* line 39, ../public.scss */
+.box-container {
+  padding: 0.809em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 1.618em;
+}
+
+/* line 44, ../public.scss */
+.nav-links {
+  margin-bottom: 1.618em;
+}
+/* line 10, ../mpress/modules/_mixins.scss */
+.nav-links:after, .nav-links:before {
+  content: "";
+  display: table;
+}
+/* line 14, ../mpress/modules/_mixins.scss */
+.nav-links:after {
+  clear: both;
+}
+/* line 47, ../public.scss */
+.nav-links a, .nav-links a:link {
+  display: inline-block;
+  background: #ed2024;
+  color: #fff;
+  padding: 0.809em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* line 54, ../public.scss */
+.nav-links a:hover, .nav-links a:focus, .nav-links a:link:hover, .nav-links a:link:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* line 58, ../public.scss */
+.nav-links .nav-previous, .nav-links .nav-next {
+  width: 50%;
+}
+/* line 61, ../public.scss */
+.nav-links .nav-previous {
+  float: left;
+  text-align: left;
+  padding-right: 0.809em;
+}
+/* line 66, ../public.scss */
+.nav-links .nav-next {
+  padding-left: 0.809em;
+  float: right;
+  text-align: right;
 }
 
 /*# sourceMappingURL=public.min.css.map */
