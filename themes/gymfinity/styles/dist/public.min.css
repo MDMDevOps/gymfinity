@@ -7812,9 +7812,10 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 28, ../modules/_buttons.scss */
 #download-app-cta .button {
+  margin: 0 10px;
   background: #424242;
 }
-/* line 31, ../modules/_buttons.scss */
+/* line 32, ../modules/_buttons.scss */
 #download-app-cta .button:hover, #download-app-cta .button:focus {
   background: #292929;
 }
@@ -8042,40 +8043,24 @@ section.content-block .block-content {
   right: 0;
 }
 
-/* line 35, ../modules/_content.scss */
-#menu-block {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-/* line 40, ../modules/_content.scss */
-#menu-block ul {
-  margin-bottom: 0;
-}
-
-/* line 46, ../modules/_content.scss */
-#events-and-testimonials {
-  background: #efefef;
-}
-
-/* line 51, ../modules/_content.scss */
+/* line 36, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 54, ../modules/_content.scss */
+/* line 39, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 57, ../modules/_content.scss */
+/* line 42, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 60, ../modules/_content.scss */
+/* line 45, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 64, ../modules/_content.scss */
+/* line 49, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -8086,7 +8071,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 67, ../modules/_content.scss */
+/* line 52, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -8096,81 +8081,88 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 76, ../modules/_content.scss */
+/* line 61, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 85, ../modules/_content.scss */
+/* line 70, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 90, ../modules/_content.scss */
+  /* line 75, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 93, ../modules/_content.scss */
+  /* line 78, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 96, ../modules/_content.scss */
+  /* line 81, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 99, ../modules/_content.scss */
+  /* line 84, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 102, ../modules/_content.scss */
+  /* line 87, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 109, ../modules/_content.scss */
+/* line 94, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 114, ../modules/_content.scss */
-.card {
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  height: 100px;
-  margin: 1rem;
-  position: relative;
-  width: 100px;
-  border-radius: 50%;
-  background: #ed2024;
+/* line 98, ../modules/_content.scss */
+#menu-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* line 103, ../modules/_content.scss */
+#menu-block ul {
+  margin-bottom: 0;
 }
 
-/* line 126, ../modules/_content.scss */
-.card-1 {
+/* line 109, ../modules/_content.scss */
+#events-and-testimonials {
+  background: #efefef;
+  padding: 100px 0;
+}
+/* line 113, ../modules/_content.scss */
+#events-and-testimonials .card {
+  background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 10px;
+}
+/* line 119, ../modules/_content.scss */
+#events-and-testimonials h2 {
+  text-align: center;
 }
 
-/* line 131, ../modules/_content.scss */
-.card-1:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-/* line 135, ../modules/_content.scss */
+/* line 125, ../modules/_content.scss */
 #about-us {
   padding: 100px 0;
 }
 
-/* line 139, ../modules/_content.scss */
+/* line 129, ../modules/_content.scss */
+#open-gym {
+  padding: 100px 0;
+}
+
+/* line 133, ../modules/_content.scss */
 #download-app-cta {
   padding: 20px 0;
   background: #e1313a;
   color: white;
 }
-/* line 144, ../modules/_content.scss */
+/* line 138, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
 }
