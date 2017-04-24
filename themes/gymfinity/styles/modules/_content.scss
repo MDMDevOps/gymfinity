@@ -32,6 +32,22 @@ section.content-block {
 	}
 }
 
+#menu-block{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ul {
+    	margin-bottom: 0;
+    }
+}
+
+
+#events-and-testimonials{
+	background:$secondary-color;
+}
+
+
 table.openings {
 	// table-layout: fixed;
 	font-size: .85rem;
@@ -116,9 +132,12 @@ table.openings {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#about-us, #download-app-cta{
-	background:#c9c9c9;
-	padding: 20px 0
+#about-us {
+	padding: 100px 0;
+}
+
+#download-app-cta{
+	padding:20px 0;
 }
 
 // .button {

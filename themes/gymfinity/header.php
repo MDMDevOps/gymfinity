@@ -56,15 +56,3 @@
 		</header>
 
 		<?php get_template_part( 'partials/banner', 'appbar' ); ?>
-
-		<div class="title-banner">
-			<div class="wrapper">
-				<div class="row">
-					<div class="column md-9">
-						<?php do_action( 'mpress_entry_title', 'entry-title' ); ?>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="page" class="hfeed site">

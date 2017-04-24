@@ -7792,7 +7792,7 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 1, ../modules/_masthead.scss */
 #masthead {
-  padding: 0.809em;
+  padding: 1.618em;
 }
 /* line 5, ../modules/_masthead.scss */
 #masthead .site-branding {
@@ -7806,62 +7806,57 @@ div.dtr-modal div.dtr-modal-background {
 }
 
 /* line 16, ../modules/_masthead.scss */
-#colophon {
-  background: -webkit-linear-gradient(left, #000000 0%, #343434 100%) !important;
-  background: linear-gradient(to right, #000000 0%, #343434 100%) !important;
-}
-
-/* line 20, ../modules/_masthead.scss */
 .title-banner {
   background: rgba(0, 0, 0, 0.1);
   padding: 0.809em;
   margin-bottom: 1.618em;
 }
-/* line 24, ../modules/_masthead.scss */
+/* line 20, ../modules/_masthead.scss */
 .title-banner h1, .title-banner h2, .title-banner .h1, .title-banner .h2 {
   padding: 0;
   margin: 0;
 }
 
-/* line 30, ../modules/_masthead.scss */
+/* line 26, ../modules/_masthead.scss */
 .top-banner {
   background: #e1313a;
   color: #000;
   text-align: center;
   padding: 0.809em 0.809em 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-/* line 35, ../modules/_masthead.scss */
+/* line 33, ../modules/_masthead.scss */
 .top-banner a, .top-banner a:link {
   color: #fff;
 }
-/* line 38, ../modules/_masthead.scss */
+/* line 36, ../modules/_masthead.scss */
 .top-banner p {
   margin: 0;
 }
-/* line 41, ../modules/_masthead.scss */
+/* line 39, ../modules/_masthead.scss */
 .top-banner .widget {
   display: block;
   min-width: 100%;
 }
-/* line 46, ../modules/_masthead.scss */
+/* line 44, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu {
   padding: 0;
 }
-/* line 48, ../modules/_masthead.scss */
+/* line 46, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li {
   display: inline-block;
 }
-/* line 51, ../modules/_masthead.scss */
+/* line 49, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
   padding: 0.4045em;
 }
 @media (min-width: 641px) {
-  /* line 30, ../modules/_masthead.scss */
+  /* line 26, ../modules/_masthead.scss */
   .top-banner {
     text-align: left;
     padding: 0 0.809em;
   }
-  /* line 59, ../modules/_masthead.scss */
+  /* line 57, ../modules/_masthead.scss */
   .top-banner > .wrapper, .top-banner > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7874,13 +7869,13 @@ div.dtr-modal div.dtr-modal-background {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 63, ../modules/_masthead.scss */
+  /* line 61, ../modules/_masthead.scss */
   .top-banner .widgets {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 66, ../modules/_masthead.scss */
+  /* line 64, ../modules/_masthead.scss */
   .top-banner #secondary-navigation {
     float: right;
   }
@@ -7913,7 +7908,7 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 1, ../modules/_footer.scss */
 #colophon {
-  background: rgba(0, 0, 0, 0.1);
+  background: #424242;
   text-align: center;
 }
 /* line 5, ../modules/_footer.scss */
@@ -8015,23 +8010,39 @@ section.content-block .block-content {
 }
 
 /* line 35, ../modules/_content.scss */
+#menu-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* line 40, ../modules/_content.scss */
+#menu-block ul {
+  margin-bottom: 0;
+}
+
+/* line 46, ../modules/_content.scss */
+#events-and-testimonials {
+  background: #efefef;
+}
+
+/* line 51, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 38, ../modules/_content.scss */
+/* line 54, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 41, ../modules/_content.scss */
+/* line 57, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 44, ../modules/_content.scss */
+/* line 60, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 48, ../modules/_content.scss */
+/* line 64, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -8042,7 +8053,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 51, ../modules/_content.scss */
+/* line 67, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -8052,45 +8063,45 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 60, ../modules/_content.scss */
+/* line 76, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 69, ../modules/_content.scss */
+/* line 85, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 74, ../modules/_content.scss */
+  /* line 90, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 77, ../modules/_content.scss */
+  /* line 93, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 80, ../modules/_content.scss */
+  /* line 96, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 83, ../modules/_content.scss */
+  /* line 99, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 86, ../modules/_content.scss */
+  /* line 102, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 93, ../modules/_content.scss */
+/* line 109, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 98, ../modules/_content.scss */
+/* line 114, ../modules/_content.scss */
 .card {
   background: #fff;
   border-radius: 2px;
@@ -8103,21 +8114,25 @@ table.openings td.class {
   background: #ed2024;
 }
 
-/* line 110, ../modules/_content.scss */
+/* line 126, ../modules/_content.scss */
 .card-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* line 115, ../modules/_content.scss */
+/* line 131, ../modules/_content.scss */
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* line 119, ../modules/_content.scss */
-#about-us, #download-app-cta {
-  background: #c9c9c9;
+/* line 135, ../modules/_content.scss */
+#about-us {
+  padding: 100px 0;
+}
+
+/* line 139, ../modules/_content.scss */
+#download-app-cta {
   padding: 20px 0;
 }
 

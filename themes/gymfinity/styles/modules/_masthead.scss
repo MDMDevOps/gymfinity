@@ -1,5 +1,5 @@
 #masthead {
-	padding: $gutter;
+	padding: $gutter * 2;
 	// background: rgba( #000, .1 ); // Temporary style to see element during development
 	// margin-bottom: 1.618rem;
 	.site-branding {
@@ -11,10 +11,6 @@
 		}
 
 	}
-}
-
-#colophon {
-	background: linear-gradient(to right, #000000 0%,#343434 100%) !important;
 }
 
 .title-banner {
@@ -32,6 +28,8 @@
 	color: #000;
 	text-align: center;
 	padding: $gutter $gutter 0;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
 	a, a:link {
 		color: #fff;
 	}
