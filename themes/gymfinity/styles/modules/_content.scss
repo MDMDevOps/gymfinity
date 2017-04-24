@@ -113,7 +113,16 @@ table.openings {
 	.card {
 		background:white;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		padding:10px;
+		padding:50px;
+
+		h2 {
+			color:$greyDark;
+		}
+
+		li{
+			color:$primary-color;
+			font-size: 25px;
+		}
 	}
 
 	h2{

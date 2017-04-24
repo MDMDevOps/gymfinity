@@ -8139,30 +8139,39 @@ table.openings td.class {
 #events-and-testimonials .card {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 10px;
+  padding: 50px;
 }
-/* line 119, ../modules/_content.scss */
+/* line 118, ../modules/_content.scss */
+#events-and-testimonials .card h2 {
+  color: #424242;
+}
+/* line 122, ../modules/_content.scss */
+#events-and-testimonials .card li {
+  color: #e1313a;
+  font-size: 25px;
+}
+/* line 128, ../modules/_content.scss */
 #events-and-testimonials h2 {
   text-align: center;
 }
 
-/* line 125, ../modules/_content.scss */
+/* line 134, ../modules/_content.scss */
 #about-us {
   padding: 100px 0;
 }
 
-/* line 129, ../modules/_content.scss */
+/* line 138, ../modules/_content.scss */
 #open-gym {
   padding: 100px 0;
 }
 
-/* line 133, ../modules/_content.scss */
+/* line 142, ../modules/_content.scss */
 #download-app-cta {
   padding: 20px 0;
   background: #e1313a;
   color: white;
 }
-/* line 138, ../modules/_content.scss */
+/* line 147, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
 }
