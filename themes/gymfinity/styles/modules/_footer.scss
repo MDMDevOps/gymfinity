@@ -16,10 +16,10 @@
 		li.facebook{
 			a, a:link{
 
-				color:$facebook-color;
+				color:white;
 
 				&:hover, &:focus{
-					color:darken($facebook-color, 10%);
+					color:$primary-color;
 				}
 			}
 		}
@@ -27,10 +27,10 @@
 		li.twitter{
 			a, a:link{
 
-				color:$twitter-color;
+				color:white;
 
 				&:hover, &:focus{
-					color:darken($twitter-color, 10%);
+					color:$primary-color;
 				}
 			}
 		}
@@ -38,10 +38,10 @@
 		li.googleplus{
 			a, a:link{
 
-				color:$googleplus-color;
+				color:white;
 
 				&:hover, &:focus{
-					color:darken($googleplus-color, 10%);
+					color:$primary-color;
 				}
 			}
 		}

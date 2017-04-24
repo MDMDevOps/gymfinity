@@ -45,6 +45,9 @@
 			padding: 0;
 			li {
 				display: inline-block;
+				&:hover, &:focus{
+					background:$redDark;
+				}
 			}
 			a, a:link {
 				padding: $gutter / 2;

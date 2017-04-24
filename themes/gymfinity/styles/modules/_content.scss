@@ -138,6 +138,12 @@ table.openings {
 
 #download-app-cta{
 	padding:20px 0;
+	background:$primary-color;
+	color:white;
+
+	.button {
+		background:$greyDark;
+	}
 }
 
 // .button {
