@@ -4727,7 +4727,6 @@ textarea {
   width: 100%;
   line-height: 1.618;
   border-radius: 2px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -8239,7 +8238,7 @@ address.inline {
 @media (min-width: 961px) {
   /* line 25, ../public.scss */
   .entry-content {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
