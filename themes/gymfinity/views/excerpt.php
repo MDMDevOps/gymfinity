@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'excerpt' ); ?> itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'excerpt box-container' ); ?> itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="excerpt-meta">
 		<?php do_action( 'mpress_entry_meta' ); ?>
 	</div>
