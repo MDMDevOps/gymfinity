@@ -7758,7 +7758,7 @@ div.dtr-modal div.dtr-modal-background {
   right: 0;
   z-index: 99999999;
   background: #fff;
-  border-top: 1px solid white;
+  border-top: 1px solid #d5d5d5;
 }
 /* line 10, ../mpress/modules/_mixins.scss */
 #appbar:after, #appbar:before {
@@ -7778,6 +7778,18 @@ div.dtr-modal div.dtr-modal-background {
 /* line 13, ../modules/_appbar.scss */
 #appbar p {
   margin: 0;
+}
+/* line 17, ../modules/_appbar.scss */
+#appbar .appbar-icons {
+  color: #8d8d8d;
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 24, ../modules/_appbar.scss */
+#appbar .appbar-icons:active {
+  color: #e1313a;
 }
 
 /* line 1, ../modules/_buttons.scss */
@@ -7823,37 +7835,38 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 1, ../modules/_masthead.scss */
 #masthead {
+  padding-top: 2em;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   text-align: center;
   margin-bottom: 1.618em;
 }
-/* line 9, ../modules/_masthead.scss */
+/* line 10, ../modules/_masthead.scss */
 .home #masthead {
   margin-bottom: 0;
 }
-/* line 12, ../modules/_masthead.scss */
+/* line 13, ../modules/_masthead.scss */
 #masthead .site-branding {
   float: none;
 }
-/* line 14, ../modules/_masthead.scss */
+/* line 15, ../modules/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
   max-width: 500px;
   margin: 0 auto;
 }
-/* line 21, ../modules/_masthead.scss */
+/* line 22, ../modules/_masthead.scss */
 #masthead .main-banner {
   padding: 1.618em;
 }
-/* line 24, ../modules/_masthead.scss */
+/* line 25, ../modules/_masthead.scss */
 #masthead .widget-area {
   max-width: 1270.56px;
   margin: 0 auto;
   padding: 3rem 1.618rem;
 }
-/* line 29, ../modules/_masthead.scss */
+/* line 30, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7865,27 +7878,27 @@ div.dtr-modal div.dtr-modal-background {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/* line 35, ../modules/_masthead.scss */
+/* line 36, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu li {
   display: block;
   width: 50%;
   float: left;
   margin-bottom: 3.2rem;
 }
-/* line 41, ../modules/_masthead.scss */
+/* line 42, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a, #masthead #menu-homepage-icon-menu a:link {
   display: inline-block;
   color: #fff;
 }
-/* line 44, ../modules/_masthead.scss */
+/* line 45, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:hover, #masthead #menu-homepage-icon-menu a:focus, #masthead #menu-homepage-icon-menu a:link:hover, #masthead #menu-homepage-icon-menu a:link:focus {
   color: #e1313a;
 }
-/* line 46, ../modules/_masthead.scss */
+/* line 47, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:hover:before, #masthead #menu-homepage-icon-menu a:focus:before, #masthead #menu-homepage-icon-menu a:link:hover:before, #masthead #menu-homepage-icon-menu a:link:focus:before {
   border-color: #e1313a;
 }
-/* line 50, ../modules/_masthead.scss */
+/* line 51, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
   content: "\f03e";
   font-family: 'icomoon';
@@ -7907,92 +7920,104 @@ div.dtr-modal div.dtr-modal-background {
           transition: border-color .2s ease;
 }
 @media (min-width: 481px) {
-  /* line 72, ../modules/_masthead.scss */
+  /* line 73, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
     font-size: 15vw;
   }
 }
 @media (min-width: 641px) {
-  /* line 78, ../modules/_masthead.scss */
+  /* line 79, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu li {
     width: 33.333%;
   }
 }
 @media (min-width: 961px) {
-  /* line 84, ../modules/_masthead.scss */
+  /* line 85, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
     font-size: 100px;
   }
 }
 
-/* line 92, ../modules/_masthead.scss */
+/* line 93, ../modules/_masthead.scss */
 .title-banner {
   background: rgba(0, 0, 0, 0.5);
   text-align: left;
   color: #fff;
   text-transform: capitalize;
 }
-/* line 98, ../modules/_masthead.scss */
+/* line 99, ../modules/_masthead.scss */
 .title-banner > .wrapper, .title-banner > .container {
   padding: 0.809em;
 }
-/* line 101, ../modules/_masthead.scss */
+/* line 102, ../modules/_masthead.scss */
 .title-banner h1, .title-banner h2, .title-banner .h1, .title-banner .h2 {
   padding: 0;
   margin: 0;
   font-size: 1.7rem;
 }
 @media (min-width: 641px) {
-  /* line 92, ../modules/_masthead.scss */
+  /* line 93, ../modules/_masthead.scss */
   .title-banner {
     font-size: 1.25rem;
   }
 }
 
-/* line 117, ../modules/_masthead.scss */
+/* line 118, ../modules/_masthead.scss */
 .top-banner {
-  background: #e1313a;
-  color: #000;
-  text-align: center;
-  padding: 0.809em 0.809em 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-/* line 124, ../modules/_masthead.scss */
-.top-banner a, .top-banner a:link {
-  color: #fff;
-}
-/* line 127, ../modules/_masthead.scss */
-.top-banner p {
-  margin: 0;
-}
-/* line 130, ../modules/_masthead.scss */
-.top-banner .widget {
-  display: block;
-  min-width: 100%;
-}
-/* line 135, ../modules/_masthead.scss */
-.top-banner #secondary-navigation .menu {
-  padding: 0;
-}
-/* line 137, ../modules/_masthead.scss */
-.top-banner #secondary-navigation .menu li {
-  display: inline-block;
-}
-/* line 139, ../modules/_masthead.scss */
-.top-banner #secondary-navigation .menu li:hover, .top-banner #secondary-navigation .menu li:focus {
-  background: #b5121b;
-}
-/* line 143, ../modules/_masthead.scss */
-.top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
-  padding: 0.4045em;
+  display: none;
 }
 @media (min-width: 641px) {
-  /* line 117, ../modules/_masthead.scss */
+  /* line 118, ../modules/_masthead.scss */
+  .top-banner {
+    display: initial;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background: #e1313a;
+    color: #000;
+    text-align: center;
+    padding: 0.809em 0.809em 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  /* line 134, ../modules/_masthead.scss */
+  .top-banner a, .top-banner a:link {
+    color: #fff;
+  }
+  /* line 137, ../modules/_masthead.scss */
+  .top-banner p {
+    margin: 0;
+  }
+  /* line 140, ../modules/_masthead.scss */
+  .top-banner .widget {
+    display: block;
+    min-width: 100%;
+  }
+  /* line 145, ../modules/_masthead.scss */
+  .top-banner #secondary-navigation .menu {
+    padding: 0;
+  }
+  /* line 147, ../modules/_masthead.scss */
+  .top-banner #secondary-navigation .menu li {
+    display: inline-block;
+  }
+  /* line 149, ../modules/_masthead.scss */
+  .top-banner #secondary-navigation .menu li:hover, .top-banner #secondary-navigation .menu li:focus {
+    background: #b5121b;
+  }
+  /* line 153, ../modules/_masthead.scss */
+  .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
+    padding: 0.4045em;
+  }
+}
+@media (min-width: 641px) and (min-width: 641px) {
+  /* line 118, ../modules/_masthead.scss */
   .top-banner {
     text-align: left;
     padding: 0 0.809em;
   }
-  /* line 151, ../modules/_masthead.scss */
+  /* line 161, ../modules/_masthead.scss */
   .top-banner > .wrapper, .top-banner > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8005,13 +8030,13 @@ div.dtr-modal div.dtr-modal-background {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 155, ../modules/_masthead.scss */
+  /* line 165, ../modules/_masthead.scss */
   .top-banner .widgets {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 158, ../modules/_masthead.scss */
+  /* line 168, ../modules/_masthead.scss */
   .top-banner #secondary-navigation {
     float: right;
   }
@@ -8284,7 +8309,7 @@ table.openings td.class {
   background: #424242;
 }
 
-/* line 138, ../modules/_content.scss */
+/* line 146, ../modules/_content.scss */
 img[class*='wp-image'] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }

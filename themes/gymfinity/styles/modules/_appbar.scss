@@ -5,12 +5,24 @@
 	right: 0;
 	z-index: 99999999;
 	background: #fff;
-	border-top: 1px solid $border-color;
+	border-top: 1px solid $greyLight;
 	@include clearfix;
 	@include breakpoint( $menu-breakpoint ) {
 		display: none;
 	}
 	p {
 		margin: 0;
+	}
+
+	.appbar-icons{
+		color:$greyMedium;
+		width: 32%;
+	    display: inline-block;
+	    text-align: center;
+	    font-size: 30px;
+
+	    &:active{
+	    	color:$primary-color;
+	    }
 	}
 }

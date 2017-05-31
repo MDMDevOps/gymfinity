@@ -1,6 +1,7 @@
 #masthead {
 	// background: rgba( #000, .1 ); // Temporary style to see element during development
 	// margin-bottom: 1.618rem;
+	padding-top:2em;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -115,48 +116,58 @@
 }
 
 .top-banner {
-	background: $primary-color;
-	color: #000;
-	text-align: center;
-	padding: $gutter $gutter 0;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	display: none;
 
-	a, a:link {
-		color: #fff;
-	}
-	p {
-		margin: 0;
-	}
-	.widget {
-		display: block;
-		min-width: 100%;
-	}
-	#secondary-navigation {
-		.menu {
-			padding: 0;
-			li {
-				display: inline-block;
-				&:hover, &:focus{
-					background:$redDark;
-				}
-			}
-			a, a:link {
-				padding: $gutter / 2;
-			}
+	@include breakpoint('sm'){
+		display: initial;
+		position:fixed;
+		top:0;
+		right:0;
+		left:0;
+		z-index:9999;
+		background: $primary-color;
+		color: #000;
+		text-align: center;
+		padding: $gutter $gutter 0;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+		a, a:link {
+			color: #fff;
 		}
-	}
-	@include breakpoint( 'sm' ) {
-		text-align: left;
-		padding: 0 $gutter;
-		> .wrapper {
-			@include flexbox( 'row' );
-			align-items: center;
+		p {
+			margin: 0;
 		}
-		.widgets {
-			flex: 1;
+		.widget {
+			display: block;
+			min-width: 100%;
 		}
 		#secondary-navigation {
-			float: right;
+			.menu {
+				padding: 0;
+				li {
+					display: inline-block;
+					&:hover, &:focus{
+						background:$redDark;
+					}
+				}
+				a, a:link {
+					padding: $gutter / 2;
+				}
+			}
+		}
+		@include breakpoint( 'sm' ) {
+			text-align: left;
+			padding: 0 $gutter;
+			> .wrapper {
+				@include flexbox( 'row' );
+				align-items: center;
+			}
+			.widgets {
+				flex: 1;
+			}
+			#secondary-navigation {
+				float: right;
+			}
 		}
 	}
 }
