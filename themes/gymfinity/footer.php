@@ -13,12 +13,12 @@
 	<section class="widgets">
 		<div class="wrapper">
 			<div class="row">
-				<div class="column md-6">
+				<div class="column md-6 widgets-left">
 					<?php if ( is_active_sidebar( 'footer-widgets-left' ) ) : ?>
 						<?php dynamic_sidebar( 'footer-widgets-left' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class="column md-6">
+				<div class="column md-6 widgets-right">
 					<?php if ( is_active_sidebar( 'footer-widgets-right' ) ) : ?>
 						<?php the_custom_logo(); ?>
 					<?php endif; ?>
