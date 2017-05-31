@@ -24,24 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-about:before {
-  content: "\e900";
+.icon-about:before, li.about a:before {
+  content: "\e900" !important;
 }
-.icon-balloons:before {
-  content: "\e901";
+.icon-balloons:before, li.parties a:before {
+  content: "\e901" !important;
 }
 .icon-heartbeat:before, li.schedule a:before {
   content: "\e902" !important;
 }
-.icon-jumpingrope:before {
-  content: "\e903";
+.icon-jumpingrope:before, li.events a:before {
+  content: "\e903" !important;
 }
-.icon-LIFTING2:before, li.classes a:before {
+.icon-LIFTING2:before, li.competition a:before {
   content: "\e904" !important;
 }
-.icon-phone:before {
-  content: "\e905";
+.icon-phone:before, li.contact a:before {
+  content: "\e942" !important;
 }
-.icon-yoga:before {
-  content: "\e906";
+.icon-yoga:before, li.classes a:before {
+  content: "\e906" !important; 
 }
