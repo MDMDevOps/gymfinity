@@ -7822,32 +7822,116 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 1, ../modules/_masthead.scss */
 #masthead {
-  padding: 1.618em;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
 }
-/* line 5, ../modules/_masthead.scss */
+/* line 8, ../modules/_masthead.scss */
 #masthead .site-branding {
   float: none;
 }
-/* line 7, ../modules/_masthead.scss */
+/* line 10, ../modules/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
   max-width: 500px;
   margin: 0 auto;
 }
+/* line 17, ../modules/_masthead.scss */
+#masthead .main-banner {
+  padding: 1.618em;
+}
+/* line 20, ../modules/_masthead.scss */
+#masthead .widget-area {
+  max-width: 1270.56px;
+  margin: 0 auto;
+  padding: 3rem 1.618rem;
+}
+/* line 25, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 31, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu li {
+  display: block;
+  width: 50%;
+  float: left;
+  margin-bottom: 3.2rem;
+}
+/* line 37, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu a, #masthead #menu-homepage-icon-menu a:link {
+  display: inline-block;
+  color: #fff;
+}
+/* line 40, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu a:hover, #masthead #menu-homepage-icon-menu a:focus, #masthead #menu-homepage-icon-menu a:link:hover, #masthead #menu-homepage-icon-menu a:link:focus {
+  color: #e1313a;
+}
+/* line 42, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu a:hover:before, #masthead #menu-homepage-icon-menu a:focus:before, #masthead #menu-homepage-icon-menu a:link:hover:before, #masthead #menu-homepage-icon-menu a:link:focus:before {
+  border-color: #e1313a;
+}
+/* line 46, ../modules/_masthead.scss */
+#masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
+  content: "\f03e";
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 50px;
+  position: relative;
+  display: block;
+  clear: both;
+  width: 1.75em;
+  height: 1.75em;
+  line-height: 1.75;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: border-color .2s ease;
+          transition: border-color .2s ease;
+}
+@media (min-width: 481px) {
+  /* line 68, ../modules/_masthead.scss */
+  #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
+    font-size: 15vw;
+  }
+}
+@media (min-width: 641px) {
+  /* line 74, ../modules/_masthead.scss */
+  #masthead #menu-homepage-icon-menu li {
+    width: 33.333%;
+  }
+}
+@media (min-width: 961px) {
+  /* line 80, ../modules/_masthead.scss */
+  #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
+    font-size: 100px;
+  }
+}
 
-/* line 16, ../modules/_masthead.scss */
+/* line 88, ../modules/_masthead.scss */
 .title-banner {
   background: rgba(0, 0, 0, 0.1);
   padding: 0.809em;
   margin-bottom: 1.618em;
 }
-/* line 20, ../modules/_masthead.scss */
+/* line 92, ../modules/_masthead.scss */
 .title-banner h1, .title-banner h2, .title-banner .h1, .title-banner .h2 {
   padding: 0;
   margin: 0;
 }
 
-/* line 26, ../modules/_masthead.scss */
+/* line 98, ../modules/_masthead.scss */
 .top-banner {
   background: #e1313a;
   color: #000;
@@ -7855,42 +7939,42 @@ div.dtr-modal div.dtr-modal-background {
   padding: 0.809em 0.809em 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-/* line 33, ../modules/_masthead.scss */
+/* line 105, ../modules/_masthead.scss */
 .top-banner a, .top-banner a:link {
   color: #fff;
 }
-/* line 36, ../modules/_masthead.scss */
+/* line 108, ../modules/_masthead.scss */
 .top-banner p {
   margin: 0;
 }
-/* line 39, ../modules/_masthead.scss */
+/* line 111, ../modules/_masthead.scss */
 .top-banner .widget {
   display: block;
   min-width: 100%;
 }
-/* line 44, ../modules/_masthead.scss */
+/* line 116, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu {
   padding: 0;
 }
-/* line 46, ../modules/_masthead.scss */
+/* line 118, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li {
   display: inline-block;
 }
-/* line 48, ../modules/_masthead.scss */
+/* line 120, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li:hover, .top-banner #secondary-navigation .menu li:focus {
   background: #b5121b;
 }
-/* line 52, ../modules/_masthead.scss */
+/* line 124, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
   padding: 0.4045em;
 }
 @media (min-width: 641px) {
-  /* line 26, ../modules/_masthead.scss */
+  /* line 98, ../modules/_masthead.scss */
   .top-banner {
     text-align: left;
     padding: 0 0.809em;
   }
-  /* line 60, ../modules/_masthead.scss */
+  /* line 132, ../modules/_masthead.scss */
   .top-banner > .wrapper, .top-banner > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7903,13 +7987,13 @@ div.dtr-modal div.dtr-modal-background {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 64, ../modules/_masthead.scss */
+  /* line 136, ../modules/_masthead.scss */
   .top-banner .widgets {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 67, ../modules/_masthead.scss */
+  /* line 139, ../modules/_masthead.scss */
   .top-banner #secondary-navigation {
     float: right;
   }
@@ -8008,59 +8092,23 @@ section.content-block .block-content {
 }
 
 /* line 8, ../modules/_content.scss */
-#menu-homepage-icon-menu {
-  text-align: center;
-}
-/* line 10, ../mpress/modules/_mixins.scss */
-#menu-homepage-icon-menu:after, #menu-homepage-icon-menu:before {
-  content: "";
-  display: table;
-}
-/* line 14, ../mpress/modules/_mixins.scss */
-#menu-homepage-icon-menu:after {
-  clear: both;
-}
-/* line 12, ../modules/_content.scss */
-#menu-homepage-icon-menu li {
-  display: inline-block;
-  width: 25%;
-  float: left;
-  height: 200px;
-}
-/* line 19, ../modules/_content.scss */
-#menu-homepage-icon-menu a:before {
-  content: "\f03e";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  /*--adjust as necessary--*/
-  color: #000;
-  font-size: 50px;
-  display: block;
-  position: relative;
-  left: 0;
-  right: 0;
-}
-
-/* line 36, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 39, ../modules/_content.scss */
+/* line 11, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 42, ../modules/_content.scss */
+/* line 14, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 45, ../modules/_content.scss */
+/* line 17, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 49, ../modules/_content.scss */
+/* line 21, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -8071,7 +8119,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 52, ../modules/_content.scss */
+/* line 24, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -8081,97 +8129,97 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 61, ../modules/_content.scss */
+/* line 33, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 70, ../modules/_content.scss */
+/* line 42, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 75, ../modules/_content.scss */
+  /* line 47, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 78, ../modules/_content.scss */
+  /* line 50, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 81, ../modules/_content.scss */
+  /* line 53, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 84, ../modules/_content.scss */
+  /* line 56, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 87, ../modules/_content.scss */
+  /* line 59, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 94, ../modules/_content.scss */
+/* line 66, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 98, ../modules/_content.scss */
+/* line 70, ../modules/_content.scss */
 #menu-block {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 103, ../modules/_content.scss */
+/* line 75, ../modules/_content.scss */
 #menu-block ul {
   margin-bottom: 0;
 }
 
-/* line 109, ../modules/_content.scss */
+/* line 81, ../modules/_content.scss */
 #events-and-testimonials {
   background: #efefef;
   padding: 100px 0;
 }
-/* line 113, ../modules/_content.scss */
+/* line 85, ../modules/_content.scss */
 #events-and-testimonials .card {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 50px;
 }
-/* line 118, ../modules/_content.scss */
+/* line 90, ../modules/_content.scss */
 #events-and-testimonials .card h2 {
   color: #424242;
 }
-/* line 122, ../modules/_content.scss */
+/* line 94, ../modules/_content.scss */
 #events-and-testimonials .card li {
   color: #e1313a;
   font-size: 25px;
 }
-/* line 128, ../modules/_content.scss */
+/* line 100, ../modules/_content.scss */
 #events-and-testimonials h2 {
   text-align: center;
 }
 
-/* line 134, ../modules/_content.scss */
+/* line 106, ../modules/_content.scss */
 #about-us {
   padding: 100px 0;
 }
 
-/* line 138, ../modules/_content.scss */
+/* line 110, ../modules/_content.scss */
 #open-gym {
   padding: 100px 0;
 }
 
-/* line 142, ../modules/_content.scss */
+/* line 114, ../modules/_content.scss */
 #download-app-cta {
   padding: 20px 0;
   background: #e1313a;
   color: white;
 }
-/* line 147, ../modules/_content.scss */
+/* line 119, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
 }
@@ -8236,8 +8284,38 @@ article.excerpt .excerpt-meta {
 }
 
 /* line 27, ../modules/_typography.scss */
-.icon-event-on-day-10:before {
+.icon-about:before {
   content: "\e900";
+}
+
+/* line 30, ../modules/_typography.scss */
+.icon-balloons:before {
+  content: "\e901";
+}
+
+/* line 33, ../modules/_typography.scss */
+.icon-heartbeat:before, li.schedule a:before {
+  content: "\e902" !important;
+}
+
+/* line 36, ../modules/_typography.scss */
+.icon-jumpingrope:before {
+  content: "\e903";
+}
+
+/* line 39, ../modules/_typography.scss */
+.icon-LIFTING2:before, li.classes a:before {
+  content: "\e904" !important;
+}
+
+/* line 42, ../modules/_typography.scss */
+.icon-phone:before {
+  content: "\e905";
+}
+
+/* line 45, ../modules/_typography.scss */
+.icon-yoga:before {
+  content: "\e906";
 }
 
 /* line 22, ../public.scss */

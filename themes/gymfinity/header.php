@@ -41,18 +41,21 @@
 
 		<?php get_template_part( 'partials/banner', 'top' ); ?>
 
-		<header id="masthead" role="banner">
+		<header id="masthead" role="banner" style="background-image: url( '<?php header_image(); ?>' );">
 			<div class="main-banner wrapper">
-				<div class="clearfix">
-					<div class="site-branding" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-						<?php the_custom_logo(); ?>
-						<hgroup>
-						    <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-						    <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
-						</hgroup>
-					</div>
+				<div class="site-branding" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+					<?php the_custom_logo(); ?>
+					<hgroup>
+					    <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
+					    <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+					</hgroup>
 				</div>
 			</div>
+			<?php if ( is_active_sidebar( 'masthead-widget-area' ) ) : ?>
+			    <div class="widget-area" role="complementary">
+			        <?php dynamic_sidebar( 'masthead-widget-area' ); ?>
+			    </div>
+			<?php endif; ?>
 		</header>
 
 		<?php get_template_part( 'partials/banner', 'appbar' ); ?>

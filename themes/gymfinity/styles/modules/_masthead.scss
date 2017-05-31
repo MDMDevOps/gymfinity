@@ -1,7 +1,10 @@
 #masthead {
-	padding: $gutter * 2;
 	// background: rgba( #000, .1 ); // Temporary style to see element during development
 	// margin-bottom: 1.618rem;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
 	.site-branding {
 		float: none;
 		.custom-logo-link {
@@ -10,6 +13,75 @@
 			margin: 0 auto;
 		}
 
+	}
+	.main-banner {
+		padding: $gutter * 2;
+	}
+	.widget-area {
+		max-width: $view-width;
+		margin: 0 auto;
+		padding: 3rem 1.618rem;
+	}
+	#menu-homepage-icon-menu {
+		@include flexbox( 'row' );
+		flex-wrap: wrap;
+		ul {
+
+		}
+		li {
+			display: block;
+			width: 50%;
+			float: left;
+			margin-bottom: 3.2rem;
+		}
+		a, a:link {
+			display: inline-block;
+			color: #fff;
+			&:hover, &:focus {
+				color: $primary-color;
+				&:before {
+					border-color: $primary-color;
+				}
+			}
+			&:before {
+				content: "\f03e";
+				font-family: 'icomoon';
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				font-size: 50px;
+				position: relative;
+				display: block;
+				clear: both;
+				width: 1.75em;
+				height: 1.75em;
+				line-height: 1.75;
+				margin: 0 auto;
+				text-align: center;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				transition: border-color .2s ease;
+			}
+		}
+		@include breakpoint( 'xs' ) {
+			a, a:link {
+				&:before {
+					font-size: 15vw;
+				}
+			}
+		}
+		@include breakpoint( 'sm' ) {
+			li {
+				width: 33.333%;
+			}
+		}
+		@include breakpoint( 'lg' ) {
+			a, a:link {
+				&:before {
+					font-size: 100px;
+				}
+			}
+		}
 	}
 }
 

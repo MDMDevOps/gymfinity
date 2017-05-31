@@ -129,6 +129,14 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
     			'before_title'  => '<h4 class="widget-title">',
     			'after_title'   => '</h4>'
     		),
+    		'masthead-widget-area' => array(
+    			'name'          => __( 'Masthead Content Widgets', 'mpress-child' ),
+    			'id'            => 'masthead-widget-area',
+    			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    			'after_widget'  => "</div>",
+    			'before_title'  => '<h4 class="widget-title">',
+    			'after_title'   => '</h4>'
+    		),
 
     		'off-canvas-widgets' => array(
     			'name'          => __( 'Off Canvas Widgets', 'mpress-child' ),
