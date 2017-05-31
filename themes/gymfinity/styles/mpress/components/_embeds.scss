@@ -13,6 +13,7 @@
 
 .aligncenter {
     margin: 0 auto $spacing;
+    display: block;
 }
 @each $name, $size in $breakpoints {
     @media ( min-width: #{$size} ) {

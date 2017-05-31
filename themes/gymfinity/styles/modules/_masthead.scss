@@ -6,6 +6,9 @@
 	background-attachment: fixed;
 	text-align: center;
 	margin-bottom: $gutter * 2;
+	.home & {
+		margin-bottom: 0;
+	}
 	.site-branding {
 		float: none;
 		.custom-logo-link {

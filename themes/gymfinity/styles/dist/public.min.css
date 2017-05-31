@@ -5374,321 +5374,322 @@ table td, .table td {
 /* line 14, ../mpress/components/_embeds.scss */
 .aligncenter, .excerpt-content-wrapper .excerpt-thumbnail img {
   margin: 0 auto 1.618em;
+  display: block;
 }
 
 @media (min-width: 481px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .xs-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .xs-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .xs-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .xs-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 481px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-xs-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-xs-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-xs-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-xs-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (min-width: 641px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .sm-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .sm-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .sm-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .sm-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 641px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-sm-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-sm-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-sm-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-sm-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (min-width: 769px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .md-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .md-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .md-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .md-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 769px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-md-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-md-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-md-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-md-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (min-width: 961px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .lg-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .lg-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .lg-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .lg-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 961px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-lg-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-lg-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-lg-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-lg-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (min-width: 1201px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .xl-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .xl-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .xl-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .xl-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 1201px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-xl-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-xl-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-xl-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-xl-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (min-width: 1441px) {
-  /* line 19, ../mpress/components/_embeds.scss */
+  /* line 20, ../mpress/components/_embeds.scss */
   .hd-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 23, ../mpress/components/_embeds.scss */
+  /* line 24, ../mpress/components/_embeds.scss */
   .hd-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 27, ../mpress/components/_embeds.scss */
+  /* line 28, ../mpress/components/_embeds.scss */
   .hd-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 31, ../mpress/components/_embeds.scss */
+  /* line 32, ../mpress/components/_embeds.scss */
   .hd-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
 @media (max-width: 1441px (-1)) {
-  /* line 37, ../mpress/components/_embeds.scss */
+  /* line 38, ../mpress/components/_embeds.scss */
   .below-hd-alignnone {
     margin: 0;
     float: none;
   }
 
-  /* line 41, ../mpress/components/_embeds.scss */
+  /* line 42, ../mpress/components/_embeds.scss */
   .below-hd-alignleft {
     float: left;
     margin: 0 1.618em 1.618em 0;
   }
 
-  /* line 45, ../mpress/components/_embeds.scss */
+  /* line 46, ../mpress/components/_embeds.scss */
   .below-hd-alignright {
     float: right;
     margin: 0 0 1.618em 1.618em;
   }
 
-  /* line 49, ../mpress/components/_embeds.scss */
+  /* line 50, ../mpress/components/_embeds.scss */
   .below-hd-aligncenter {
     margin: 0 auto 1.618em;
     float: none;
   }
 }
-/* line 56, ../mpress/components/_embeds.scss */
+/* line 57, ../mpress/components/_embeds.scss */
 .wp-caption {
   width: auto !important;
   max-width: 100%;
   text-align: center;
 }
-/* line 60, ../mpress/components/_embeds.scss */
+/* line 61, ../mpress/components/_embeds.scss */
 .wp-caption img {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 65, ../mpress/components/_embeds.scss */
+/* line 66, ../mpress/components/_embeds.scss */
 .wp-caption .wp-caption-text {
   font-size: 0.85em;
   line-height: 1.618;
@@ -5698,13 +5699,13 @@ table td, .table td {
   caption-side: bottom;
 }
 
-/* line 75, ../mpress/components/_embeds.scss */
+/* line 76, ../mpress/components/_embeds.scss */
 .gallery {
   width: 100%;
   margin: 0 auto 1.618em;
   text-align: center;
 }
-/* line 79, ../mpress/components/_embeds.scss */
+/* line 80, ../mpress/components/_embeds.scss */
 .gallery .gallery-item {
   padding: 3px;
   display: inline-block;
@@ -7829,26 +7830,30 @@ div.dtr-modal div.dtr-modal-background {
   margin-bottom: 1.618em;
 }
 /* line 9, ../modules/_masthead.scss */
+.home #masthead {
+  margin-bottom: 0;
+}
+/* line 12, ../modules/_masthead.scss */
 #masthead .site-branding {
   float: none;
 }
-/* line 11, ../modules/_masthead.scss */
+/* line 14, ../modules/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
   max-width: 500px;
   margin: 0 auto;
 }
-/* line 18, ../modules/_masthead.scss */
+/* line 21, ../modules/_masthead.scss */
 #masthead .main-banner {
   padding: 1.618em;
 }
-/* line 21, ../modules/_masthead.scss */
+/* line 24, ../modules/_masthead.scss */
 #masthead .widget-area {
   max-width: 1270.56px;
   margin: 0 auto;
   padding: 3rem 1.618rem;
 }
-/* line 26, ../modules/_masthead.scss */
+/* line 29, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7860,27 +7865,27 @@ div.dtr-modal div.dtr-modal-background {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/* line 32, ../modules/_masthead.scss */
+/* line 35, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu li {
   display: block;
   width: 50%;
   float: left;
   margin-bottom: 3.2rem;
 }
-/* line 38, ../modules/_masthead.scss */
+/* line 41, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a, #masthead #menu-homepage-icon-menu a:link {
   display: inline-block;
   color: #fff;
 }
-/* line 41, ../modules/_masthead.scss */
+/* line 44, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:hover, #masthead #menu-homepage-icon-menu a:focus, #masthead #menu-homepage-icon-menu a:link:hover, #masthead #menu-homepage-icon-menu a:link:focus {
   color: #e1313a;
 }
-/* line 43, ../modules/_masthead.scss */
+/* line 46, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:hover:before, #masthead #menu-homepage-icon-menu a:focus:before, #masthead #menu-homepage-icon-menu a:link:hover:before, #masthead #menu-homepage-icon-menu a:link:focus:before {
   border-color: #e1313a;
 }
-/* line 47, ../modules/_masthead.scss */
+/* line 50, ../modules/_masthead.scss */
 #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
   content: "\f03e";
   font-family: 'icomoon';
@@ -7902,49 +7907,49 @@ div.dtr-modal div.dtr-modal-background {
           transition: border-color .2s ease;
 }
 @media (min-width: 481px) {
-  /* line 69, ../modules/_masthead.scss */
+  /* line 72, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
     font-size: 15vw;
   }
 }
 @media (min-width: 641px) {
-  /* line 75, ../modules/_masthead.scss */
+  /* line 78, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu li {
     width: 33.333%;
   }
 }
 @media (min-width: 961px) {
-  /* line 81, ../modules/_masthead.scss */
+  /* line 84, ../modules/_masthead.scss */
   #masthead #menu-homepage-icon-menu a:before, #masthead #menu-homepage-icon-menu a:link:before {
     font-size: 100px;
   }
 }
 
-/* line 89, ../modules/_masthead.scss */
+/* line 92, ../modules/_masthead.scss */
 .title-banner {
   background: rgba(0, 0, 0, 0.5);
   text-align: left;
   color: #fff;
   text-transform: capitalize;
 }
-/* line 95, ../modules/_masthead.scss */
+/* line 98, ../modules/_masthead.scss */
 .title-banner > .wrapper, .title-banner > .container {
   padding: 0.809em;
 }
-/* line 98, ../modules/_masthead.scss */
+/* line 101, ../modules/_masthead.scss */
 .title-banner h1, .title-banner h2, .title-banner .h1, .title-banner .h2 {
   padding: 0;
   margin: 0;
   font-size: 1.7rem;
 }
 @media (min-width: 641px) {
-  /* line 89, ../modules/_masthead.scss */
+  /* line 92, ../modules/_masthead.scss */
   .title-banner {
     font-size: 1.25rem;
   }
 }
 
-/* line 114, ../modules/_masthead.scss */
+/* line 117, ../modules/_masthead.scss */
 .top-banner {
   background: #e1313a;
   color: #000;
@@ -7952,42 +7957,42 @@ div.dtr-modal div.dtr-modal-background {
   padding: 0.809em 0.809em 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-/* line 121, ../modules/_masthead.scss */
+/* line 124, ../modules/_masthead.scss */
 .top-banner a, .top-banner a:link {
   color: #fff;
 }
-/* line 124, ../modules/_masthead.scss */
+/* line 127, ../modules/_masthead.scss */
 .top-banner p {
   margin: 0;
 }
-/* line 127, ../modules/_masthead.scss */
+/* line 130, ../modules/_masthead.scss */
 .top-banner .widget {
   display: block;
   min-width: 100%;
 }
-/* line 132, ../modules/_masthead.scss */
+/* line 135, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu {
   padding: 0;
 }
-/* line 134, ../modules/_masthead.scss */
+/* line 137, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li {
   display: inline-block;
 }
-/* line 136, ../modules/_masthead.scss */
+/* line 139, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu li:hover, .top-banner #secondary-navigation .menu li:focus {
   background: #b5121b;
 }
-/* line 140, ../modules/_masthead.scss */
+/* line 143, ../modules/_masthead.scss */
 .top-banner #secondary-navigation .menu a, .top-banner #secondary-navigation .menu a:link {
   padding: 0.4045em;
 }
 @media (min-width: 641px) {
-  /* line 114, ../modules/_masthead.scss */
+  /* line 117, ../modules/_masthead.scss */
   .top-banner {
     text-align: left;
     padding: 0 0.809em;
   }
-  /* line 148, ../modules/_masthead.scss */
+  /* line 151, ../modules/_masthead.scss */
   .top-banner > .wrapper, .top-banner > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8000,13 +8005,13 @@ div.dtr-modal div.dtr-modal-background {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 152, ../modules/_masthead.scss */
+  /* line 155, ../modules/_masthead.scss */
   .top-banner .widgets {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 155, ../modules/_masthead.scss */
+  /* line 158, ../modules/_masthead.scss */
   .top-banner #secondary-navigation {
     float: right;
   }
@@ -8242,6 +8247,11 @@ table.openings td.class {
 /* line 119, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
+}
+
+/* line 138, ../modules/_content.scss */
+img[class*='wp-image'] {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* line 1, ../modules/_blog.scss */
