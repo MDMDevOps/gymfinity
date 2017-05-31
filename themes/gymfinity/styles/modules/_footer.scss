@@ -1,7 +1,13 @@
 #colophon{
-	background:$greyDark;
-	text-align:center;
-
+	// background:$greyDark;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 0;
+	section {
+		padding: 1.618rem;
+	}
 	ul li{
 		display: inline-block;
 	}
@@ -59,7 +65,7 @@
 	}
 
 	.site-info {
-    	margin-top: 40px;
+		background: $greyDark;
 	}
 }
 

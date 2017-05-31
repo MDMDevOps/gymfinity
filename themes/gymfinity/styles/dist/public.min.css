@@ -8026,63 +8026,70 @@ div.dtr-modal div.dtr-modal-background {
 
 /* line 1, ../modules/_footer.scss */
 #colophon {
-  background: #424242;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   text-align: center;
+  padding: 0;
 }
-/* line 5, ../modules/_footer.scss */
+/* line 8, ../modules/_footer.scss */
+#colophon section {
+  padding: 1.618rem;
+}
+/* line 11, ../modules/_footer.scss */
 #colophon ul li {
   display: inline-block;
 }
-/* line 9, ../modules/_footer.scss */
+/* line 15, ../modules/_footer.scss */
 #colophon span.icon {
   font-size: 2em;
   padding: 5px;
 }
-/* line 14, ../modules/_footer.scss */
+/* line 20, ../modules/_footer.scss */
 #colophon ul.social {
   margin-bottom: 0;
 }
-/* line 17, ../modules/_footer.scss */
+/* line 23, ../modules/_footer.scss */
 #colophon ul.social li.facebook a, #colophon ul.social li.facebook a:link {
   color: white;
 }
-/* line 21, ../modules/_footer.scss */
+/* line 27, ../modules/_footer.scss */
 #colophon ul.social li.facebook a:hover, #colophon ul.social li.facebook a:focus, #colophon ul.social li.facebook a:link:hover, #colophon ul.social li.facebook a:link:focus {
   color: #e1313a;
 }
-/* line 28, ../modules/_footer.scss */
+/* line 34, ../modules/_footer.scss */
 #colophon ul.social li.twitter a, #colophon ul.social li.twitter a:link {
   color: white;
 }
-/* line 32, ../modules/_footer.scss */
+/* line 38, ../modules/_footer.scss */
 #colophon ul.social li.twitter a:hover, #colophon ul.social li.twitter a:focus, #colophon ul.social li.twitter a:link:hover, #colophon ul.social li.twitter a:link:focus {
   color: #e1313a;
 }
-/* line 39, ../modules/_footer.scss */
+/* line 45, ../modules/_footer.scss */
 #colophon ul.social li.googleplus a, #colophon ul.social li.googleplus a:link {
   color: white;
 }
-/* line 43, ../modules/_footer.scss */
+/* line 49, ../modules/_footer.scss */
 #colophon ul.social li.googleplus a:hover, #colophon ul.social li.googleplus a:focus, #colophon ul.social li.googleplus a:link:hover, #colophon ul.social li.googleplus a:link:focus {
   color: #e1313a;
 }
-/* line 50, ../modules/_footer.scss */
+/* line 56, ../modules/_footer.scss */
 #colophon .custom-logo-link {
   max-width: 200px;
 }
-/* line 54, ../modules/_footer.scss */
+/* line 60, ../modules/_footer.scss */
 #colophon .margin-widget {
   margin-top: 10px;
 }
 @media (min-width: 961px) {
-  /* line 54, ../modules/_footer.scss */
+  /* line 60, ../modules/_footer.scss */
   #colophon .margin-widget {
     margin-bottom: 20px;
   }
 }
-/* line 61, ../modules/_footer.scss */
+/* line 67, ../modules/_footer.scss */
 #colophon .site-info {
-  margin-top: 40px;
+  background: #424242;
 }
 
 /* line 2, ../modules/_content.scss */

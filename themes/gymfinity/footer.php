@@ -9,25 +9,28 @@
 
 
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="row">
-		<div class="column md-4 margin-widget">
-			<?php if ( is_active_sidebar( 'footer-widgets-left' ) ) : ?>
-				<?php dynamic_sidebar( 'footer-widgets-left' ); ?>
-			<?php endif; ?>
+<footer id="colophon" class="site-footer" role="contentinfo"  style="background-image: url( '<?php header_image(); ?>' );">
+	<section class="widgets">
+		<div class="wrapper">
+			<div class="row">
+				<div class="column md-6">
+					<?php if ( is_active_sidebar( 'footer-widgets-left' ) ) : ?>
+						<?php dynamic_sidebar( 'footer-widgets-left' ); ?>
+					<?php endif; ?>
+				</div>
+				<div class="column md-6">
+					<?php if ( is_active_sidebar( 'footer-widgets-right' ) ) : ?>
+						<?php the_custom_logo(); ?>
+					<?php endif; ?>
+				</div>
+			</div>
 		</div>
-		<div class="column md-4">
-			<?php if ( is_active_sidebar( 'footer-widgets-right' ) ) : ?>
-				<?php the_custom_logo(); ?>
-			<?php endif; ?>
-		</div>
-	</div>
-
-	<div class="site-info">
+	</section>
+	<section class="site-info">
 		<div class="wrapper">
 			<?php do_action( 'copyright_message' ); ?>
 		</div>
-	</div>
+	</section>
 </footer>
 
 </div><!-- #page -->

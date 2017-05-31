@@ -51,7 +51,7 @@
 					</hgroup>
 				</div>
 			</div>
-			<?php if ( is_active_sidebar( 'masthead-widget-area' ) ) : ?>
+			<?php if ( is_active_sidebar( 'masthead-widget-area' ) && is_front_page() ) : ?>
 			    <div class="widget-area" role="complementary">
 			        <?php dynamic_sidebar( 'masthead-widget-area' ); ?>
 			    </div>
