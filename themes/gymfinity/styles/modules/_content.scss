@@ -5,6 +5,14 @@ section.content-block {
 	}
 }
 
+article{
+	padding:$gutter;
+
+	@include breakpoint('sm'){
+		padding:$gutter*3;
+	}
+}
+
 table.openings {
 	// table-layout: fixed;
 	font-size: .85rem;

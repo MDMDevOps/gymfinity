@@ -8136,23 +8136,34 @@ section.content-block .block-content {
 }
 
 /* line 8, ../modules/_content.scss */
+article {
+  padding: 0.809em;
+}
+@media (min-width: 641px) {
+  /* line 8, ../modules/_content.scss */
+  article {
+    padding: 2.427em;
+  }
+}
+
+/* line 16, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 11, ../modules/_content.scss */
+/* line 19, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 14, ../modules/_content.scss */
+/* line 22, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 17, ../modules/_content.scss */
+/* line 25, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 21, ../modules/_content.scss */
+/* line 29, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -8163,7 +8174,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 24, ../modules/_content.scss */
+/* line 32, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -8173,97 +8184,97 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 33, ../modules/_content.scss */
+/* line 41, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 42, ../modules/_content.scss */
+/* line 50, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 47, ../modules/_content.scss */
+  /* line 55, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 50, ../modules/_content.scss */
+  /* line 58, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 53, ../modules/_content.scss */
+  /* line 61, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 56, ../modules/_content.scss */
+  /* line 64, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 59, ../modules/_content.scss */
+  /* line 67, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 66, ../modules/_content.scss */
+/* line 74, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 70, ../modules/_content.scss */
+/* line 78, ../modules/_content.scss */
 #menu-block {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 75, ../modules/_content.scss */
+/* line 83, ../modules/_content.scss */
 #menu-block ul {
   margin-bottom: 0;
 }
 
-/* line 81, ../modules/_content.scss */
+/* line 89, ../modules/_content.scss */
 #events-and-testimonials {
   background: #efefef;
   padding: 100px 0;
 }
-/* line 85, ../modules/_content.scss */
+/* line 93, ../modules/_content.scss */
 #events-and-testimonials .card {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 50px;
 }
-/* line 90, ../modules/_content.scss */
+/* line 98, ../modules/_content.scss */
 #events-and-testimonials .card h2 {
   color: #424242;
 }
-/* line 94, ../modules/_content.scss */
+/* line 102, ../modules/_content.scss */
 #events-and-testimonials .card li {
   color: #e1313a;
   font-size: 25px;
 }
-/* line 100, ../modules/_content.scss */
+/* line 108, ../modules/_content.scss */
 #events-and-testimonials h2 {
   text-align: center;
 }
 
-/* line 106, ../modules/_content.scss */
+/* line 114, ../modules/_content.scss */
 #about-us {
   padding: 100px 0;
 }
 
-/* line 110, ../modules/_content.scss */
+/* line 118, ../modules/_content.scss */
 #open-gym {
   padding: 100px 0;
 }
 
-/* line 114, ../modules/_content.scss */
+/* line 122, ../modules/_content.scss */
 #download-app-cta {
   padding: 20px 0;
   background: #e1313a;
   color: white;
 }
-/* line 119, ../modules/_content.scss */
+/* line 127, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
 }
@@ -8395,7 +8406,6 @@ address.inline {
 
 /* line 46, ../public.scss */
 .box-container, #primary .widget {
-  padding: 0.809em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 1.618em;
   border-top: 3px solid #e1313a;
@@ -8403,6 +8413,11 @@ address.inline {
 }
 
 /* line 53, ../public.scss */
+#primary .widget {
+  padding: 0.809em;
+}
+
+/* line 57, ../public.scss */
 .nav-links {
   margin-bottom: 1.618em;
 }
@@ -8415,7 +8430,7 @@ address.inline {
 .nav-links:after {
   clear: both;
 }
-/* line 56, ../public.scss */
+/* line 60, ../public.scss */
 .nav-links a, .nav-links a:link {
   display: inline-block;
   background: #e1313a;
@@ -8425,21 +8440,21 @@ address.inline {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-/* line 63, ../public.scss */
+/* line 67, ../public.scss */
 .nav-links a:hover, .nav-links a:focus, .nav-links a:link:hover, .nav-links a:link:focus {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-/* line 67, ../public.scss */
+/* line 71, ../public.scss */
 .nav-links .nav-previous, .nav-links .nav-next {
   width: 50%;
 }
-/* line 70, ../public.scss */
+/* line 74, ../public.scss */
 .nav-links .nav-previous {
   float: left;
   text-align: left;
   padding-right: 0.809em;
 }
-/* line 75, ../public.scss */
+/* line 79, ../public.scss */
 .nav-links .nav-next {
   padding-left: 0.809em;
   float: right;

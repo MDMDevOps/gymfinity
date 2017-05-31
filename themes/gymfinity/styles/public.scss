@@ -44,12 +44,16 @@ address.inline {
 }
 
 .box-container, #primary .widget {
-	padding: $gutter;
 	box-shadow: $box-shadow;
 	margin-bottom: $gutter * 2;
 	border-top: 3px solid $primary-color;
 	background: #fff;
 }
+
+#primary .widget{
+	padding:$gutter;
+}
+
 .nav-links {
 	@include clearfix;
 	margin-bottom: $gutter * 2;
