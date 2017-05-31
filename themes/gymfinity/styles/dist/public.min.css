@@ -8314,13 +8314,13 @@ article.excerpt .excerpt-meta {
 }
 
 /* line 27, ../modules/_typography.scss */
-.icon-about:before {
-  content: "\e900";
+.icon-about:before, li.about a:before {
+  content: "\e900" !important;
 }
 
 /* line 30, ../modules/_typography.scss */
-.icon-balloons:before {
-  content: "\e901";
+.icon-balloons:before, li.parties a:before {
+  content: "\e901" !important;
 }
 
 /* line 33, ../modules/_typography.scss */
@@ -8329,23 +8329,23 @@ article.excerpt .excerpt-meta {
 }
 
 /* line 36, ../modules/_typography.scss */
-.icon-jumpingrope:before {
-  content: "\e903";
+.icon-jumpingrope:before, li.events a:before {
+  content: "\e903" !important;
 }
 
 /* line 39, ../modules/_typography.scss */
-.icon-LIFTING2:before, li.classes a:before {
+.icon-LIFTING2:before, li.competition a:before {
   content: "\e904" !important;
 }
 
 /* line 42, ../modules/_typography.scss */
-.icon-phone:before {
-  content: "\e905";
+.icon-phone:before, li.contact a:before {
+  content: "\e942" !important;
 }
 
 /* line 45, ../modules/_typography.scss */
-.icon-yoga:before {
-  content: "\e906";
+.icon-yoga:before, li.classes a:before {
+  content: "\e906" !important;
 }
 
 /* line 21, ../public.scss */
