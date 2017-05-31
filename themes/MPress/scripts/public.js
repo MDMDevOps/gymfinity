@@ -11,4 +11,5 @@ jQuery( function( $ ) {
 		// Mpress.togglebuttons.collapse();
 		// Mpress.navigation.closeAll();
 	});
+
 }); // end document ready
