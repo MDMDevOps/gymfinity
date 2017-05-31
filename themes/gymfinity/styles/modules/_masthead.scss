@@ -5,6 +5,7 @@
 	background-position: center center;
 	background-attachment: fixed;
 	text-align: center;
+	margin-bottom: $gutter * 2;
 	.site-branding {
 		float: none;
 		.custom-logo-link {
@@ -86,12 +87,27 @@
 }
 
 .title-banner {
-	background: rgba( #000, .1 );
-	padding: $gutter;
-	margin-bottom: $gutter * 2;
+	background: rgba( #000, .5 );
+	// padding: $gutter;
+	text-align: left;
+	color: #fff;
+	text-transform: capitalize;
+	> .wrapper {
+		padding: $gutter;
+	}
 	h1, h2, .h1, .h2 {
 		padding: 0;
 		margin: 0;
+		font-size: 1.7rem;
+	}
+	// a, a:link {
+	// 	color: #fff;
+	// 	&:hover, &:focus {
+	// 		color: rgba( #fff, .65 );
+	// 	}
+	// }
+	@include breakpoint( 'sm' ) {
+		font-size: 1.25rem;
 	}
 }
 

@@ -8,9 +8,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
 	<header class="entry-header">
-		<div class="entry-meta">
-			<?php do_action( 'mpress_entry_meta' ); ?>
-		</div>
+		<?php if( is_singular() && !is_page() ) : ?>
+			<div class="entry-meta">
+				<?php do_action( 'mpress_entry_meta' ); ?>
+			</div>
+		<?php endif; ?>
+		<?php do_action( 'mpress_entry_title' ); ?>
 	</header>
 	<div class="entry-content" itemprop="text articleBody">
 		<?php the_content(); ?>

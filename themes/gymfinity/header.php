@@ -39,6 +39,8 @@
 
 		<?php if( get_theme_mod( 'mpress_menu_type' ) === 'offcanvas' ) : get_template_part( 'partials/offcanvas' ); endif; ?>
 
+		<?php get_template_part( 'partials/banner', 'appbar' ); ?>
+
 		<?php get_template_part( 'partials/banner', 'top' ); ?>
 
 		<header id="masthead" role="banner" style="background-image: url( '<?php header_image(); ?>' );">
@@ -51,11 +53,8 @@
 					</hgroup>
 				</div>
 			</div>
-			<?php if ( is_active_sidebar( 'masthead-widget-area' ) && is_front_page() ) : ?>
-			    <div class="widget-area" role="complementary">
-			        <?php dynamic_sidebar( 'masthead-widget-area' ); ?>
-			    </div>
-			<?php endif; ?>
+
+			<?php get_template_part( 'partials/masthead', is_front_page() ? 'frontpage' : '' ); ?>
+
 		</header>
 
-		<?php get_template_part( 'partials/banner', 'appbar' ); ?>
