@@ -8273,12 +8273,22 @@ article.excerpt .excerpt-meta {
   display: block;
 }
 @media (min-width: 481px) {
-  /* line 21, ../modules/_blog.scss */
-  .excerpt-content-wrapper .excerpt-thumbnail img {
+  /* line 20, ../modules/_blog.scss */
+  .excerpt-content-wrapper .excerpt-thumbnail {
     float: left;
     margin: 0 0.809em 0.809em 0;
     position: relative;
     top: 6px;
+    display: block;
+  }
+  /* line 10, ../mpress/modules/_mixins.scss */
+  .excerpt-content-wrapper .excerpt-thumbnail:after, .excerpt-content-wrapper .excerpt-thumbnail:before {
+    content: "";
+    display: table;
+  }
+  /* line 14, ../mpress/modules/_mixins.scss */
+  .excerpt-content-wrapper .excerpt-thumbnail:after {
+    clear: both;
   }
 }
 

@@ -18,12 +18,12 @@ article.excerpt {
 	}
 	@include breakpoint( 'xs' ) {
 		.excerpt-thumbnail {
-			img {
-				float: left;
-				margin: 0 $gutter $gutter 0;
-				position: relative;
-				top: 6px;
-			}
+			@include clearfix();
+			float: left;
+			margin: 0 $gutter $gutter 0;
+			position: relative;
+			top: 6px;
+			display: block;
 		}
 	}
 }
