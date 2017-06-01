@@ -4733,7 +4733,7 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   padding: 0.4045em 0.809em;
-  border: 1px solid white;
+  border: 1px solid #e4e4e4;
 }
 
 /* line 35, ../mpress/components/_forms.scss */
@@ -4838,7 +4838,7 @@ ul.pagination, .entry-content ul.pagination {
 /* line 49, ../mpress/components/_buttons.scss */
 ul.pagination li, .entry-content ul.pagination li {
   display: inline-block;
-  border-right: 1px solid white;
+  border-right: 1px solid #e4e4e4;
 }
 /* line 52, ../mpress/components/_buttons.scss */
 ul.pagination li.current, .entry-content ul.pagination li.current {
@@ -4858,7 +4858,7 @@ ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.paginatio
 }
 /* line 65, ../mpress/components/_buttons.scss */
 ul.pagination li:first-child, .entry-content ul.pagination li:first-child {
-  border-left: 1px solid white;
+  border-left: 1px solid #e4e4e4;
   border-radius: 2px 0 0 2px;
 }
 /* line 69, ../mpress/components/_buttons.scss */
@@ -4870,12 +4870,12 @@ ul.pagination a, ul.pagination a:link, .entry-content ul.pagination a, .entry-co
   line-height: 1.618;
   display: block;
   padding: 0 1.618em;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }
 /* line 79, ../mpress/components/_buttons.scss */
 ul.pagination a:hover, ul.pagination a:focus, ul.pagination a:link:hover, ul.pagination a:link:focus, .entry-content ul.pagination a:hover, .entry-content ul.pagination a:focus, .entry-content ul.pagination a:link:hover, .entry-content ul.pagination a:link:focus {
-  background: #f2f2f2;
+  background: #d7d7d7;
 }
 
 /* -----------------------------------------------------------------------------
@@ -5165,7 +5165,7 @@ dl dd {
  * ---------------------------------------------------------------------------*/
 /* line 10, ../mpress/components/_typography.scss */
 hr {
-  border: solid white;
+  border: solid #e4e4e4;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
@@ -5283,7 +5283,7 @@ code, kbd, pre, samp {
   background: #e9e9e9;
   padding-right: 0.809em;
   padding-left: 0.809em;
-  outline: 1px solid white;
+  outline: 1px solid #e4e4e4;
   border-radius: 2px;
 }
 /* line 96, ../mpress/components/_typography.scss */
@@ -6057,8 +6057,8 @@ nav.navigation-menu a, nav.navigation-menu a:link {
   font-size: .9rem;
   display: block;
   margin: 0 auto 1.618em;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
   padding: 0;
 }
 /* line 18, ../mpress/components/_widgets.scss */
@@ -6078,7 +6078,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
 .banner-bottom > .wrapper > div, .banner-bottom > .container > div {
   display: table-cell;
   padding: .809em;
-  border-right: 1px solid white;
+  border-right: 1px solid #e4e4e4;
 }
 /* line 26, ../mpress/components/_widgets.scss */
 .banner-bottom > .wrapper > div:first-child, .banner-bottom > .container > div:first-child {
@@ -6150,8 +6150,8 @@ nav.navigation-menu a, nav.navigation-menu a:link {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }
 /* line 80, ../mpress/components/_widgets.scss */
 .banner-bottom .search_wrapper form {
@@ -6207,7 +6207,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
           order: 2;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #e4e4e4;
   text-align: center;
 }
 /* line 123, ../mpress/components/_widgets.scss */
@@ -6243,7 +6243,7 @@ nav.navigation-menu a, nav.navigation-menu a:link {
   }
   /* line 147, ../mpress/components/_widgets.scss */
   .banner-bottom .social {
-    border-top: 1px solid white;
+    border-top: 1px solid #e4e4e4;
     width: auto;
   }
 }
@@ -6542,7 +6542,7 @@ body.offcanvas #page-wrapper {
 
 /* line 2, ../mpress/components/_comments.scss */
 .comment-list li.comment {
-  border: 1px solid white;
+  border: 1px solid #e4e4e4;
   padding: 1.618rem;
   margin-bottom: 1.618rem;
   position: relative;
@@ -8065,7 +8065,7 @@ div.dtr-modal div.dtr-modal-background {
 }
 /* line 12, ../modules/_sidebar.scss */
 #sidebar-navigation ul a:hover, #sidebar-navigation ul a:focus, #sidebar-navigation ul a:link:hover, #sidebar-navigation ul a:link:focus {
-  background-color: white;
+  background-color: #e4e4e4;
 }
 
 /* line 1, ../modules/_footer.scss */
@@ -8167,34 +8167,34 @@ section.content-block .block-content {
 }
 
 /* line 8, ../modules/_content.scss */
-article {
+article, .box-container-inner {
   padding: 0.809em;
 }
 @media (min-width: 641px) {
   /* line 8, ../modules/_content.scss */
-  article {
+  article, .box-container-inner {
     padding: 2.427em;
   }
 }
 
-/* line 16, ../modules/_content.scss */
+/* line 15, ../modules/_content.scss */
 table.openings {
   font-size: .85rem;
 }
-/* line 19, ../modules/_content.scss */
+/* line 18, ../modules/_content.scss */
 table.openings td {
   vertical-align: top;
 }
-/* line 22, ../modules/_content.scss */
+/* line 21, ../modules/_content.scss */
 table.openings thead {
   display: none;
 }
-/* line 25, ../modules/_content.scss */
+/* line 24, ../modules/_content.scss */
 table.openings tr {
   display: block;
   margin-bottom: 1.618rem;
 }
-/* line 29, ../modules/_content.scss */
+/* line 28, ../modules/_content.scss */
 table.openings td {
   margin-top: -1px;
   display: -webkit-box;
@@ -8205,7 +8205,7 @@ table.openings td {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 32, ../modules/_content.scss */
+/* line 31, ../modules/_content.scss */
 table.openings td:before {
   display: block;
   content: attr(class);
@@ -8215,102 +8215,102 @@ table.openings td:before {
   max-width: 65px;
   font-weight: 600;
 }
-/* line 41, ../modules/_content.scss */
+/* line 40, ../modules/_content.scss */
 table.openings td:first-child {
   margin-top: 0;
 }
-/* line 50, ../modules/_content.scss */
+/* line 49, ../modules/_content.scss */
 table.openings td.class {
   font-weight: 600;
 }
 @media (min-width: 769px) {
-  /* line 55, ../modules/_content.scss */
+  /* line 54, ../modules/_content.scss */
   table.openings thead {
     display: table-header-group;
   }
-  /* line 58, ../modules/_content.scss */
+  /* line 57, ../modules/_content.scss */
   table.openings tr {
     display: table-row;
   }
-  /* line 61, ../modules/_content.scss */
+  /* line 60, ../modules/_content.scss */
   table.openings td {
     display: table-cell;
     margin: 0;
   }
-  /* line 64, ../modules/_content.scss */
+  /* line 63, ../modules/_content.scss */
   table.openings td.ages {
     white-space: nowrap;
   }
-  /* line 67, ../modules/_content.scss */
+  /* line 66, ../modules/_content.scss */
   table.openings td:before {
     content: '';
     display: none;
   }
 }
 
-/* line 74, ../modules/_content.scss */
+/* line 73, ../modules/_content.scss */
 .jackrabbit_table_wrapper {
   overflow-x: auto;
 }
 
-/* line 78, ../modules/_content.scss */
+/* line 77, ../modules/_content.scss */
 #menu-block {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 83, ../modules/_content.scss */
+/* line 82, ../modules/_content.scss */
 #menu-block ul {
   margin-bottom: 0;
 }
 
-/* line 89, ../modules/_content.scss */
+/* line 88, ../modules/_content.scss */
 #events-and-testimonials {
   background: #efefef;
   padding: 100px 0;
 }
-/* line 93, ../modules/_content.scss */
+/* line 92, ../modules/_content.scss */
 #events-and-testimonials .card {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 50px;
 }
-/* line 98, ../modules/_content.scss */
+/* line 97, ../modules/_content.scss */
 #events-and-testimonials .card h2 {
   color: #424242;
 }
-/* line 102, ../modules/_content.scss */
+/* line 101, ../modules/_content.scss */
 #events-and-testimonials .card li {
   color: #e1313a;
   font-size: 25px;
 }
-/* line 108, ../modules/_content.scss */
+/* line 107, ../modules/_content.scss */
 #events-and-testimonials h2 {
   text-align: center;
 }
 
-/* line 114, ../modules/_content.scss */
+/* line 113, ../modules/_content.scss */
 #about-us {
   padding: 100px 0;
 }
 
-/* line 118, ../modules/_content.scss */
+/* line 117, ../modules/_content.scss */
 #open-gym {
   padding: 100px 0;
 }
 
-/* line 122, ../modules/_content.scss */
+/* line 121, ../modules/_content.scss */
 #download-app-cta {
   padding: 20px 0;
   background: #e1313a;
   color: white;
 }
-/* line 127, ../modules/_content.scss */
+/* line 126, ../modules/_content.scss */
 #download-app-cta .button {
   background: #424242;
 }
 
-/* line 146, ../modules/_content.scss */
+/* line 145, ../modules/_content.scss */
 img[class*='wp-image'] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -8326,7 +8326,7 @@ article.excerpt header, article.excerpt footer, article.excerpt > div {
 }
 /* line 8, ../modules/_blog.scss */
 article.excerpt .excerpt-meta {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 /* line 14, ../modules/_blog.scss */

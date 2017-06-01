@@ -5,10 +5,9 @@ section.content-block {
 	}
 }
 
-article{
+article, .box-container-inner {
 	padding:$gutter;
-
-	@include breakpoint('sm'){
+	@include breakpoint( 'sm' ) {
 		padding:$gutter*3;
 	}
 }

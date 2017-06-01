@@ -37,7 +37,9 @@
 
 					<?php if ( comments_open() || get_comments_number() ) : ?>
 						<div class="box-container">
-							<?php comments_template(); ?>
+							<div class="box-container-inner">
+								<?php comments_template(); ?>
+							</div>
 						</div>
 					<?php endif;
 				else :
