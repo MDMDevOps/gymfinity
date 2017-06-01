@@ -1,17 +1,48 @@
 #sidebar-navigation {
-	display: none;
-	@include breakpoint( $menu-breakpoint ) {
-		display: block;
-	}
-	ul {
-		margin: 0;
-		padding: 0;
-		a, a:link {
-			padding: $gutter;
-			margin: 0 ( 0 - $gutter );
-			&:hover, &:focus {
-				background-color: $border-color;
-			}
-		}
-	}
+    display: none;
+    @include breakpoint( $menu-breakpoint) {
+        display: block;
+    }
+    ul a:hover,
+    ul a:focus,
+    ul a:link:hover,
+    ul a:link:focus {
+        background-color: white;
+        box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.59);
+        background-color: rgba(115, 114, 114, 0.07);
+        border-top: 1px solid rgba(235, 233, 233, 0.69);
+        padding: 0.778em 0.809em;
+        border-left: 3px solid #c31c25;
+    }
+    a,
+    nav.navigation-menu a:link {
+        padding: .2rem .809rem;
+    }
+    li ul.sub-menu.focused {
+        display: block;
+        font-size: .9em;
+        padding-left: 1rem ;
+    }
+        li ul.sub-menu {
+        font-size: .9em;
+        padding-left: 1rem ;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        a,
+        a:link {
+            padding: $gutter;
+            margin: 0 ( 0 - $gutter);
+            &:hover,
+            &:focus {
+                background-color: $border-color;
+            }
+        } 
+    }
+}
+.widget.box-container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    border-top: 0px solid rgba(255, 255, 255, 0) !important;
 }
