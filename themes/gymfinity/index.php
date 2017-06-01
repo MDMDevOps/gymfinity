@@ -29,7 +29,11 @@
 						<?php get_template_part( 'views/content', get_post_type() ); ?>
 					</div>
 
-					<?php the_post_navigation( array( 'prev_text' => '<i class="fa fa-long-arrow-left" aria-hidden="true"></i> Last Post', 'next_text' => 'Next Post <i class="fa fa-long-arrow-right" aria-hidden="true"></i>' ) ); ?>
+					<?php
+					if( get_post_type() === 'post' ) {
+						the_post_navigation( array( 'prev_text' => '<i class="fa fa-long-arrow-left" aria-hidden="true"></i> Last Post', 'next_text' => 'Next Post <i class="fa fa-long-arrow-right" aria-hidden="true"></i>' ) );
+					}
+					?>
 
 					<?php if ( comments_open() || get_comments_number() ) : ?>
 						<div class="box-container">
