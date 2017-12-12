@@ -1,0 +1,241 @@
+/*------------------------------------------------------------------------------
+ * First file MUST be the variables file
+ * -------------------------------------------------------------------------- */
+@import 'modules/variables';
+/*------------------------------------------------------------------------------
+ * !Important: Copy the styles directory from MPress parent theme, and place here
+ *  - styles/mpress
+ * Import those styles directly into this file, so we only have to enqueue 1 file
+ * -------------------------------------------------------------------------- */
+@import 'mpress/public';
+@import 'vendors/datatables';
+@import 'modules/appbar';
+@import 'modules/buttons';
+@import 'modules/masthead';
+@import 'modules/sidebar';
+@import 'modules/footer';
+@import 'modules/content';
+@import 'modules/blog';
+@import 'modules/typography';
+@import 'modules/slick';
+
+body {
+	// font-weight: 300;
+	background: $secondary-color;
+}
+
+.admin-bar {
+	.top-banner {
+		top: 32px !important;
+		@media screen and (max-width: 782px) {
+		    top: 46px !important;
+		}
+	}
+}
+
+address.inline {
+	display: inline;
+}
+
+.entry-content {
+	font-size: 1rem;
+	@include breakpoint( 'lg' ) {
+		font-size: 1.1rem;
+	}
+}
+#primary {
+	position: relative;
+	&.nosidebar {
+		max-width: 1040px;
+		main, #sidebar {
+			@include clearfix();
+			padding: 0 $gutter;
+		}
+		#sidebar {
+			margin: 0 -.809rem 1.618rem;
+			@include flexbox( 'row' );
+			> .widget, .widget-area {
+				float: left;
+				margin: 0 .809rem;
+				flex: 1;
+			}
+			.widget-area {
+				.widget {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.fixed-scroll-column {
+	&.fixed {
+		position: fixed;
+	}
+}
+
+.box-container, #primary .widget {
+	box-shadow: $box-shadow;
+	margin-bottom: $gutter * 2;
+	border-top: 3px solid $primary-color;
+	background: #fff;
+}
+
+#primary .widget{
+	padding:$gutter;
+}
+.alignright.bookproduct {
+	width: 100%;
+	margin: 0 auto 1.618rem;
+	@include breakpoint( 'sm' ) {
+		float: right;
+		max-width: 400px;
+		margin: 0 0 1.618em 1.618em;
+	}
+}
+
+.nav-links {
+	@include clearfix;
+	margin-bottom: $gutter * 2;
+	a, a:link {
+		background:$primary-color;
+		border:none;
+		color:white;
+		padding: 5px 1.618em;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		border-radius:2px;
+		margin-bottom:15px;
+
+		&:hover, &:focus{
+			background:$redDark;
+			color:white;
+		}
+
+		&:active{
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+	}
+
+	.current{
+		background:$redDark;
+		border:none;
+		color:white;
+		padding: 5px 1.618em;
+		// box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		border-radius:2px;
+		margin-bottom:15px;
+	}
+
+	.nav-previous, .nav-next {
+		width: 50%;
+	}
+	.nav-previous {
+		float: left;
+		text-align: left;
+		padding-right: $gutter;
+	}
+	.nav-next {
+		padding-left: $gutter;
+		float: right;
+		text-align: right;
+	}
+}
+
+blockquote{
+	color:#5c5c5c;
+}
+
+.off-canvas-menu {
+	padding: 0;
+	@include flexbox('column');
+	.off-canvas-wrapper {
+		flex: 1;
+		background-position: center center;
+		background-size: cover;
+	}
+	.menu {
+		a, a:link {
+			background: rgba( #000, .45 );
+			border-bottom: 1px solid rgba( #000, 1 );
+			border-top: 1px solid rgba( #fff, .15 );
+		}
+		ul {
+			li {
+				a, a:link {
+					background: rgba( #000, .65 );
+					border-bottom: 1px solid black;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+.excerpt-footer {
+	.excerpt-meta {
+		padding-top: 0;
+		li.post_tags {
+			.icon {
+				&:after {
+					content: ' Tags: ';
+					font-family: $sans;
+					color: $font-color;
+				}
+			}
+		}
+		li.categories {
+			.icon {
+				&:after {
+					content: ' Posted In: ';
+					font-family: $sans;
+					color: $font-color;
+				}
+			}
+		}
+	}
+}
+.woocommerce {
+	.checkout-addon-products {
+		margin: 0 -2%;
+		ul.products {
+			li.product {
+				display: block;
+				font-size: .85rem;
+				line-height: 1.2;
+				position: relative;
+				padding: .809rem .809rem 60px .809rem !important;
+				// padding-bottom: 60px !important;
+				// width: 100% !important;
+				width: 46%;
+				// max-width: 220px;
+				// min-width: 160px;
+				border: 1px solid rgba(0, 0, 0, 0.11);
+				border-top: 3px solid #e1313a;
+				margin: 0 2% 4% !important;
+				text-align: center;
+				overflow: hidden;
+				// padding: 1.618rem;
+				&.last, &.first {
+					margin: 0 2% 4% !important;
+				}
+				@include breakpoint('xs') {
+					width: 29.3%;
+				}
+				@include breakpoint('sm') {
+					width: 46%;
+				}
+				@include breakpoint('md') {
+					width: 21%;
+				}
+				@include breakpoint('md') {
+					width: 16%;
+				}
+			}
+			a.woocommerce-LoopProduct-link {
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+	}
+}
+
+
+

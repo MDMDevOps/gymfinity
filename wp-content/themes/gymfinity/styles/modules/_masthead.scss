@@ -1,0 +1,193 @@
+#masthead {
+	// background: rgba( #000, .1 ); // Temporary style to see element during development
+	// margin-bottom: 1.618rem;
+	padding-top:2em;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+	margin-bottom: $gutter * 2;
+	.home & {
+		margin-bottom: 0;
+	}
+	.site-branding {
+		float: none;
+		.custom-logo-link {
+			display: block;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+	}
+	.main-banner {
+		padding: $gutter * 2;
+	}
+	.widget-area {
+		max-width: $view-width;
+		margin: 0 auto;
+		padding: 3rem 1.618rem;
+	}
+	#menu-homepage-icon-menu {
+		@include flexbox( 'row' );
+		flex-wrap: wrap;
+		ul {
+
+		}
+		li {
+			display: block;
+			width: 50%;
+			float: left;
+			margin-bottom: 3.2rem;
+		}
+		a, a:link {
+			display: inline-block;
+			color: #fff;
+			&:hover, &:focus {
+				color: $primary-color;
+				&:before {
+					border-color: $primary-color;
+				}
+			}
+			&:before {
+				content: "\f03e";
+				font-family: 'icomoon';
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				font-size: 50px;
+				position: relative;
+				display: block;
+				clear: both;
+				width: 1.75em;
+				height: 1.75em;
+				line-height: 1.75;
+				margin: 0 auto;
+				text-align: center;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				transition: border-color .2s ease;
+			}
+		}
+		@include breakpoint( 'xs' ) {
+			a, a:link {
+				&:before {
+					font-size: 15vw;
+				}
+			}
+		}
+		@include breakpoint( 'sm' ) {
+			li {
+				width: 33.333%;
+			}
+		}
+		@include breakpoint( 'lg' ) {
+			a, a:link {
+				&:before {
+					font-size: 100px;
+				}
+			}
+		}
+	}
+}
+
+.title-banner {
+	background: rgba( #000, .5 );
+	// padding: $gutter;
+	text-align: left;
+	color: #fff;
+	text-transform: capitalize;
+	> .wrapper {
+		padding: $gutter;
+	}
+	h1, h2, .h1, .h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 1.7rem;
+	}
+	// a, a:link {
+	// 	color: #fff;
+	// 	&:hover, &:focus {
+	// 		color: rgba( #fff, .65 );
+	// 	}
+	// }
+	@include breakpoint( 'sm' ) {
+		font-size: 1.25rem;
+	}
+}
+
+
+.top-banner {
+	display: none;
+
+	div.widgets, nav {
+		display: block;
+		text-align: center;
+		float: none;
+	}
+
+	@media (min-width: 768px){
+		div.widgets, nav {
+			text-align: left;
+		}
+	}
+
+	@include breakpoint('sm'){
+		display: initial;
+		position:fixed;
+		top:0;
+		right:0;
+		left:0;
+		z-index:9999;
+		background: $primary-color;
+		color: #000;
+		text-align: center;
+		padding: $gutter $gutter 0;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
+		a, a:link {
+			color: #fff;
+		}
+		p {
+			margin: 0;
+		}
+
+		.widget {
+			display: block;
+			min-width: 100%;
+		}
+		#secondary-navigation {
+			.menu {
+				padding: 0;
+				font-size: 0;
+				li {
+					display: inline-block;
+					font-size: 1rem;
+					&:hover, &:focus{
+						background:$redDark;
+					}
+					&.current_page_item, &.current_page_parent {
+						background:$redDark;
+					}
+				}
+				a, a:link {
+					padding: 0.5em;
+				}
+			}
+		}
+		@include breakpoint( 'md' ) {
+			text-align: left;
+			padding: 0 $gutter;
+			> .wrapper {
+				@include flexbox( 'row' );
+				align-items: center;
+			}
+			.widgets {
+				flex: 1;
+			}
+			#secondary-navigation {
+				float: right;
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+#colophon{
+	// background:$greyDark;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 0;
+	section {
+		padding: 1.618rem;
+	}
+	ul li{
+		display: inline-block;
+	}
+
+	span.icon {
+	    font-size: 2em;
+	    padding: 5px;
+	}
+
+	.widgets-left{
+		margin-top: 20px;
+		text-align: center;
+
+		@include breakpoint( 'sm' ){
+			text-align: left;
+		}
+
+		p{
+			color:white;
+		}
+
+		a{
+			color:white;
+			&:hover, &:focus{
+				color:$primary-color;
+			}
+		}
+	}
+
+	ul.social{
+		margin-bottom: 0;
+		li.facebook{
+			a, a:link{
+
+				color:white;
+
+				&:hover, &:focus{
+					color:$primary-color;
+				}
+			}
+		}
+
+		li.twitter{
+			a, a:link{
+
+				color:white;
+
+				&:hover, &:focus{
+					color:$primary-color;
+				}
+			}
+		}
+
+		li.googleplus{
+			a, a:link{
+
+				color:white;
+
+				&:hover, &:focus{
+					color:$primary-color;
+				}
+			}
+		}
+	}
+
+	.custom-logo-link{
+		max-width: 200px;
+	}
+
+	.margin-widget{
+		margin-top: 10px;
+		@include breakpoint( 'lg' ) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.site-info {
+		background: $greyDark;
+		color:white;
+	}
+}
+
+

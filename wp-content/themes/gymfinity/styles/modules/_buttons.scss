@@ -1,0 +1,49 @@
+.dropdown-toggle {
+	outline: none;
+	&.focused {
+		transform: rotate( 180deg );
+	}
+}
+
+.woocommerce a.button, .button, input[type='submit']{
+	background:$primary-color;
+	border:none;
+	color:white;
+	padding: 5px 1.618em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius:2px;
+	margin-bottom:15px;
+
+	&:hover, &:focus{
+		background:$redDark;
+		color:white;
+	}
+
+	&:active{
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
+}
+
+.woocommerce a.button{
+	padding: 10px 20px;
+}
+
+#download-app-cta{
+	.button {
+		margin: 0 10px;
+		background:$greyDark;
+
+		&:hover, &:focus{
+			background: darken($greyDark, 10%);
+		}
+
+	}
+}
+
+.gform_button{
+	color:white!important;
+}
+
+.ginput_container input, .ginput_container textarea {
+	border: 1px solid $greyMedium!important;
+}

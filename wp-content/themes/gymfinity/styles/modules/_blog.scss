@@ -1,0 +1,41 @@
+article.excerpt {
+	// outline: 1px solid $border-color;
+	margin-bottom: $gutter * 2;
+	box-shadow: $box-shadow;
+	header, footer, > div {
+		padding: $gutter;
+	}
+	.excerpt-meta {
+		border-bottom: 1px solid $border-color;
+	}
+}
+.excerpt-content-wrapper {
+	@include clearfix();
+	.excerpt-thumbnail {
+		img {
+			@extend .aligncenter;
+			display: block;
+		}
+	}
+	@include breakpoint( 'xs' ) {
+		.excerpt-thumbnail {
+			@include clearfix();
+			float: left;
+			margin: 0 $gutter $gutter 0;
+			position: relative;
+			top: 6px;
+			display: block;
+		}
+	}
+}
+
+.sharedaddy {
+	.sd-content {
+		ul {
+			margin: 0 !important;
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
