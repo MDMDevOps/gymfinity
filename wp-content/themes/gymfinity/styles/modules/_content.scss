@@ -507,6 +507,17 @@ aside#sidebar .widget.box-container{
 		display: block;
 	}
 }
+.woocommerce-checkout-review-order-table {
+	dd, dt {
+		// display: inline-block;
+		// float: none;
+		margin-bottom: 0px !important;
+		font-size: .85rem !important;
+	}
+	.variation-BookingType {
+		display: none !important;
+	}
+}
 
 // .woocommerce aside#sidebar .widget.box-container{
 // 	display:none;

@@ -8799,6 +8799,16 @@ aside#sidebar .widget.box-container {
   }
 }
 
+/* line 511, ../modules/_content.scss */
+.woocommerce-checkout-review-order-table dd, .woocommerce-checkout-review-order-table dt {
+  margin-bottom: 0px !important;
+  font-size: .85rem !important;
+}
+/* line 517, ../modules/_content.scss */
+.woocommerce-checkout-review-order-table .variation-BookingType {
+  display: none !important;
+}
+
 /* line 1, ../modules/_blog.scss */
 article.excerpt {
   margin-bottom: 1.618em;
