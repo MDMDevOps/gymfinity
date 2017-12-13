@@ -48,34 +48,42 @@ jQuery( function( $ ) {
 	    adaptiveHeight : true,
 	});
 
-	$( '.checkout-addon-products ul.products' ).slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		dots: true,
-		responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        slidesToShow: 3,
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		      }
-		    },
-		    {
-		      breakpoint: 420,
-		      settings: {
-		        slidesToShow: 1,
-		      }
-		    }
-		  ]
-	});
+
+
+	function init_cart_slider() {
+		$( '.checkout-addon-products ul.products' ).slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: true,
+			responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 3,
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 2,
+			      }
+			    },
+			    {
+			      breakpoint: 420,
+			      settings: {
+			        slidesToShow: 1,
+			      }
+			    }
+			  ]
+		});
+	}
+	// Run function once initially
+	init_cart_slider();
+	// Hook to cart update
+	$( document.body ).on( 'updated_cart_totals', init_cart_slider );
 
 	// Datatables stuff
 	(function(){
