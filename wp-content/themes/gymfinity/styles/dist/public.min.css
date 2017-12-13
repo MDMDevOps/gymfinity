@@ -8800,12 +8800,12 @@ aside#sidebar .widget.box-container {
 }
 
 /* line 511, ../modules/_content.scss */
-.woocommerce-checkout-review-order-table dd, .woocommerce-checkout-review-order-table dt {
+.woocommerce-checkout-review-order-table dd, .woocommerce-checkout-review-order-table dt, .woocommerce-cart-form__contents dd, .woocommerce-cart-form__contents dt {
   margin-bottom: 0px !important;
   font-size: .85rem !important;
 }
 /* line 517, ../modules/_content.scss */
-.woocommerce-checkout-review-order-table .variation-BookingType {
+.woocommerce-checkout-review-order-table .variation-BookingType, .woocommerce-cart-form__contents .variation-BookingType {
   display: none !important;
 }
 
