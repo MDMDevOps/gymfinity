@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 				<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 				<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+				<th class="product-subtotal"><?php _e( 'Due Today', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -95,7 +95,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
 							<?php
-								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+								$display_price = get_post_meta( $product_id, '_wc_cdp_price', true );
+								if( !empty( $display_price ) ) {
+									echo apply_filters( 'woocommerce_cart_item_price', woocommerce_price( $display_price ), $cart_item, $cart_item_key );
+								} else {
+									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+								}
 							?>
 						</td>
 

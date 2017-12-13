@@ -42,12 +42,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 </header>
 
 <div class="entry-content">
-	<div class="alignright bookproduct">
-		<?php
-			woocommerce_template_single_add_to_cart();
-			woocommerce_template_single_sharing();
-		 ?>
+	<div class="row add-padding-bottom">
+		<div class="column sm-6">
+			<?php echo apply_filters( 'the_content', get_the_excerpt() ); ?>
+		</div>
+		<div class="column sm-6">
+			<?php woocommerce_template_single_add_to_cart(); ?>
+			<?php woocommerce_template_single_sharing(); ?>
+		</div>
+
 	</div>
+
+	<?php //do_action( 'woocommerce_single_product_summary' ); ?>
 	<?php the_content(); ?>
 
 </div>

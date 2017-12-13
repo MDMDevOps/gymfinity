@@ -2,7 +2,7 @@
     <div class="title-banner">
     	<div class="wrapper">
     		<div class="row">
-    			<div class="column lg-9">
+    			<div class="column bannerwrapper">
     				<?php dynamic_sidebar( 'masthead-widget-area' ); ?>
     			</div>
     		</div>

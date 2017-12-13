@@ -172,13 +172,13 @@ if( !function_exists( 'mpress_add_sidebars' ) ) {
 					'before_title'  => '<h4 class="widget-title">',
 					'after_title'   => '</h4>'
 			),
-			'parties-content' => array(
-				'name'          => __( 'Parties Page Content', 'mpress-child' ),
-					'id'            => 'parties-content',
+			'after-cart-widget' => array(
+				'name'          => __( 'After Cart Widget', 'mpress-child' ),
+					'id'            => 'after-cart-widget',
 					'before_widget' => '',
 					'after_widget'  => "",
-					'before_title'  => '<h4 class="widget-title">',
-					'after_title'   => '</h4>'
+					'before_title'  => '<h3 class="widget-title">',
+					'after_title'   => '</h3>'
 			),
 		);
 		return array_merge( $sidebars, $child_sidebars );
@@ -712,11 +712,9 @@ function staff_cpt_order( $orderby ) {
 
 // add_action( 'wc_deposit_theme', 'custom_booking_price', 10, 2);
 function woo_featured_before_cart() {
-	$content  = '<div class="checkout-addon-products">';
-	$content .= '<h3>Customize Your Event with Add-ons</h3>';
-	$content .= do_shortcode( '[featured_products]' );
-	$content .= '</div>';
-	echo $content;
+	if ( is_active_sidebar( 'after-cart-widget' ) ) :
+       dynamic_sidebar( 'after-cart-widget' );
+	endif;
 }
 add_action( 'woocommerce_after_cart_table', 'woo_featured_before_cart' );
 

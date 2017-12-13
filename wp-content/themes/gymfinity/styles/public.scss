@@ -194,7 +194,10 @@ blockquote{
 }
 .woocommerce {
 	.checkout-addon-products {
-		margin: 0 -2%;
+		// margin: 0 -2%;
+		.slick-list, .slick-dots {
+			margin-bottom: 1.618rem;
+		}
 		ul.products {
 			li.product {
 				display: block;
@@ -204,30 +207,35 @@ blockquote{
 				padding: .809rem .809rem 60px .809rem !important;
 				// padding-bottom: 60px !important;
 				// width: 100% !important;
-				width: 46%;
+				// width: 46%;
 				// max-width: 220px;
 				// min-width: 160px;
 				border: 1px solid rgba(0, 0, 0, 0.11);
 				border-top: 3px solid #e1313a;
-				margin: 0 2% 4% !important;
+				// margin: 0 2% 4% !important;
 				text-align: center;
-				overflow: hidden;
+				// float: none;
+				// width: auto;
+				// max-width: 200px;
+				margin: 0 1em !important;
+				clear: none;
+				// overflow: hidden;
 				// padding: 1.618rem;
-				&.last, &.first {
-					margin: 0 2% 4% !important;
-				}
-				@include breakpoint('xs') {
-					width: 29.3%;
-				}
-				@include breakpoint('sm') {
-					width: 46%;
-				}
-				@include breakpoint('md') {
-					width: 21%;
-				}
-				@include breakpoint('md') {
-					width: 16%;
-				}
+				// &.last, &.first {
+				// 	margin: 0 2% 4% !important;
+				// }
+				// @include breakpoint('xs') {
+				// 	width: 29.3%;
+				// }
+				// @include breakpoint('sm') {
+				// 	width: 46%;
+				// }
+				// @include breakpoint('md') {
+				// 	width: 21%;
+				// }
+				// @include breakpoint('md') {
+				// 	width: 16%;
+				// }
 			}
 			a.woocommerce-LoopProduct-link {
 				pointer-events: none;
